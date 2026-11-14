@@ -4,39 +4,39 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="robots" content="noindex, nofollow, noarchive">
-  <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#07090d">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f2f5f8">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <title>How to Set Up a Meter Main Combo — Sharma Education</title>
   <link rel="icon" href="logo.png">
   <link rel="apple-touch-icon" href="logo.png">
   <style>
     :root {
-      --bg: #07090d; --panel: #121821; --panel-2: #171e28; --line: #2a3442;
-      --gold: #e8a317; --gold-2: #ffd36a; --blue: #2f7fd0; --green: #35b558;
-      --text: #f3f5f7; --muted: #9aa5b4; --red: #e5534b;
+      --bg: #f2f5f8; --panel: #ffffff; --panel-2: #ffffff; --line: #d3dde6;
+      --gold: #96690a; --gold-2: #8a5f00; --blue: #0058a3; --green: #1d9e4b;
+      --text: #182430; --muted: #5a6b7d; --red: #c0392b;
     }
     * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
     html, body { margin: 0; background: var(--bg); color: var(--text);
       font-family: "Segoe UI", "Helvetica Neue", ui-sans-serif, system-ui, sans-serif;
       -webkit-font-smoothing: antialiased; }
     body { background:
-      radial-gradient(90vw 50vh at 100% -10%, rgba(232,163,23,0.08), transparent 50%),
-      radial-gradient(80vw 40vh at 0% 0%, rgba(47,127,208,0.10), transparent 55%),
+      radial-gradient(90vw 50vh at 100% -10%, rgba(232,163,23,0.10), transparent 50%),
+      radial-gradient(80vw 40vh at 0% 0%, rgba(0,88,163,0.08), transparent 55%),
       var(--bg); min-height: 100dvh; }
     .wrap { max-width: 620px; margin: 0 auto; padding: 18px 14px 36px; }
     .back { display: inline-block; color: var(--muted); text-decoration: none; font-size: 0.85rem; margin: 2px 2px 12px; }
     header { display: flex; align-items: center; gap: 12px; margin: 0 2px 4px; }
-    header img { height: 42px; width: auto; background: #fff; border-radius: 10px; padding: 4px 6px; }
+    header img { height: 42px; width: auto; background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 4px 6px; }
     header .k { font-size: 0.68rem; font-weight: 750; letter-spacing: 0.09em; text-transform: uppercase; color: var(--gold); }
     h1 { margin: 10px 2px 6px; font-size: 1.55rem; font-weight: 760; letter-spacing: -0.02em; line-height: 1.15; }
     .sub { margin: 0 2px; color: var(--muted); font-size: 0.93rem; line-height: 1.5; }
-    .warn { margin: 16px 0 0; padding: 13px 14px; border: 1px solid rgba(229,83,75,0.55);
-      background: rgba(229,83,75,0.10); border-radius: 14px; font-size: 0.88rem; line-height: 1.5; }
-    .warn b { color: #ff9d97; }
-    .card { margin-top: 14px; padding: 16px 15px 14px; background: linear-gradient(180deg, var(--panel-2), var(--panel));
-      border: 1px solid var(--line); border-radius: 16px; }
+    .warn { margin: 16px 0 0; padding: 13px 14px; border: 1px solid rgba(192,57,43,0.5);
+      background: #fdf0ef; border-radius: 14px; font-size: 0.88rem; line-height: 1.5; }
+    .warn b { color: #b3261e; }
+    .card { margin-top: 14px; padding: 16px 15px 14px; background: var(--panel);
+      border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 1px 3px rgba(24,36,48,0.06); }
     h2 { margin: 24px 2px 6px; font-size: 0.8rem; font-weight: 750; letter-spacing: 0.09em;
       text-transform: uppercase; color: var(--gold); }
     h3 { margin: 0 0 6px; font-size: 1.05rem; font-weight: 700; }
@@ -46,21 +46,24 @@
     li { margin-bottom: 5px; }
     .muted { color: var(--muted); }
     .nec { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em;
-      color: #bcd8f5; border: 1px solid rgba(47,127,208,0.55); border-radius: 999px; padding: 2px 8px; margin: 0 4px 4px 0; }
+      color: var(--blue); background: #eaf3fb; border: 1px solid rgba(0,88,163,0.4); border-radius: 999px; padding: 2px 8px; margin: 0 4px 4px 0; }
     .sharma { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em;
-      color: var(--gold-2); border: 1px solid rgba(232,163,23,0.5); border-radius: 999px; padding: 2px 8px; margin: 0 4px 4px 0; }
+      color: var(--gold-2); background: #fdf6e0; border: 1px solid rgba(150,105,10,0.45); border-radius: 999px; padding: 2px 8px; margin: 0 4px 4px 0; }
     .diagram { width: 100%; height: auto; display: block; }
+    .card.highlight { border: 2px solid var(--blue); background: linear-gradient(180deg, #eaf3fb, #ffffff); }
+    .highlight-banner { margin: 12px 0 0; padding: 13px 14px; border: 2px solid var(--gold);
+      background: #fdf6e0; border-radius: 14px; font-size: 0.92rem; line-height: 1.5; }
     .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
     @media (max-width: 480px) { .gallery { grid-template-columns: 1fr; } }
-    figure { margin: 0; background: #0c1118; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+    figure { margin: 0; background: #ffffff; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
     figure img { width: 100%; height: auto; display: block; }
     figcaption { padding: 10px 11px 12px; font-size: 0.84rem; line-height: 1.5; color: var(--muted); }
     figcaption b { color: var(--text); display: block; margin-bottom: 3px; font-size: 0.9rem; }
-    .bar { height: 10px; background: #0c1118; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; margin: 10px 0 4px; }
+    .bar { height: 10px; background: #e3eaf1; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; margin: 10px 0 4px; }
     .bar i { display: block; height: 100%; width: 0%; background: linear-gradient(90deg, var(--blue), var(--green)); transition: width .25s; }
     .pct { font-size: 0.8rem; color: var(--muted); }
     label.chk { display: flex; gap: 10px; align-items: flex-start; padding: 9px 10px; margin: 7px 0;
-      background: #0c1118; border: 1px solid var(--line); border-radius: 12px; font-size: 0.9rem; line-height: 1.45; cursor: pointer; }
+      background: #f7fafc; border: 1px solid var(--line); border-radius: 12px; font-size: 0.9rem; line-height: 1.45; cursor: pointer; }
     label.chk input { margin-top: 2px; width: 18px; height: 18px; accent-color: var(--green); flex: none; }
     label.chk.done span { color: var(--muted); text-decoration: line-through; }
     .reset { margin-top: 10px; background: none; border: 1px solid var(--line); color: var(--muted);
@@ -84,50 +87,51 @@
     <p class="sub">A meter main combo is the meter base and the main service disconnect in one outdoor enclosure — the utility meter on top, the main breaker below it. Sharma's standard service: <b>meter outside, interior panel directly inside, back to back.</b> This lesson walks the whole set-up, start to inspection.</p>
 
     <div class="warn"><b>Safety first:</b> the service conductors ahead of the main breaker are unfused and always live once the utility energizes them. Never cut a utility seal or pull a meter unless the utility and your foreman say so. De-energized work only, until the utility makes the final connection.</div>
+    <div class="highlight-banner"><b>Grounding at Sharma — UFER first:</b> typically we ground the service with the <b>UFER</b> (concrete-encased electrode in the footing). It's taught first in this lesson, before the step-by-step — find the stub, protect it, land the GEC on it.</div>
 
     <h2>The picture — what goes where</h2>
     <div class="card">
       <svg class="diagram" viewBox="0 0 600 380" role="img" aria-label="Diagram: underground service to a meter main combo on the outside wall, interior panel back to back inside, ground rods below">
-        <rect x="0" y="0" width="600" height="380" fill="#0c1118"/>
-        <rect x="282" y="30" width="14" height="270" fill="#2a3442"/>
-        <text x="289" y="20" fill="#9aa5b4" font-size="11" text-anchor="middle">HOUSE WALL</text>
-        <text x="140" y="52" fill="#9aa5b4" font-size="12" text-anchor="middle">OUTSIDE</text>
-        <text x="450" y="52" fill="#9aa5b4" font-size="12" text-anchor="middle">INSIDE (GARAGE)</text>
+        <rect x="0" y="0" width="600" height="380" fill="#e9eff5"/>
+        <rect x="282" y="30" width="14" height="270" fill="#b9c7d4"/>
+        <text x="289" y="20" fill="#5a6b7d" font-size="11" text-anchor="middle">HOUSE WALL</text>
+        <text x="140" y="52" fill="#5a6b7d" font-size="12" text-anchor="middle">OUTSIDE</text>
+        <text x="450" y="52" fill="#5a6b7d" font-size="12" text-anchor="middle">INSIDE (GARAGE)</text>
         <!-- underground lateral -->
         <path d="M20 340 H215 V250" fill="none" stroke="#2f7fd0" stroke-width="5"/>
-        <text x="60" y="328" fill="#bcd8f5" font-size="11">UTILITY LATERAL (UG)</text>
-        <text x="60" y="358" fill="#9aa5b4" font-size="10">in conduit, from transformer / pedestal</text>
+        <text x="60" y="328" fill="#0058a3" font-size="11">UTILITY LATERAL (UG)</text>
+        <text x="60" y="358" fill="#5a6b7d" font-size="10">in conduit, from transformer / pedestal</text>
         <!-- meter combo -->
-        <rect x="215" y="95" width="67" height="155" rx="8" fill="#171e28" stroke="#e8a317" stroke-width="2"/>
-        <circle cx="248" cy="128" r="21" fill="none" stroke="#f3f5f7" stroke-width="2"/>
-        <text x="248" y="132" fill="#f3f5f7" font-size="10" text-anchor="middle">kWh</text>
+        <rect x="215" y="95" width="67" height="155" rx="8" fill="#ffffff" stroke="#e8a317" stroke-width="2"/>
+        <circle cx="248" cy="128" r="21" fill="none" stroke="#182430" stroke-width="2"/>
+        <text x="248" y="132" fill="#182430" font-size="10" text-anchor="middle">kWh</text>
         <rect x="228" y="168" width="40" height="26" rx="3" fill="#e8a317"/>
         <text x="248" y="185" fill="#07090d" font-size="10" font-weight="bold" text-anchor="middle">200A</text>
-        <text x="248" y="218" fill="#ffd36a" font-size="10" text-anchor="middle">MAIN</text>
-        <text x="248" y="232" fill="#ffd36a" font-size="10" text-anchor="middle">BREAKER</text>
-        <text x="248" y="82" fill="#ffd36a" font-size="11" font-weight="bold" text-anchor="middle">METER MAIN COMBO</text>
+        <text x="248" y="218" fill="#96690a" font-size="10" text-anchor="middle">MAIN</text>
+        <text x="248" y="232" fill="#96690a" font-size="10" text-anchor="middle">BREAKER</text>
+        <text x="248" y="82" fill="#96690a" font-size="11" font-weight="bold" text-anchor="middle">METER MAIN COMBO</text>
         <!-- through-wall nipple -->
         <rect x="282" y="150" width="32" height="16" fill="#35b558"/>
-        <text x="330" y="140" fill="#9fe8b1" font-size="10">THRU-WALL NIPPLE</text>
+        <text x="330" y="140" fill="#177245" font-size="10">THRU-WALL NIPPLE</text>
         <!-- interior panel -->
-        <rect x="314" y="95" width="70" height="130" rx="8" fill="#171e28" stroke="#2f7fd0" stroke-width="2"/>
-        <text x="349" y="82" fill="#bcd8f5" font-size="11" font-weight="bold" text-anchor="middle">INTERIOR PANEL</text>
-        <g stroke="#2a3442" stroke-width="3">
+        <rect x="314" y="95" width="70" height="130" rx="8" fill="#ffffff" stroke="#2f7fd0" stroke-width="2"/>
+        <text x="349" y="82" fill="#0058a3" font-size="11" font-weight="bold" text-anchor="middle">INTERIOR PANEL</text>
+        <g stroke="#c3d0dd" stroke-width="3">
           <line x1="324" y1="115" x2="374" y2="115"/><line x1="324" y1="132" x2="374" y2="132"/>
           <line x1="324" y1="149" x2="374" y2="149"/><line x1="324" y1="166" x2="374" y2="166"/>
           <line x1="324" y1="183" x2="374" y2="183"/><line x1="324" y1="200" x2="374" y2="200"/>
         </g>
-        <text x="349" y="245" fill="#9aa5b4" font-size="10" text-anchor="middle">back to back with meter</text>
+        <text x="349" y="245" fill="#5a6b7d" font-size="10" text-anchor="middle">back to back with meter</text>
         <!-- ground -->
         <line x1="240" y1="250" x2="240" y2="322" stroke="#35b558" stroke-width="3"/>
         <line x1="205" y1="322" x2="275" y2="322" stroke="#35b558" stroke-width="3"/>
         <line x1="218" y1="312" x2="218" y2="332" stroke="#35b558" stroke-width="3"/>
         <line x1="262" y1="312" x2="262" y2="332" stroke="#35b558" stroke-width="3"/>
-        <text x="120" y="292" fill="#9fe8b1" font-size="10">GEC to 2 ground rods</text>
-        <text x="120" y="306" fill="#9aa5b4" font-size="10">8 ft rods, min 6 ft apart</text>
+        <text x="120" y="292" fill="#177245" font-size="10">GEC to 2 ground rods</text>
+        <text x="120" y="306" fill="#5a6b7d" font-size="10">8 ft rods, min 6 ft apart</text>
         <line x1="196" y1="288" x2="234" y2="318" stroke="#35b558" stroke-width="1"/>
-        <text x="450" y="300" fill="#9aa5b4" font-size="10" text-anchor="middle">Branch circuits → house</text>
-        <path d="M384 130 H470 M384 165 H470 M384 200 H470" stroke="#2a3442" stroke-width="3"/>
+        <text x="450" y="300" fill="#5a6b7d" font-size="10" text-anchor="middle">Branch circuits → house</text>
+        <path d="M384 130 H470 M384 165 H470 M384 200 H470" stroke="#c3d0dd" stroke-width="3"/>
       </svg>
       <p class="muted" style="margin-top:10px">Underground service shown, grounded to rods. On an overhead service the same combo is fed from a mast/weatherhead above it instead — the set-up below the meter does not change. And where the footing has a <b>UFER</b> (concrete-encased electrode), the GEC lands there — full UFER section below.</p>
     </div>
@@ -166,6 +170,47 @@
       </ul>
     </div>
 
+    <h2>The UFER — concrete-encased electrode</h2>
+    <div class="card highlight">
+      <span class="nec">NEC 250.52(A)(3)</span><span class="nec">NEC 250.66(B)</span><span class="sharma">FLORIDA NEW CONSTRUCTION</span>
+      <p style="margin-top:10px">Named for Herbert Ufer. A UFER is a grounding electrode <b>buried in the concrete footing itself</b>: at least <b>20 ft</b> of either <b>½-inch rebar</b> (one piece, or pieces tied together with steel tie wire) or <b>bare copper conductor, #4 AWG or larger</b>, encased in at least 2 inches of concrete, near the bottom of the footing, in direct contact with the earth. Concrete holds moisture against the steel/copper, so a UFER is one of the best electrodes there is — better than a driven rod.</p>
+      <svg class="diagram" viewBox="0 0 600 300" role="img" aria-label="Cross-section diagram: rebar running through the concrete footing, stubbing up at the service location to the meter main combo">
+        <rect x="0" y="0" width="600" height="300" fill="#e9eff5"/>
+        <text x="300" y="24" fill="#5a6b7d" font-size="11" text-anchor="middle">CROSS-SECTION — FOOTING AT THE SERVICE WALL</text>
+        <!-- grade / earth -->
+        <rect x="0" y="238" width="600" height="62" fill="#dde5d2"/>
+        <text x="34" y="272" fill="#5a6b7d" font-size="10">EARTH</text>
+        <!-- slab + wall -->
+        <rect x="330" y="52" width="90" height="120" fill="#b9c7d4"/>
+        <text x="375" y="44" fill="#5a6b7d" font-size="10" text-anchor="middle">BLOCK WALL</text>
+        <rect x="180" y="160" width="330" height="14" fill="#aebfce"/>
+        <text x="520" y="170" fill="#5a6b7d" font-size="10">SLAB</text>
+        <!-- footing -->
+        <rect x="120" y="188" width="390" height="50" fill="#232c38" stroke="#c3d0dd"/>
+        <text x="130" y="182" fill="#5a6b7d" font-size="10">CONCRETE FOOTING</text>
+        <!-- rebar in footing -->
+        <line x1="132" y1="222" x2="470" y2="222" stroke="#e8a317" stroke-width="5"/>
+        <line x1="470" y1="222" x2="470" y2="120" stroke="#e8a317" stroke-width="5"/>
+        <text x="200" y="214" fill="#96690a" font-size="11">REBAR (OR BARE #4 Cu) — 20 FT MIN, IN THE FOOTING</text>
+        <!-- stub to combo -->
+        <rect x="438" y="58" width="64" height="62" rx="6" fill="#ffffff" stroke="#e8a317" stroke-width="2"/>
+        <circle cx="470" cy="78" r="11" fill="none" stroke="#182430" stroke-width="2"/>
+        <rect x="458" y="96" width="24" height="12" fill="#e8a317"/>
+        <text x="470" y="50" fill="#96690a" font-size="10" font-weight="bold" text-anchor="middle">METER COMBO</text>
+        <line x1="470" y1="120" x2="470" y2="160" stroke="#35b558" stroke-width="3"/>
+        <text x="486" y="146" fill="#177245" font-size="10">STUB-UP + GEC</text>
+        <text x="486" y="160" fill="#5a6b7d" font-size="10">at the service location</text>
+      </svg>
+      <h3 style="margin-top:12px">Working the UFER on a Sharma job</h3>
+      <ul>
+        <li><b>Before the pour:</b> the UFER is made while the footing steel is going in — confirm it's on the plan/footing and that the stub will come up <b>at the service location</b>, where the combo/panel will be. Once the concrete is poured, you can't add one.</li>
+        <li><b>Protect the stub.</b> The rebar or copper tail that sticks up for the connection is the whole connection point. Don't let it get cut off, bent flat, or buried. If a stub gets cut, tell the foreman — don't just drive a rod and stay quiet.</li>
+        <li><b>Connect it at the service:</b> GEC from the combo's ground/neutral bar to the stub with a listed clamp/connector made for rebar/concrete-encased use. Size: <b>#4 copper is the largest GEC the code requires to a UFER</b> (250.66(B)) — bigger is allowed, never required.</li>
+        <li><b>It still counts as the system:</b> a UFER on its own satisfies the grounding electrode requirement — no supplemental rod is required for a concrete-encased electrode the way one is for a single rod. If rods or a metal water pipe are also present, they all bond together into the one system (250.50).</li>
+        <li><b>No UFER on the plan?</b> Then it's rods: two 8 ft rods, 6 ft apart, per Step 5. UFER is used when the plan/footing actually has one — never claim one that isn't there.</li>
+      </ul>
+    </div>
+
     <h2>Step by step</h2>
     <div class="card">
       <h3>1 · Mount the combo</h3>
@@ -180,7 +225,7 @@
       <p>The meter main combo is the <b>service equipment</b>: this is where the neutral is bonded to the enclosure and to ground. Every panel after it (including the interior panel) is fed with grounds and neutrals <b>separated</b> — 4-wire feed, neutral bar isolated, no bonding screw downstream.</p>
       <span class="nec">NEC 250.24</span><span class="nec">NEC 250.142</span>
       <h3 style="margin-top:14px">5 · Grounding electrode system — UFER first, then rods</h3>
-      <p><b>Check for the UFER first.</b> On Florida new construction the footing usually carries a concrete-encased electrode (the UFER — next section). If it's there, it <b>must</b> be used: every electrode present at the building gets bonded into one system (250.50). Land the GEC on the UFER stub — to a concrete-encased electrode the GEC never needs to be larger than <b>#4 copper</b> (250.66(B)).</p>
+      <p><b>Check for the UFER first — typically, this is the ground.</b> On Florida new construction the footing usually carries a concrete-encased electrode (the UFER — taught in full above). If it's there, it <b>must</b> be used: every electrode present at the building gets bonded into one system (250.50). Land the GEC on the UFER stub — to a concrete-encased electrode the GEC never needs to be larger than <b>#4 copper</b> (250.66(B)).</p>
       <p><b>Ground rods:</b> drive <b>two 8 ft rods, at least 6 ft apart</b> where rods are the electrode (one rod is only enough if it tests 25 Ω or less). The GEC to a rod never needs to be larger than #6 copper (250.66(A)). Many Sharma services land <b>both</b> — UFER plus rods, bonded together. Bond the metal water pipe where present, and install the <b>intersystem bonding termination</b> at the service for cable/phone/fiber grounds.</p>
       <span class="nec">NEC 250.50</span><span class="nec">NEC 250.52(A)(3) UFER</span><span class="nec">NEC 250.53</span><span class="nec">NEC 250.94</span>
       <h3 style="margin-top:14px">6 · Surge protection</h3>
@@ -196,47 +241,6 @@
         <li>Any extra breaker spaces in the combo labeled for what they feed — the 20A GFCI receptacle under the combo, for example.</li>
       </ul>
       <span class="nec">NEC 230.70(B)</span><span class="nec">NEC 230.85</span><span class="nec">NEC 408.4 directory</span>
-    </div>
-
-    <h2>The UFER — concrete-encased electrode</h2>
-    <div class="card">
-      <span class="nec">NEC 250.52(A)(3)</span><span class="nec">NEC 250.66(B)</span><span class="sharma">FLORIDA NEW CONSTRUCTION</span>
-      <p style="margin-top:10px">Named for Herbert Ufer. A UFER is a grounding electrode <b>buried in the concrete footing itself</b>: at least <b>20 ft</b> of either <b>½-inch rebar</b> (one piece, or pieces tied together with steel tie wire) or <b>bare copper conductor, #4 AWG or larger</b>, encased in at least 2 inches of concrete, near the bottom of the footing, in direct contact with the earth. Concrete holds moisture against the steel/copper, so a UFER is one of the best electrodes there is — better than a driven rod.</p>
-      <svg class="diagram" viewBox="0 0 600 300" role="img" aria-label="Cross-section diagram: rebar running through the concrete footing, stubbing up at the service location to the meter main combo">
-        <rect x="0" y="0" width="600" height="300" fill="#0c1118"/>
-        <text x="300" y="24" fill="#9aa5b4" font-size="11" text-anchor="middle">CROSS-SECTION — FOOTING AT THE SERVICE WALL</text>
-        <!-- grade / earth -->
-        <rect x="0" y="238" width="600" height="62" fill="#141a12"/>
-        <text x="34" y="272" fill="#9aa5b4" font-size="10">EARTH</text>
-        <!-- slab + wall -->
-        <rect x="330" y="52" width="90" height="120" fill="#2a3442"/>
-        <text x="375" y="44" fill="#9aa5b4" font-size="10" text-anchor="middle">BLOCK WALL</text>
-        <rect x="180" y="160" width="330" height="14" fill="#3a4656"/>
-        <text x="520" y="170" fill="#9aa5b4" font-size="10">SLAB</text>
-        <!-- footing -->
-        <rect x="120" y="188" width="390" height="50" fill="#232c38" stroke="#2a3442"/>
-        <text x="130" y="182" fill="#9aa5b4" font-size="10">CONCRETE FOOTING</text>
-        <!-- rebar in footing -->
-        <line x1="132" y1="222" x2="470" y2="222" stroke="#e8a317" stroke-width="5"/>
-        <line x1="470" y1="222" x2="470" y2="120" stroke="#e8a317" stroke-width="5"/>
-        <text x="200" y="214" fill="#ffd36a" font-size="11">REBAR (OR BARE #4 Cu) — 20 FT MIN, IN THE FOOTING</text>
-        <!-- stub to combo -->
-        <rect x="438" y="58" width="64" height="62" rx="6" fill="#171e28" stroke="#e8a317" stroke-width="2"/>
-        <circle cx="470" cy="78" r="11" fill="none" stroke="#f3f5f7" stroke-width="2"/>
-        <rect x="458" y="96" width="24" height="12" fill="#e8a317"/>
-        <text x="470" y="50" fill="#ffd36a" font-size="10" font-weight="bold" text-anchor="middle">METER COMBO</text>
-        <line x1="470" y1="120" x2="470" y2="160" stroke="#35b558" stroke-width="3"/>
-        <text x="486" y="146" fill="#9fe8b1" font-size="10">STUB-UP + GEC</text>
-        <text x="486" y="160" fill="#9aa5b4" font-size="10">at the service location</text>
-      </svg>
-      <h3 style="margin-top:12px">Working the UFER on a Sharma job</h3>
-      <ul>
-        <li><b>Before the pour:</b> the UFER is made while the footing steel is going in — confirm it's on the plan/footing and that the stub will come up <b>at the service location</b>, where the combo/panel will be. Once the concrete is poured, you can't add one.</li>
-        <li><b>Protect the stub.</b> The rebar or copper tail that sticks up for the connection is the whole connection point. Don't let it get cut off, bent flat, or buried. If a stub gets cut, tell the foreman — don't just drive a rod and stay quiet.</li>
-        <li><b>Connect it at the service:</b> GEC from the combo's ground/neutral bar to the stub with a listed clamp/connector made for rebar/concrete-encased use. Size: <b>#4 copper is the largest GEC the code requires to a UFER</b> (250.66(B)) — bigger is allowed, never required.</li>
-        <li><b>It still counts as the system:</b> a UFER on its own satisfies the grounding electrode requirement — no supplemental rod is required for a concrete-encased electrode the way one is for a single rod. If rods or a metal water pipe are also present, they all bond together into the one system (250.50).</li>
-        <li><b>No UFER on the plan?</b> Then it's rods: two 8 ft rods, 6 ft apart, per Step 5. UFER is used when the plan/footing actually has one — never claim one that isn't there.</li>
-      </ul>
     </div>
 
     <h2>Quick numbers</h2>
