@@ -50,6 +50,12 @@
     .sharma { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em;
       color: var(--gold-2); border: 1px solid rgba(232,163,23,0.5); border-radius: 999px; padding: 2px 8px; margin: 0 4px 4px 0; }
     .diagram { width: 100%; height: auto; display: block; }
+    .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    @media (max-width: 480px) { .gallery { grid-template-columns: 1fr; } }
+    figure { margin: 0; background: #0c1118; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+    figure img { width: 100%; height: auto; display: block; }
+    figcaption { padding: 10px 11px 12px; font-size: 0.84rem; line-height: 1.5; color: var(--muted); }
+    figcaption b { color: var(--text); display: block; margin-bottom: 3px; font-size: 0.9rem; }
     .bar { height: 10px; background: #0c1118; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; margin: 10px 0 4px; }
     .bar i { display: block; height: 100%; width: 0%; background: linear-gradient(90deg, var(--blue), var(--green)); transition: width .25s; }
     .pct { font-size: 0.8rem; color: var(--muted); }
@@ -124,6 +130,29 @@
         <path d="M384 130 H470 M384 165 H470 M384 200 H470" stroke="#2a3442" stroke-width="3"/>
       </svg>
       <p class="muted" style="margin-top:10px">Underground service shown. On an overhead service the same combo is fed from a mast/weatherhead above it instead — the set-up below the meter does not change.</p>
+    </div>
+
+    <h2>From a real Sharma job — the actual gear</h2>
+    <div class="card">
+      <p class="muted">These are Sharma's own photos of the Eaton MBT48B200BTS (Type BR, 200A) going in on a block wall. Tap any photo to see it full size — read the labels, that's part of the lesson.</p>
+      <div class="gallery">
+        <figure>
+          <a href="photo-finished.jpg"><img src="photo-finished.jpg" alt="Finished meter main combo mounted on a block wall with a GFCI receptacle below it" loading="lazy"></a>
+          <figcaption><b>1 · The finished set-up</b>Combo mounted plumb on the block wall, meter socket waiting for the utility's meter, the red EMERGENCY DISCONNECT label on the door, and the GFCI receptacle fed from the combo below it — the service receptacle the crew works off during the build.</figcaption>
+        </figure>
+        <figure>
+          <a href="photo-front.jpg"><img src="photo-front.jpg" alt="Close-up of the meter socket and Emergency Disconnect label, Eaton catalog label MBT48B200BTS" loading="lazy"></a>
+          <figcaption><b>2 · Read the front</b>Meter socket jaws up top — line lugs at the top, load lugs at the bottom, neutral in the middle. Down at the bottom corner is the catalog label: <b style="display:inline;color:var(--gold-2)">Eaton Cat. No. MBT48B200BTS · 200A · 120/240V</b>. Check this label on every install to confirm you have the right gear.</figcaption>
+        </figure>
+        <figure>
+          <a href="photo-inside.jpg"><img src="photo-inside.jpg" alt="Inside the meter main combo: meter socket, 200 amp CSR main breaker, 20 amp branch breaker, ground and neutral bars, bare copper grounding conductor" loading="lazy"></a>
+          <figcaption><b>3 · Inside the combo</b>Top: the meter socket. Middle: the <b style="display:inline;color:var(--gold-2)">200A CSR 25K main breaker</b> — the service disconnect. Below it, the 20A branch breaker that feeds the GFCI underneath. Down the right side: the ground/neutral bars. The bare copper running the left side is the grounding electrode conductor headed down and out to the ground rods.</figcaption>
+        </figure>
+        <figure>
+          <a href="photo-door-label.jpg"><img src="photo-door-label.jpg" alt="Inside of the combo door showing the Eaton wiring diagram and torque table, plus the Sharma Electric and HVAC sticker" loading="lazy"></a>
+          <figcaption><b>4 · The door label is the manual</b>Inside the door: the typical wiring diagram (note "bonded neutral" at the service), the torque table for every lug, and the breaker ratings. This is where Step 3's torque numbers come from — never guess them. Sharma's service sticker goes on the door of every install.</figcaption>
+        </figure>
+      </div>
     </div>
 
     <h2>Before you start — the Sharma set-up</h2>
