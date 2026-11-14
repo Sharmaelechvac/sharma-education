@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#07090d">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>How to Set Up a Meter Main Combo — Sharma Education</title>
+  <link rel="icon" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  <style>
+    :root {
+      --bg: #07090d; --panel: #121821; --panel-2: #171e28; --line: #2a3442;
+      --gold: #e8a317; --gold-2: #ffd36a; --blue: #2f7fd0; --green: #35b558;
+      --text: #f3f5f7; --muted: #9aa5b4; --red: #e5534b;
+    }
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    html, body { margin: 0; background: var(--bg); color: var(--text);
+      font-family: "Segoe UI", "Helvetica Neue", ui-sans-serif, system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased; }
+    body { background:
+      radial-gradient(90vw 50vh at 100% -10%, rgba(232,163,23,0.08), transparent 50%),
+      radial-gradient(80vw 40vh at 0% 0%, rgba(47,127,208,0.10), transparent 55%),
+      var(--bg); min-height: 100dvh; }
+    .wrap { max-width: 620px; margin: 0 auto; padding: 18px 14px 36px; }
+    .back { display: inline-block; color: var(--muted); text-decoration: none; font-size: 0.85rem; margin: 2px 2px 12px; }
+    header { display: flex; align-items: center; gap: 12px; margin: 0 2px 4px; }
+    header img { height: 42px; width: auto; background: #fff; border-radius: 10px; padding: 4px 6px; }
+    header .k { font-size: 0.68rem; font-weight: 750; letter-spacing: 0.09em; text-transform: uppercase; color: var(--gold); }
+    h1 { margin: 10px 2px 6px; font-size: 1.55rem; font-weight: 760; letter-spacing: -0.02em; line-height: 1.15; }
+    .sub { margin: 0 2px; color: var(--muted); font-size: 0.93rem; line-height: 1.5; }
+    .warn { margin: 16px 0 0; padding: 13px 14px; border: 1px solid rgba(229,83,75,0.55);
+      background: rgba(229,83,75,0.10); border-radius: 14px; font-size: 0.88rem; line-height: 1.5; }
+    .warn b { color: #ff9d97; }
+    .card { margin-top: 14px; padding: 16px 15px 14px; background: linear-gradient(180deg, var(--panel-2), var(--panel));
+      border: 1px solid var(--line); border-radius: 16px; }
+    h2 { margin: 24px 2px 6px; font-size: 0.8rem; font-weight: 750; letter-spacing: 0.09em;
+      text-transform: uppercase; color: var(--gold); }
+    h3 { margin: 0 0 6px; font-size: 1.05rem; font-weight: 700; }
+    p, li { font-size: 0.92rem; line-height: 1.55; }
+    p { margin: 0 0 8px; }
+    ul, ol { margin: 6px 0 4px; padding-left: 20px; }
+    li { margin-bottom: 5px; }
+    .muted { color: var(--muted); }
+    .nec { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em;
+      color: #bcd8f5; border: 1px solid rgba(47,127,208,0.55); border-radius: 999px; padding: 2px 8px; margin: 0 4px 4px 0; }
+    .sharma { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em;
+      color: var(--gold-2); border: 1px solid rgba(232,163,23,0.5); border-radius: 999px; padding: 2px 8px; margin: 0 4px 4px 0; }
+    .diagram { width: 100%; height: auto; display: block; }
+    .bar { height: 10px; background: #0c1118; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; margin: 10px 0 4px; }
+    .bar i { display: block; height: 100%; width: 0%; background: linear-gradient(90deg, var(--blue), var(--green)); transition: width .25s; }
+    .pct { font-size: 0.8rem; color: var(--muted); }
+    label.chk { display: flex; gap: 10px; align-items: flex-start; padding: 9px 10px; margin: 7px 0;
+      background: #0c1118; border: 1px solid var(--line); border-radius: 12px; font-size: 0.9rem; line-height: 1.45; cursor: pointer; }
+    label.chk input { margin-top: 2px; width: 18px; height: 18px; accent-color: var(--green); flex: none; }
+    label.chk.done span { color: var(--muted); text-decoration: line-through; }
+    .reset { margin-top: 10px; background: none; border: 1px solid var(--line); color: var(--muted);
+      border-radius: 999px; padding: 7px 14px; font: inherit; font-size: 0.82rem; cursor: pointer; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    td, th { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; line-height: 1.4; }
+    th { color: var(--gold-2); font-size: 0.76rem; letter-spacing: 0.05em; text-transform: uppercase; }
+    footer { margin: 30px 2px 0; color: var(--muted); font-size: 0.72rem; text-align: center; line-height: 1.5; }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← Education</a>
+    <header>
+      <img src="logo.png" alt="Sharma Electric &amp; HVAC">
+      <div><span class="k">Sharma Education · Field How-To</span></div>
+    </header>
+
+    <h1>How to Set Up a Meter Main Combo</h1>
+    <p class="sub">A meter main combo is the meter base and the main service disconnect in one outdoor enclosure — the utility meter on top, the main breaker below it. Sharma's standard service: <b>meter outside, interior panel directly inside, back to back.</b> This lesson walks the whole set-up, start to inspection.</p>
+
+    <div class="warn"><b>Safety first:</b> the service conductors ahead of the main breaker are unfused and always live once the utility energizes them. Never cut a utility seal or pull a meter unless the utility and your foreman say so. De-energized work only, until the utility makes the final connection.</div>
+
+    <h2>The picture — what goes where</h2>
+    <div class="card">
+      <svg class="diagram" viewBox="0 0 600 380" role="img" aria-label="Diagram: underground service to a meter main combo on the outside wall, interior panel back to back inside, ground rods below">
+        <rect x="0" y="0" width="600" height="380" fill="#0c1118"/>
+        <rect x="282" y="30" width="14" height="270" fill="#2a3442"/>
+        <text x="289" y="20" fill="#9aa5b4" font-size="11" text-anchor="middle">HOUSE WALL</text>
+        <text x="140" y="52" fill="#9aa5b4" font-size="12" text-anchor="middle">OUTSIDE</text>
+        <text x="450" y="52" fill="#9aa5b4" font-size="12" text-anchor="middle">INSIDE (GARAGE)</text>
+        <!-- underground lateral -->
+        <path d="M20 340 H215 V250" fill="none" stroke="#2f7fd0" stroke-width="5"/>
+        <text x="60" y="328" fill="#bcd8f5" font-size="11">UTILITY LATERAL (UG)</text>
+        <text x="60" y="358" fill="#9aa5b4" font-size="10">in conduit, from transformer / pedestal</text>
+        <!-- meter combo -->
+        <rect x="215" y="95" width="67" height="155" rx="8" fill="#171e28" stroke="#e8a317" stroke-width="2"/>
+        <circle cx="248" cy="128" r="21" fill="none" stroke="#f3f5f7" stroke-width="2"/>
+        <text x="248" y="132" fill="#f3f5f7" font-size="10" text-anchor="middle">kWh</text>
+        <rect x="228" y="168" width="40" height="26" rx="3" fill="#e8a317"/>
+        <text x="248" y="185" fill="#07090d" font-size="10" font-weight="bold" text-anchor="middle">200A</text>
+        <text x="248" y="218" fill="#ffd36a" font-size="10" text-anchor="middle">MAIN</text>
+        <text x="248" y="232" fill="#ffd36a" font-size="10" text-anchor="middle">BREAKER</text>
+        <text x="248" y="82" fill="#ffd36a" font-size="11" font-weight="bold" text-anchor="middle">METER MAIN COMBO</text>
+        <!-- through-wall nipple -->
+        <rect x="282" y="150" width="32" height="16" fill="#35b558"/>
+        <text x="330" y="140" fill="#9fe8b1" font-size="10">THRU-WALL NIPPLE</text>
+        <!-- interior panel -->
+        <rect x="314" y="95" width="70" height="130" rx="8" fill="#171e28" stroke="#2f7fd0" stroke-width="2"/>
+        <text x="349" y="82" fill="#bcd8f5" font-size="11" font-weight="bold" text-anchor="middle">INTERIOR PANEL</text>
+        <g stroke="#2a3442" stroke-width="3">
+          <line x1="324" y1="115" x2="374" y2="115"/><line x1="324" y1="132" x2="374" y2="132"/>
+          <line x1="324" y1="149" x2="374" y2="149"/><line x1="324" y1="166" x2="374" y2="166"/>
+          <line x1="324" y1="183" x2="374" y2="183"/><line x1="324" y1="200" x2="374" y2="200"/>
+        </g>
+        <text x="349" y="245" fill="#9aa5b4" font-size="10" text-anchor="middle">back to back with meter</text>
+        <!-- ground -->
+        <line x1="240" y1="250" x2="240" y2="322" stroke="#35b558" stroke-width="3"/>
+        <line x1="205" y1="322" x2="275" y2="322" stroke="#35b558" stroke-width="3"/>
+        <line x1="218" y1="312" x2="218" y2="332" stroke="#35b558" stroke-width="3"/>
+        <line x1="262" y1="312" x2="262" y2="332" stroke="#35b558" stroke-width="3"/>
+        <text x="120" y="292" fill="#9fe8b1" font-size="10">GEC to 2 ground rods</text>
+        <text x="120" y="306" fill="#9aa5b4" font-size="10">8 ft rods, min 6 ft apart</text>
+        <line x1="196" y1="288" x2="234" y2="318" stroke="#35b558" stroke-width="1"/>
+        <text x="450" y="300" fill="#9aa5b4" font-size="10" text-anchor="middle">Branch circuits → house</text>
+        <path d="M384 130 H470 M384 165 H470 M384 200 H470" stroke="#2a3442" stroke-width="3"/>
+      </svg>
+      <p class="muted" style="margin-top:10px">Underground service shown. On an overhead service the same combo is fed from a mast/weatherhead above it instead — the set-up below the meter does not change.</p>
+    </div>
+
+    <h2>Before you start — the Sharma set-up</h2>
+    <div class="card">
+      <span class="sharma">SHARMA STANDARD</span><span class="nec">NEC 230.70</span><span class="nec">NEC 230.85</span>
+      <ul>
+        <li><b>Confirm the meter/panel relationship first.</b> Sharma standard so far: meter and panel are <b>back to back</b> — combo on the exterior of the wall, panel directly inside. If a plan shows anything else, ask the foreman before you mount anything.</li>
+        <li><b>Gear:</b> meter combo = <b>Eaton, Type BR</b> (example: MBT48B200BTS, 200A main). Interior panel = <b>Siemens, Type QP</b>. Match the plan and the service size — 200A is the standard Sharma house service.</li>
+        <li><b>Location:</b> where the serving utility wants it, reachable, not behind gates or AC units, with clear working space — 3 ft deep, 30 in wide, 6 ft 6 in headroom (NEC 110.26). Meter height is set by the utility's rules — check them, don't guess.</li>
+        <li><b>Permit + utility:</b> permit pulled, and the utility's service requirements (lateral point, conduit size, trench) confirmed before trenching or setting the mast.</li>
+      </ul>
+    </div>
+
+    <h2>Step by step</h2>
+    <div class="card">
+      <h3>1 · Mount the combo</h3>
+      <p>Fasten the enclosure plumb and solid to the wall at the utility's meter height, through the mounting holes into structure — not just siding. Seal the top and sides where the utility/AHJ requires it. Keep it dead straight: a crooked combo is the first thing an inspector (and a builder) sees.</p>
+      <h3 style="margin-top:14px">2 · Bring the service in</h3>
+      <p><b>Underground:</b> riser conduit up into the bottom of the combo, sized per the utility (2 in PVC is typical on Sharma houses — confirm), expansion fitting where required, trench and warning tape per utility spec. <b>Overhead:</b> mast through or beside the roof line with the weatherhead above the utility's attachment point, drip loop left for the utility.</p>
+      <span class="nec">NEC 230.28 mast</span><span class="nec">NEC 300.5 underground</span>
+      <h3 style="margin-top:14px">3 · Land the service conductors</h3>
+      <p>Size for the service: a 200A dwelling service can use <b>2/0 copper or 4/0 aluminum</b> service conductors under the 83% dwelling rule (Table 310.12). Land line conductors on the meter/main lugs, neutral on the neutral bar. Anti-oxidant and a wire brush on aluminum. <b>Torque every lug to the label spec with a torque tool</b> — "tight" is not a spec.</p>
+      <span class="nec">NEC 310.12</span><span class="nec">NEC 110.14(D) torque</span>
+      <h3 style="margin-top:14px">4 · Bond the neutral here — and only here</h3>
+      <p>The meter main combo is the <b>service equipment</b>: this is where the neutral is bonded to the enclosure and to ground. Every panel after it (including the interior panel) is fed with grounds and neutrals <b>separated</b> — 4-wire feed, neutral bar isolated, no bonding screw downstream.</p>
+      <span class="nec">NEC 250.24</span><span class="nec">NEC 250.142</span>
+      <h3 style="margin-top:14px">5 · Grounding electrode system</h3>
+      <p>Drive <b>two 8 ft ground rods, at least 6 ft apart</b> (one rod is only enough if it tests 25 Ω or less — two is the Sharma field standard). Grounding electrode conductor per Table 250.66 — to a rod it never needs to be larger than #6 copper (250.66(A)). Bond the metal water pipe where present, and install the <b>intersystem bonding termination</b> at the service for cable/phone/fiber grounds.</p>
+      <span class="nec">NEC 250.50</span><span class="nec">NEC 250.53</span><span class="nec">NEC 250.94</span>
+      <h3 style="margin-top:14px">6 · Surge protection</h3>
+      <p>Dwelling services require a <b>Type 1 or Type 2 surge protective device</b> at the service. Many Sharma combos carry it in the enclosure or as a listed accessory — if it's not built in, install it at the service/panel per its listing.</p>
+      <span class="nec">NEC 230.67</span>
+      <h3 style="margin-top:14px">7 · Feed the interior panel, back to back</h3>
+      <p>Short nipple through the wall from the combo's load side into the interior panel directly inside. Feed it as a feeder (grounds/neutrals separate in the panel, Step 4). Label the panel's main as fed from the service disconnect outside.</p>
+      <span class="sharma">SHARMA STANDARD — BACK TO BACK</span>
+      <h3 style="margin-top:14px">8 · Label it like an inspector reads it</h3>
+      <ul>
+        <li>Main breaker marked as the <b>service disconnect</b> (230.70(B)).</li>
+        <li>For a house, that same disconnect is the <b>emergency disconnect</b> — marked "EMERGENCY DISCONNECT, SERVICE DISCONNECT" (230.85).</li>
+        <li>Any extra breaker spaces in the combo (the Eaton BR combo has 4 spaces / 8 circuits) labeled for what they feed — the 20A GFCI in the base on Sharma EXJ houses, for example.</li>
+      </ul>
+      <span class="nec">NEC 230.70(B)</span><span class="nec">NEC 230.85</span><span class="nec">NEC 408.4 directory</span>
+    </div>
+
+    <h2>Quick numbers</h2>
+    <div class="card">
+      <table>
+        <tr><th>Item</th><th>Standard</th></tr>
+        <tr><td>House service size</td><td>200A (confirm on plan)</td></tr>
+        <tr><td>Service conductors, 200A dwelling</td><td>2/0 Cu or 4/0 Al — Table 310.12 (83% rule)</td></tr>
+        <tr><td>Sharma combo</td><td>Eaton Type BR — e.g. MBT48B200BTS, 200A main, 4 spaces / 8 circuits</td></tr>
+        <tr><td>Interior panel</td><td>Siemens Type QP, back to back</td></tr>
+        <tr><td>Ground rods</td><td>2 × 8 ft, min 6 ft apart</td></tr>
+        <tr><td>GEC to rods</td><td>#6 Cu max required — 250.66(A); size other electrodes by Table 250.66</td></tr>
+        <tr><td>Working space</td><td>3 ft deep × 30 in wide × 6 ft 6 in high — 110.26</td></tr>
+        <tr><td>Surge protection</td><td>Type 1 or 2 SPD required — 230.67</td></tr>
+      </table>
+    </div>
+
+    <h2>Inspection-ready checklist</h2>
+    <div class="card">
+      <p class="muted">Tap each item as you finish it on the job. Your checkmarks save on this phone.</p>
+      <div class="bar"><i id="fill"></i></div>
+      <span class="pct" id="pct">0 of 12 done</span>
+      <div id="checks">
+        <label class="chk"><input type="checkbox" data-k="loc"><span>Location and back-to-back layout confirmed with foreman / plan</span></label>
+        <label class="chk"><input type="checkbox" data-k="mount"><span>Combo mounted plumb, solid, at utility meter height</span></label>
+        <label class="chk"><input type="checkbox" data-k="space"><span>Working space clear: 3 ft × 30 in × 6 ft 6 in</span></label>
+        <label class="chk"><input type="checkbox" data-k="service"><span>Service raceway in (UG riser or overhead mast), utility point confirmed</span></label>
+        <label class="chk"><input type="checkbox" data-k="conductors"><span>Service conductors sized right (200A: 2/0 Cu / 4/0 Al) and landed</span></label>
+        <label class="chk"><input type="checkbox" data-k="torque"><span>Every lug torqued to the label spec — 110.14(D)</span></label>
+        <label class="chk"><input type="checkbox" data-k="bond"><span>Neutral bonded in the combo only; panel neutral isolated</span></label>
+        <label class="chk"><input type="checkbox" data-k="rods"><span>Two 8 ft ground rods driven, 6 ft+ apart, GEC landed</span></label>
+        <label class="chk"><input type="checkbox" data-k="water"><span>Water pipe bonded (where metal) + intersystem bonding termination installed</span></label>
+        <label class="chk"><input type="checkbox" data-k="spd"><span>Surge protection in place — Type 1 or 2, 230.67</span></label>
+        <label class="chk"><input type="checkbox" data-k="labels"><span>Service disconnect + emergency disconnect labels on; combo breakers labeled</span></label>
+        <label class="chk"><input type="checkbox" data-k="photo"><span>Photos taken of the finished set-up for the job record</span></label>
+      </div>
+      <button class="reset" id="reset" type="button">Reset checklist</button>
+    </div>
+
+    <h2>Common fails — don't be these</h2>
+    <div class="card">
+      <ul>
+        <li><b>Bonding the neutral again in the interior panel.</b> One bond, at the service. A second bond puts neutral current on the ground path.</li>
+        <li><b>One ground rod and no test.</b> Unless you can prove 25 Ω or less, the second rod is required.</li>
+        <li><b>Hand-tight lugs.</b> Loose service lugs are a heat/fire call later. Torque wrench, label value.</li>
+        <li><b>No surge device.</b> 230.67 has required it on dwelling services since the 2020 code.</li>
+        <li><b>Combo buried behind the AC unit or a gate.</b> Working space and utility access are checked first on inspection.</li>
+        <li><b>Guessing the meter height or lateral point.</b> Those are the utility's call — a wrong guess is a tear-out.</li>
+      </ul>
+      <p class="muted">Content pending final review by Sharma's master electrician. Follow your foreman and the plans — they win over any app.</p>
+    </div>
+
+    <footer>
+      Sharma Electric &amp; HVAC · Lic. EC13013924 · CAC1823596<br>
+      <a href="../">← Education</a> · <a href="https://sharmaelechvac.github.io/sharma-nec-code/">NEC Code app</a> · <a href="https://sharma-electrician-101.sharma-crew.workers.dev">Electrician 101</a>
+    </footer>
+  </div>
+
+  <script>
+    const KEY = "sharma-meter-combo-checklist-v1";
+    const boxes = [...document.querySelectorAll("#checks input[type=checkbox]")];
+    let saved = {};
+    try { saved = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { saved = {}; }
+    function render() {
+      let done = 0;
+      boxes.forEach((b) => {
+        b.checked = !!saved[b.dataset.k];
+        b.closest("label").classList.toggle("done", b.checked);
+        if (b.checked) done++;
+      });
+      document.getElementById("fill").style.width = (done / boxes.length * 100) + "%";
+      document.getElementById("pct").textContent = done + " of " + boxes.length + " done";
+    }
+    boxes.forEach((b) => b.addEventListener("change", () => {
+      saved[b.dataset.k] = b.checked;
+      localStorage.setItem(KEY, JSON.stringify(saved));
+      render();
+    }));
+    document.getElementById("reset").addEventListener("click", () => {
+      saved = {}; localStorage.removeItem(KEY); render();
+    });
+    render();
+  </script>
+</body>
+</html>
