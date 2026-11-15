@@ -6,7 +6,7 @@ Live: https://sharmaelechvac.github.io/sharma-education/
 
 One landing page linking Sharma's two learning apps:
 
-- **Residential Rough-In Guide** — https://sharma-electrician-101.sharma-crew.workers.dev
+- **Residential Rough-In Guide** — https://sharmaelechvac.github.io/sharma-rough-in-guide/
   Field guide for helpers/apprentices: cheat sheets, Residential Rough-in, Ask the NEC, practice quizzes.
 - **NEC Code** — https://sharmaelechvac.github.io/sharma-nec-code/
   NEC 2020 / FBC 8th Ed. Field Book app: 9 chapters, lookup, calculators, checklists, quizzes.
