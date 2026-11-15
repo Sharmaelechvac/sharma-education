@@ -13,33 +13,30 @@
   <link rel="apple-touch-icon" href="../logo.png">
   <style>
     :root {
-      --bg: #f2f5f8; --panel: #ffffff; --line: #d3dde6;
-      --gold: #96690a; --gold-2: #8a5f00; --blue: #0058a3; --green: #1d9e4b;
-      --text: #182430; --muted: #5a6b7d; --red: #c0392b;
+      --bg: #f4f6fb; --panel: #ffffff; --line: #dfe4ee;
+      --gold: #8a5a12; --gold-2: #8a5a12; --blue: #264387; --green: #1d9e4b;
+      --text: #1d2433; --muted: #5b6478; --red: #c0392b;
     }
     * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
     html, body { margin: 0; background: var(--bg); color: var(--text);
       font-family: "Segoe UI", "Helvetica Neue", ui-sans-serif, system-ui, sans-serif;
       -webkit-font-smoothing: antialiased; }
-    body { background:
-      radial-gradient(90vw 50vh at 100% -10%, rgba(232,163,23,0.10), transparent 50%),
-      radial-gradient(80vw 40vh at 0% 0%, rgba(0,88,163,0.08), transparent 55%),
-      var(--bg); min-height: 100dvh; }
+    body { background: var(--bg); min-height: 100dvh; }
     .wrap { max-width: 620px; margin: 0 auto; padding: 18px 14px 36px; }
     .back { display: inline-block; color: var(--muted); text-decoration: none; font-size: 0.85rem; margin: 2px 2px 12px; }
     header { display: flex; align-items: center; gap: 12px; margin: 0 2px 4px; }
-    header img { height: 42px; width: auto; background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 4px 6px; }
+    header img { height: 42px; width: auto; background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 4px 6px; }
     header .k { font-size: 0.68rem; font-weight: 750; letter-spacing: 0.09em; text-transform: uppercase; color: var(--gold); }
     h1 { margin: 10px 2px 6px; font-size: 1.55rem; font-weight: 760; letter-spacing: -0.02em; line-height: 1.15; }
     .sub { margin: 0 2px; color: var(--muted); font-size: 0.93rem; line-height: 1.5; }
     .warn { margin: 16px 0 0; padding: 13px 14px; border: 1px solid rgba(192,57,43,0.5);
-      background: #fdf0ef; border-radius: 14px; font-size: 0.88rem; line-height: 1.5; }
+      background: #fdf0ef; border-radius: 6px; font-size: 0.88rem; line-height: 1.5; }
     .warn b { color: #b3261e; }
     .highlight-banner { margin: 12px 0 0; padding: 13px 14px; border: 2px solid var(--gold);
-      background: #fdf6e0; border-radius: 14px; font-size: 0.92rem; line-height: 1.5; }
+      background: #fdf6e0; border-radius: 6px; font-size: 0.92rem; line-height: 1.5; }
     .card { margin-top: 14px; padding: 16px 15px 14px; background: var(--panel);
-      border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 1px 3px rgba(24,36,48,0.06); }
-    .card.highlight { border: 2px solid var(--blue); background: linear-gradient(180deg, #eaf3fb, #ffffff); }
+      border: 1px solid var(--line); border-radius: 6px; box-shadow: none; }
+    .card.highlight { border: 2px solid var(--blue); background: #eaf3fb; }
     h2 { margin: 24px 2px 6px; font-size: 0.8rem; font-weight: 750; letter-spacing: 0.09em;
       text-transform: uppercase; color: var(--blue); }
     h3 { margin: 0 0 6px; font-size: 1.05rem; font-weight: 700; }
@@ -49,34 +46,35 @@
     li { margin-bottom: 5px; }
     .muted { color: var(--muted); }
     .nec { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em;
-      color: var(--blue); background: #eaf3fb; border: 1px solid rgba(0,88,163,0.4); border-radius: 999px; padding: 2px 8px; margin: 0 4px 4px 0; }
+      color: var(--blue); background: #eaf3fb; border: 1px solid rgba(0,88,163,0.4); border-radius: 4px; padding: 2px 8px; margin: 0 4px 4px 0; }
     .sharma { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em;
-      color: var(--gold-2); background: #fdf6e0; border: 1px solid rgba(150,105,10,0.45); border-radius: 999px; padding: 2px 8px; margin: 0 4px 4px 0; }
+      color: var(--gold-2); background: #fdf6e0; border: 1px solid rgba(150,105,10,0.45); border-radius: 4px; padding: 2px 8px; margin: 0 4px 4px 0; }
     .diagram { width: 100%; height: auto; display: block; }
     .legend { display: flex; flex-wrap: wrap; gap: 8px 14px; margin: 12px 0 0; padding: 0; list-style: none; }
     .legend li { display: inline-flex; align-items: center; gap: 6px; margin: 0; font-size: 0.82rem; font-weight: 650; }
     .legend i { width: 22px; height: 8px; border-radius: 2px; display: inline-block; border: 1px solid rgba(24,36,48,0.35); flex: none; }
-    .bar { height: 10px; background: #e3eaf1; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; margin: 10px 0 4px; }
-    .bar i { display: block; height: 100%; width: 0%; background: linear-gradient(90deg, var(--blue), var(--green)); transition: width .25s; }
+    .bar { height: 10px; background: #e3eaf1; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; margin: 10px 0 4px; }
+    .bar i { display: block; height: 100%; width: 0%; background: var(--blue); transition: width .25s; }
     .pct { font-size: 0.8rem; color: var(--muted); }
     label.chk { display: flex; gap: 10px; align-items: flex-start; padding: 9px 10px; margin: 7px 0;
-      background: #f7fafc; border: 1px solid var(--line); border-radius: 12px; font-size: 0.9rem; line-height: 1.45; cursor: pointer; }
+      background: #f7fafc; border: 1px solid var(--line); border-radius: 6px; font-size: 0.9rem; line-height: 1.45; cursor: pointer; }
     label.chk input { margin-top: 2px; width: 18px; height: 18px; accent-color: var(--green); flex: none; }
     label.chk.done span { color: var(--muted); text-decoration: line-through; }
     .reset { margin-top: 10px; background: none; border: 1px solid var(--line); color: var(--muted);
-      border-radius: 999px; padding: 7px 14px; font: inherit; font-size: 0.82rem; cursor: pointer; }
+      border-radius: 4px; padding: 7px 14px; font: inherit; font-size: 0.82rem; cursor: pointer; }
     table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
     td, th { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; line-height: 1.4; }
     th { color: var(--gold-2); font-size: 0.76rem; letter-spacing: 0.05em; text-transform: uppercase; }
     footer { margin: 30px 2px 0; color: var(--muted); font-size: 0.72rem; text-align: center; line-height: 1.5; }
     footer a { color: var(--muted); }
   </style>
+  <link rel="stylesheet" href="../brand.css?v=1">
 </head>
 <body>
   <div class="wrap">
     <a class="back" href="../">← Education</a>
     <header>
-      <img src="../logo.png" alt="Sharma Electric &amp; HVAC">
+      <img src="../sharma-logo.svg" alt="Sharma Electric &amp; HVAC">
       <div><span class="k">Sharma Education · Field How-To</span></div>
     </header>
 
