@@ -121,15 +121,16 @@
         <text x="392" y="252" fill="#0058a3" font-size="10">TUG SERVICE</text>
         <text x="392" y="266" fill="#0058a3" font-size="10">GFCI OUTLET</text>
         <text x="392" y="280" fill="#5a6b7d" font-size="9">extra-duty in-use (bubble) cover — not a flip cover</text>
-        <!-- grounding bridge -->
-        <rect x="196" y="240" width="62" height="16" rx="3" fill="#ffffff" stroke="#177245" stroke-width="2"/>
-        <g fill="#177245"><circle cx="206" cy="248" r="3"/><circle cx="222" cy="248" r="3"/><circle cx="238" cy="248" r="3"/></g>
-        <text x="120" y="236" fill="#177245" font-size="10">GROUNDING BRIDGE</text>
-        <text x="120" y="266" fill="#5a6b7d" font-size="9">intersystem bonding</text>
-        <line x1="227" y1="256" x2="227" y2="286" stroke="#177245" stroke-width="3"/>
         <!-- GEC in PVC down left side to UFER -->
         <path d="M258 220 V286 H180" fill="none" stroke="#8fa5ba" stroke-width="7"/>
         <path d="M258 220 V286 H180" fill="none" stroke="#1d9e4b" stroke-width="2.5" stroke-dasharray="5 4"/>
+        <!-- grounding bridge — white in-line device clamped ON the vertical GEC pipe run, below the GFI, body extending right from the pipe (per the real Sharma photos) -->
+        <rect x="253" y="238" width="10" height="5" fill="#5a6b7d"/>
+        <rect x="250" y="261" width="42" height="17" rx="4" fill="#ffffff" stroke="#177245" stroke-width="2"/>
+        <circle cx="278" cy="269.5" r="2.4" fill="#177245"/>
+        <text x="60" y="262" fill="#177245" font-size="10">GROUNDING BRIDGE</text>
+        <text x="60" y="276" fill="#5a6b7d" font-size="9">in-line on the GEC pipe, below the GFI</text>
+        <line x1="196" y1="266" x2="248" y2="269" stroke="#177245" stroke-width="1"/>
         <text x="52" y="180" fill="#177245" font-size="10">GROUNDING WIRE</text>
         <text x="52" y="194" fill="#177245" font-size="10">IN PVC PIPE</text>
         <text x="52" y="208" fill="#5a6b7d" font-size="9">combo → down the wall → UFER</text>
@@ -138,6 +139,7 @@
       <p class="muted" style="margin-top:10px">That's the whole TUG. If what you're looking at has more than this on it, you're not on the TUG anymore — you're into rough-in work, which is a different lesson.</p>
     </div>
 
+    <a href="../overhead/" style="display:block;text-align:center;background:#0058a3;color:#ffffff;font-weight:800;font-size:clamp(21px,6vw,32px);letter-spacing:.5px;line-height:1.25;padding:24px 16px;border-radius:16px;text-decoration:none;margin:20px 0 6px;box-shadow:0 5px 16px rgba(0,88,163,.35)">FOR OVERHEAD INSTRUCTIONS CLICK HERE</a>
     <h2>From a real Sharma job — the actual gear</h2>
     <div class="card">
       <p class="muted">Sharma's own photos of a TUG going in on a block wall. Tap any photo to see it full size — read the labels, that's part of the lesson.</p>
@@ -220,7 +222,7 @@
       <p>Land the grounding conductor on the combo's ground/neutral bar, take it out through the <b>small ground hole</b> in the bottom of the can (that hole typically needs no bushing — or, if this can has a ½-inch knockout toward the very back, clear of the underground pipe, use that with a bushing; great practice, not typical), then run it <b>down the wall in PVC pipe</b> for protection and connect it to the <b>UFER stub</b> with a listed clamp. This is typically the whole grounding job on a Sharma TUG — the UFER is the electrode (section above). If the plan shows rods as well, drive and bond them too; every electrode present ties together.</p>
       <span class="nec">NEC 250.52(A)(3)</span><span class="nec">NEC 250.66(B)</span><span class="sharma">SHARMA TUG CHECKLIST — ITEM 5</span>
       <h3 style="margin-top:14px">4 · Install the grounding bridge</h3>
-      <p>Mount the <b>intersystem grounding bridge</b> at the base of the combo and bond it to the grounding system. The bridge is the landing point where cable, phone, and fiber grounds will bond to Sharma's ground — it goes on at the TUG, not as an afterthought, and it gets its own close-up photo (below).</p>
+      <p>Mount the <b>intersystem grounding bridge</b> <b>in-line on the grounding (GEC) PVC pipe run below the combo</b> — the pipe passes in the top of it and out the bottom, the body sits flat on the wall — and bond it to the grounding system. The bridge is the landing point where cable, phone, and fiber grounds will bond to Sharma's ground — it goes on at the TUG, not as an afterthought, and it gets its own close-up photo (below).</p>
       <span class="nec">NEC 250.94 — intersystem bonding</span><span class="sharma">SHARMA TUG CHECKLIST — ITEM 3</span>
       <h3 style="margin-top:14px">5 · Close it up, mark it, photograph it</h3>
       <ul>
@@ -254,7 +256,7 @@
       <span class="pct" id="pct">0 of 6 done</span>
       <div id="checks">
         <label class="chk"><input type="checkbox" data-k="meter"><span>Meter base mounted — plumb, solid, right location and height; downpipe 2-in Sch 40 PVC, 3 ft under, 90° sweep toward the street, 2 straps minimum</span></label>
-        <label class="chk"><input type="checkbox" data-k="gfi"><span>TUG Service GFCI Outlet — 20A breaker in, GFI in, extra-duty in-use (bubble) cover on, and marked</span></label>
+        <label class="chk"><input type="checkbox" data-k="gfi"><span>TUG Service GFCI Outlet — 20A breaker in, GFI in, listed extra-duty in-use (bubble) cover on, and marked</span></label>
         <label class="chk"><input type="checkbox" data-k="bridge"><span>Intersystem grounding bridge installed and bonded</span></label>
         <label class="chk"><input type="checkbox" data-k="locknut"><span>Locknut &amp; bushing check — male adapters seated, locknuts tight, bushings on the conduit entries (small ground hole doesn't need one)</span></label>
         <label class="chk"><input type="checkbox" data-k="ground"><span>Grounding — GEC to the UFER, run in PVC pipe, clamped</span></label>

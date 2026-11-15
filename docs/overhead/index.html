@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f2f5f8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Overhead Service — The Sharma TUG · Sharma Education</title>
+  <link rel="icon" href="../logo.png">
+  <link rel="apple-touch-icon" href="../logo.png">
+  <style>
+    :root {
+      --bg: #f2f5f8; --panel: #ffffff; --line: #d3dde6;
+      --gold: #96690a; --gold-2: #8a5f00; --blue: #0058a3; --green: #1d9e4b;
+      --text: #182430; --muted: #5a6b7d; --red: #c0392b;
+    }
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    html, body { margin: 0; background: var(--bg); color: var(--text);
+      font-family: "Segoe UI", "Helvetica Neue", ui-sans-serif, system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased; }
+    body { background:
+      radial-gradient(90vw 50vh at 100% -10%, rgba(232,163,23,0.10), transparent 50%),
+      radial-gradient(80vw 40vh at 0% 0%, rgba(0,88,163,0.08), transparent 55%),
+      var(--bg); min-height: 100dvh; }
+    .wrap { max-width: 620px; margin: 0 auto; padding: 18px 14px 36px; }
+    .back { display: inline-block; color: var(--muted); text-decoration: none; font-size: 0.85rem; margin: 2px 2px 12px; }
+    header { display: flex; align-items: center; gap: 12px; margin: 0 2px 4px; }
+    header img { height: 42px; width: auto; background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 4px 6px; }
+    header .k { font-size: 0.68rem; font-weight: 750; letter-spacing: 0.09em; text-transform: uppercase; color: var(--gold); }
+    h1 { margin: 10px 2px 6px; font-size: 1.55rem; font-weight: 760; letter-spacing: -0.02em; line-height: 1.15; }
+    .sub { margin: 0 2px; color: var(--muted); font-size: 0.93rem; line-height: 1.5; }
+    .warn { margin: 16px 0 0; padding: 13px 14px; border: 1px solid rgba(192,57,43,0.5);
+      background: #fdf0ef; border-radius: 14px; font-size: 0.88rem; line-height: 1.5; }
+    .warn b { color: #b3261e; }
+    .highlight-banner { margin: 12px 0 0; padding: 13px 14px; border: 2px solid var(--gold);
+      background: #fdf6e0; border-radius: 14px; font-size: 0.92rem; line-height: 1.5; }
+    .card { margin-top: 14px; padding: 16px 15px 14px; background: var(--panel);
+      border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 1px 3px rgba(24,36,48,0.06); }
+    .card.highlight { border: 2px solid var(--blue); background: linear-gradient(180deg, #eaf3fb, #ffffff); }
+    h2 { margin: 24px 2px 6px; font-size: 0.8rem; font-weight: 750; letter-spacing: 0.09em;
+      text-transform: uppercase; color: var(--blue); }
+    h3 { margin: 0 0 6px; font-size: 1.05rem; font-weight: 700; }
+    p, li { font-size: 0.92rem; line-height: 1.55; }
+    p { margin: 0 0 8px; }
+    ul, ol { margin: 6px 0 4px; padding-left: 20px; }
+    li { margin-bottom: 5px; }
+    .muted { color: var(--muted); }
+    .nec { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em;
+      color: var(--blue); background: #eaf3fb; border: 1px solid rgba(0,88,163,0.4); border-radius: 999px; padding: 2px 8px; margin: 0 4px 4px 0; }
+    .sharma { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em;
+      color: var(--gold-2); background: #fdf6e0; border: 1px solid rgba(150,105,10,0.45); border-radius: 999px; padding: 2px 8px; margin: 0 4px 4px 0; }
+    .diagram { width: 100%; height: auto; display: block; }
+    .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    @media (max-width: 480px) { .gallery { grid-template-columns: 1fr; } }
+    figure { margin: 0; background: #ffffff; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+    figure img { width: 100%; height: auto; display: block; }
+    figcaption { padding: 10px 11px 12px; font-size: 0.84rem; line-height: 1.5; color: var(--muted); }
+    figcaption b { color: var(--text); display: block; margin-bottom: 3px; font-size: 0.9rem; }
+    .bar { height: 10px; background: #e3eaf1; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; margin: 10px 0 4px; }
+    .bar i { display: block; height: 100%; width: 0%; background: linear-gradient(90deg, var(--blue), var(--green)); transition: width .25s; }
+    .pct { font-size: 0.8rem; color: var(--muted); }
+    label.chk { display: flex; gap: 10px; align-items: flex-start; padding: 9px 10px; margin: 7px 0;
+      background: #f7fafc; border: 1px solid var(--line); border-radius: 12px; font-size: 0.9rem; line-height: 1.45; cursor: pointer; }
+    label.chk input { margin-top: 2px; width: 18px; height: 18px; accent-color: var(--green); flex: none; }
+    label.chk.done span { color: var(--muted); text-decoration: line-through; }
+    .reset { margin-top: 10px; background: none; border: 1px solid var(--line); color: var(--muted);
+      border-radius: 999px; padding: 7px 14px; font: inherit; font-size: 0.82rem; cursor: pointer; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    td, th { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; line-height: 1.4; }
+    th { color: var(--gold-2); font-size: 0.76rem; letter-spacing: 0.05em; text-transform: uppercase; }
+    footer { margin: 30px 2px 0; color: var(--muted); font-size: 0.72rem; text-align: center; line-height: 1.5; }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← Education</a>
+    <header>
+      <img src="../logo.png" alt="Sharma Electric &amp; HVAC">
+      <div><span class="k">Sharma Education · Field How-To</span></div>
+    </header>
+
+    <h1>Overhead Service — the Sharma TUG</h1>
+    <p class="sub">Same TUG job, different way in. On an <b>overhead</b> job there is no underground downpipe — the power company brings the service <b>by air, from the pole</b>. The crew's work on top is the <b>mast</b>: a riser up from the combo with a weatherhead on top, high enough and strong enough that the utility can land its drop. Everything below the combo is the same Sharma TUG as the underground lesson: <b>meter on the wall · breaker and GFI in, and marked · grounding to the UFER in PVC pipe · grounding bridge on · covers, labels, and photos.</b> This page teaches the parts that change.</p>
+
+    <div class="warn"><b>Safety first:</b> you are setting gear the utility will energize. Work it dead, keep hands out of the meter socket, and never cut a utility seal or pull a meter unless the utility and your foreman say so. And the utility makes the drop connection at the top of the mast — Sharma builds the mast, the power company lands its wires on it. Never climb the pole, ever.</div>
+
+    <div class="highlight-banner"><b>Grounding at Sharma — UFER first:</b> overhead or underground, typically we ground the TUG to the <b>UFER</b> (the concrete-encased electrode in the footing), with the grounding conductor run in <b>PVC pipe</b>. Find the stub before you start — the UFER section below is taught before the steps for a reason.</div>
+
+    <h2>The picture — an overhead TUG</h2>
+    <div class="card">
+      <svg class="diagram" viewBox="0 0 600 470" role="img" aria-label="Diagram of a Sharma overhead TUG: mast rising from the meter main combo through the roof line, weatherhead and drip loop at the top, utility drop running to the pole, GFCI outlet and grounding bridge below the combo, grounding conductor in PVC pipe down to the UFER in the footing">
+        <rect x="0" y="0" width="600" height="470" fill="#e9eff5"/>
+        <text x="300" y="24" fill="#5a6b7d" font-size="11" text-anchor="middle">THE SHARMA TUG — OVERHEAD SERVICE (GARAGE SIDE)</text>
+        <!-- utility pole -->
+        <rect x="514" y="56" width="13" height="344" fill="#aebfce"/>
+        <rect x="478" y="86" width="86" height="8" fill="#aebfce"/>
+        <circle cx="492" cy="82" r="4" fill="#5a6b7d"/>
+        <circle cx="520" cy="82" r="4" fill="#5a6b7d"/>
+        <circle cx="548" cy="82" r="4" fill="#5a6b7d"/>
+        <text x="520" y="46" fill="#5a6b7d" font-size="10" text-anchor="middle">UTILITY POLE</text>
+        <!-- house wall + roof line -->
+        <rect x="185" y="176" width="235" height="224" fill="#d5dfe9"/>
+        <line x1="140" y1="190" x2="450" y2="158" stroke="#8fa5ba" stroke-width="6"/>
+        <text x="150" y="150" fill="#5a6b7d" font-size="10">ROOF LINE</text>
+        <text x="196" y="196" fill="#5a6b7d" font-size="9">HOUSE WALL</text>
+        <!-- mast -->
+        <rect x="293" y="98" width="13" height="142" fill="#ffffff" stroke="#96690a" stroke-width="2"/>
+        <rect x="284" y="196" width="31" height="7" fill="#96690a"/>
+        <rect x="284" y="222" width="31" height="7" fill="#96690a"/>
+        <text x="196" y="120" fill="#96690a" font-size="10">SERVICE MAST</text>
+        <text x="196" y="134" fill="#5a6b7d" font-size="9">strapped to the structure</text>
+        <line x1="282" y1="126" x2="292" y2="140" stroke="#96690a" stroke-width="1"/>
+        <!-- weatherhead -->
+        <path d="M288 98 q12 -16 24 0 l0 6 l-24 0 z" fill="#ffffff" stroke="#182430" stroke-width="2"/>
+        <text x="330" y="76" fill="#182430" font-size="10">WEATHERHEAD (service head)</text>
+        <text x="330" y="90" fill="#5a6b7d" font-size="9">top of the mast, above the point of attachment</text>
+        <!-- service conductors out of head + drip loop + attachment -->
+        <path d="M296 100 C 288 128, 306 140, 322 128" fill="none" stroke="#182430" stroke-width="2.5"/>
+        <circle cx="322" cy="126" r="4" fill="#c0392b"/>
+        <text x="352" y="118" fill="#c0392b" font-size="10">POINT OF ATTACHMENT</text>
+        <text x="330" y="152" fill="#5a6b7d" font-size="9">drip loop — conductors loop BELOW the head</text>
+        <line x1="330" y1="146" x2="306" y2="128" stroke="#5a6b7d" stroke-width="1"/>
+        <!-- utility drop -->
+        <path d="M322 126 C 390 96, 450 92, 490 84" fill="none" stroke="#0058a3" stroke-width="2.5"/>
+        <text x="392" y="72" fill="#0058a3" font-size="10">UTILITY DROP — the power company lands it here</text>
+        <!-- combo -->
+        <rect x="250" y="240" width="100" height="118" rx="9" fill="#ffffff" stroke="#96690a" stroke-width="2.5"/>
+        <circle cx="300" cy="268" r="21" fill="none" stroke="#182430" stroke-width="2"/>
+        <text x="300" y="272" fill="#182430" font-size="9" text-anchor="middle">kWh</text>
+        <rect x="274" y="298" width="52" height="20" rx="3" fill="#e8a317"/>
+        <text x="300" y="312" fill="#07090d" font-size="9" font-weight="bold" text-anchor="middle">200A MAIN</text>
+        <rect x="274" y="322" width="52" height="17" rx="3" fill="#0058a3"/>
+        <text x="300" y="334" fill="#ffffff" font-size="8.5" font-weight="bold" text-anchor="middle">20A BRKR</text>
+        <text x="300" y="232" fill="#96690a" font-size="11" font-weight="bold" text-anchor="middle">METER MAIN COMBO</text>
+        <text x="362" y="352" fill="#96690a" font-size="9">EMERGENCY DISCONNECT label</text>
+        <!-- GFI below combo -->
+        <line x1="316" y1="358" x2="316" y2="368" stroke="#0058a3" stroke-width="4"/>
+        <rect x="292" y="368" width="48" height="34" rx="6" fill="#ffffff" stroke="#0058a3" stroke-width="2"/>
+        <text x="316" y="384" fill="#0058a3" font-size="9.5" font-weight="bold" text-anchor="middle">GFI</text>
+        <text x="316" y="396" fill="#5a6b7d" font-size="8" text-anchor="middle">marked</text>
+        <text x="352" y="380" fill="#0058a3" font-size="9.5">TUG SERVICE GFCI OUTLET</text>
+        <text x="352" y="394" fill="#5a6b7d" font-size="8.5">extra-duty in-use (bubble) cover — not a flip cover</text>
+        <!-- GEC in PVC down left side to UFER -->
+        <path d="M256 358 V404 H180" fill="none" stroke="#8fa5ba" stroke-width="7"/>
+        <path d="M256 358 V404 H180" fill="none" stroke="#1d9e4b" stroke-width="2.5" stroke-dasharray="5 4"/>
+        <!-- grounding bridge — white in-line device clamped ON the vertical GEC pipe run, below the GFI, body extending right from the pipe (per the real Sharma photos) -->
+        <rect x="251" y="363" width="10" height="5" fill="#5a6b7d"/>
+        <rect x="248" y="372" width="42" height="17" rx="4" fill="#ffffff" stroke="#177245" stroke-width="2"/>
+        <circle cx="276" cy="380.5" r="2.4" fill="#177245"/>
+        <text x="40" y="376" fill="#177245" font-size="10">GROUNDING BRIDGE</text>
+        <text x="40" y="390" fill="#5a6b7d" font-size="9">in-line on the GEC pipe, below the GFI</text>
+        <line x1="176" y1="382" x2="246" y2="381" stroke="#177245" stroke-width="1"/>
+        <text x="40" y="300" fill="#177245" font-size="10">GROUNDING WIRE</text>
+        <text x="40" y="314" fill="#177245" font-size="10">IN PVC PIPE</text>
+        <text x="40" y="328" fill="#5a6b7d" font-size="9">combo → down the wall → UFER</text>
+        <line x1="178" y1="316" x2="246" y2="344" stroke="#177245" stroke-width="1"/>
+        <!-- footing + earth -->
+        <rect x="0" y="402" width="600" height="68" fill="#dde5d2"/>
+        <rect x="90" y="376" width="420" height="32" fill="#dbe4ec" stroke="#b9c7d4"/>
+        <line x1="102" y1="396" x2="470" y2="396" stroke="#96690a" stroke-width="5"/>
+        <line x1="180" y1="396" x2="180" y2="404" stroke="#96690a" stroke-width="5"/>
+        <text x="300" y="428" fill="#5a6b7d" font-size="10" text-anchor="middle">FOOTING — UFER (REBAR / BARE #4 Cu, 20 FT IN THE CONCRETE)</text>
+        <text x="300" y="444" fill="#5a6b7d" font-size="10" text-anchor="middle">UFER stub comes up at the service location</text>
+      </svg>
+      <p class="muted" style="margin-top:10px">Read it top to bottom: pole, drop, weatherhead, drip loop, mast, combo — then the same TUG underneath as always. The mast is the only new part; everything from the combo down is the underground lesson word for word.</p>
+    </div>
+
+    <h2>Before you roll</h2>
+    <div class="card">
+      <span class="sharma">SHARMA STANDARD</span>
+      <ul>
+        <li><b>Gear:</b> Sharma usually runs <b>Siemens</b> — meter main combo (example: Siemens MM0202B1200, 200A main). On the truck for an overhead TUG: everything on the standard TUG list — the combo, a <b>20A breaker</b>, a <b>GFCI receptacle</b> with weatherproof box and a <b>listed extra-duty while-in-use (bubble) cover</b> — the deep cover that stays weatherproof with a cord plugged in, <b>not a regular flip cover</b>, <b>PVC pipe</b> and fittings for the grounding run, <b>PVC male adapters, locknuts, and bushings</b> for every pipe entry, the <b>intersystem grounding bridge</b>, grounding conductor and listed clamps, labels — <b>plus the overhead gear:</b> the <b>overhead hub — Milbank, NOT Siemens</b> (for the Siemens meter combos Sharma uses, the compatible hub is Milbank — it makes no sense, but that's the one that fits), the <b>mast pipe — 2-inch rigid</b>, the <b>weatherhead (service head) — 2-inch, PVC or rigid</b> (use whatever is cheaper or already on the truck), the service conductors — <b>4/0 XHHW, 3 runs, typically 45 feet total for the runs</b> — that run up the mast and out the head, and <b>straps for the mast — Mineralac straps are best, but 2-hole rigid straps work too</b>. If the plan calls for extra mast support or guying, those fittings go on the truck too — only fittings <b>identified for use with service masts</b>.</li>
+        <li><b>No underground gear needed:</b> no downpipe, no 90° sweep — the service comes by air on this one.</li>
+        <li><b>Location:</b> where the plan and the utility say — on Sharma houses the meter goes on the <b>garage side</b>. Meter height is the utility's rule — check it, don't guess.</li>
+        <li><b>Mast height comes from the plan and the power company</b> (Duke Energy / SECO requirements) — set it so the utility's drop will clear (see the clearances in Step 1). There is no guessing a mast height off this page.</li>
+        <li><b>Find the UFER stub first.</b> Know where the grounding lands before the combo goes up — it decides where your PVC run goes.</li>
+      </ul>
+    </div>
+
+    <h2>The UFER — concrete-encased electrode</h2>
+    <div class="card highlight">
+      <span class="nec">NEC 250.52(A)(3)</span><span class="nec">NEC 250.66(B)</span><span class="sharma">TYPICALLY, THIS IS THE GROUND</span>
+      <p style="margin-top:10px">Named for Herbert Ufer. A UFER is a grounding electrode <b>buried in the concrete footing itself</b>: at least <b>20 ft</b> of either <b>½-inch rebar</b> (one piece, or pieces tied together with steel tie wire) or <b>bare copper conductor, #4 AWG or larger</b>, encased in at least 2 inches of concrete, near the bottom of the footing, in direct contact with the earth. Concrete holds moisture against the steel/copper, so a UFER is one of the best electrodes there is — better than a driven rod.</p>
+      <svg class="diagram" viewBox="0 0 600 300" role="img" aria-label="Cross-section diagram: rebar running through the concrete footing, stubbing up at the service location to the meter main combo">
+        <rect x="0" y="0" width="600" height="300" fill="#e9eff5"/>
+        <text x="300" y="24" fill="#5a6b7d" font-size="11" text-anchor="middle">CROSS-SECTION — FOOTING AT THE SERVICE WALL</text>
+        <rect x="0" y="238" width="600" height="62" fill="#dde5d2"/>
+        <text x="34" y="272" fill="#5a6b7d" font-size="10">EARTH</text>
+        <rect x="330" y="52" width="90" height="120" fill="#b9c7d4"/>
+        <text x="375" y="44" fill="#5a6b7d" font-size="10" text-anchor="middle">BLOCK WALL</text>
+        <rect x="180" y="160" width="330" height="14" fill="#aebfce"/>
+        <text x="520" y="170" fill="#5a6b7d" font-size="10">SLAB</text>
+        <rect x="120" y="188" width="390" height="50" fill="#dbe4ec" stroke="#b9c7d4"/>
+        <text x="130" y="182" fill="#5a6b7d" font-size="10">CONCRETE FOOTING</text>
+        <line x1="132" y1="222" x2="470" y2="222" stroke="#96690a" stroke-width="5"/>
+        <line x1="470" y1="222" x2="470" y2="120" stroke="#96690a" stroke-width="5"/>
+        <text x="200" y="214" fill="#96690a" font-size="11">REBAR (OR BARE #4 Cu) — 20 FT MIN, IN THE FOOTING</text>
+        <rect x="438" y="58" width="64" height="62" rx="6" fill="#ffffff" stroke="#96690a" stroke-width="2"/>
+        <circle cx="470" cy="78" r="11" fill="none" stroke="#182430" stroke-width="2"/>
+        <rect x="458" y="96" width="24" height="12" fill="#e8a317"/>
+        <text x="470" y="50" fill="#96690a" font-size="10" font-weight="bold" text-anchor="middle">METER COMBO</text>
+        <line x1="470" y1="120" x2="470" y2="160" stroke="#1d9e4b" stroke-width="3"/>
+        <text x="486" y="146" fill="#177245" font-size="10">STUB-UP + GEC</text>
+        <text x="486" y="160" fill="#5a6b7d" font-size="10">at the service location</text>
+      </svg>
+      <h3 style="margin-top:12px">Working the UFER on a Sharma job</h3>
+      <ul>
+        <li><b>Protect the stub.</b> The rebar or copper tail sticking up is the whole connection point. Don't let it get cut off, bent flat, or buried. If a stub is cut or missing, tell the foreman — don't just drive a rod and stay quiet.</li>
+        <li><b>Run it in PVC.</b> Sharma runs the grounding conductor from the combo down to the UFER <b>protected in PVC pipe</b>.</li>
+        <li><b>Connect it right:</b> listed clamp/connector made for rebar/concrete-encased use. <b>#4 copper is the largest GEC the code requires to a UFER</b> (250.66(B)) — bigger is allowed, never required.</li>
+        <li><b>Every electrode present bonds in</b> (250.50). If a job also has rods or a metal water pipe, they all tie into the one system. And a UFER is used when the plan/footing actually has one — never claim one that isn't there.</li>
+      </ul>
+    </div>
+
+    <h2>The overhead TUG process — step by step</h2>
+    <div class="card">
+      <h3>1 · Put the meter on the wall — and set the mast</h3>
+      <p>Mount the meter main combo at the planned location (garage side), at the utility's meter height, plumb and solid into the structure — not just the finish. A crooked can is the first thing the inspector and the builder see. Every pipe that enters the can lands on a <b>male adapter</b>, with the <b>locknut run up tight</b> inside and a <b>bushing</b> over the threads where the conductors pass — <b>very important</b>, and it's its own line on the Sharma TUG checklist. One exception: the <b>small ground hole</b> in the bottom of the can, where the grounding conductor leaves — that one typically doesn't need a bushing.</p>
+      <p><b>The mast:</b> the riser rises out of the top of the combo, plumb, and carries the service conductors up to the <b>weatherhead (service head)</b> at the top. <b>Sharma standard:</b> the mast lands on the combo through the <b>overhead hub — and the hub is Milbank, NOT Siemens</b>: for the Siemens combos we use, the compatible hub is Milbank (we know, it makes no sense — order the Milbank hub or the mast doesn't land). The mast is <b>2-inch rigid pipe</b>; the conductors are <b>4/0 XHHW — 3 runs, typically 45 feet total for the runs</b>; the weatherhead is <b>2-inch, PVC or rigid — use whatever is cheaper or available on the truck</b>. Strap the mast solid to the structure — <b>Mineralac straps are best, but 2-hole rigid straps work too</b>. Where the mast is what the utility's drop hangs on, the mast and its fittings have to be up to that job: use only fittings <b>identified for use with service masts</b>, and support or guy the mast the way the plan shows if the plan calls for it (230.28). A mast that leans, wiggles, or pulls loose when the drop lands on it is a failed TUG.</p>
+      <p><b>Height is the whole game.</b> Set the mast height from the <b>plan and the serving utility's requirements (Duke Energy / SECO)</b> so the drop the utility lands will meet its clearances: the drop must clear roofs it passes over by <b>8 ft</b>, stay <b>10 ft</b> above the ground at the service entrance area, and clear a residential driveway by <b>12 ft</b> (230.24). Your mast height is what makes those numbers possible — too short a mast and the drop can never clear, and the utility will not connect it. Keep the drop's path at least <b>3 ft</b> away from windows, doors, and porches it passes (230.9).</p>
+      <p><b>The top of the mast, in order:</b> the <b>weatherhead sits above the point of attachment</b> — the point where the utility's drop connects to our conductors (230.26) — and never below it (230.54). The service conductors come out of the weatherhead and <b>form a drip loop</b>: they hang down in a loop <b>below</b> the head before rising to the attachment point, so rain runs down the loop and drips off instead of following the wire into the head (230.54). Leave the conductor ends at the attachment point ready for the utility — <b>the power company makes the drop connection, not us.</b></p>
+      <span class="nec">NEC 230.26 — point of attachment</span><span class="nec">NEC 230.28 — service masts</span><span class="nec">NEC 230.54 — service head + drip loop</span><span class="nec">NEC 230.24 — drop clearances</span><span class="nec">NEC 230.9 — 3 ft from openings</span><span class="sharma">SHARMA TUG CHECKLIST — ITEM 1 + 4</span>
+      <p style="margin-top:10px;padding:11px 12px;border:2px solid var(--gold);background:#fdf6e0;border-radius:12px"><b>Very important — male adapter · locknut · bushing.</b> No pipe stubbed into the can raw. Male adapter on the pipe, locknut tight inside the can, bushing on the threads so nothing sharp touches the conductors. The only place you skip the bushing is the small ground hole.</p>
+      <h3 style="margin-top:14px">2 · Install the breaker and the GFI — and mark it</h3>
+      <p>Set a <b>20A breaker</b> in the combo and feed the <b>TUG Service GFCI Outlet</b> in its weatherproof box under the combo, fitted with a <b>listed extra-duty while-in-use cover</b> — the deep bubble cover that closes over a plugged-in cord and stays weatherproof while it's in use (NEC 406.9(B)). <b>Not a regular flip cover:</b> a flip lid only protects the outlet when nothing is plugged in, and the TUG outlet lives with a cord in it. Then <b>mark it</b>: the breaker labeled in the combo, and the GFI marked as the TUG service outlet. That one receptacle is the power the whole build runs on until the house is finished — it has to be right, protected, and findable.</p>
+      <span class="nec">NEC 590.6 — GFCI on temporary power</span><span class="nec">NEC 406.9(B) — extra-duty in-use cover</span><span class="sharma">SHARMA TUG CHECKLIST — ITEM 2</span>
+      <h3 style="margin-top:14px">3 · Grounding to the UFER, in PVC pipe</h3>
+      <p>Land the grounding conductor on the combo's ground/neutral bar, take it out through the <b>small ground hole</b> in the bottom of the can (that hole typically needs no bushing), then run it <b>down the wall in PVC pipe</b> for protection and connect it to the <b>UFER stub</b> with a listed clamp. This is typically the whole grounding job on a Sharma TUG — the UFER is the electrode (section above). If the plan shows rods as well, drive and bond them too; every electrode present ties together.</p>
+      <span class="nec">NEC 250.52(A)(3)</span><span class="nec">NEC 250.66(B)</span><span class="sharma">SHARMA TUG CHECKLIST — ITEM 5</span>
+      <h3 style="margin-top:14px">4 · Install the grounding bridge</h3>
+      <p>Mount the <b>intersystem grounding bridge</b> <b>in-line on the grounding (GEC) PVC pipe run below the combo</b> — the pipe passes in the top of it and out the bottom, the body sits flat on the wall — and bond it to the grounding system. The bridge is the landing point where cable, phone, and fiber grounds will bond to Sharma's ground — it goes on at the TUG, not as an afterthought, and it gets its own close-up photo (below).</p>
+      <span class="nec">NEC 250.94 — intersystem bonding</span><span class="sharma">SHARMA TUG CHECKLIST — ITEM 3</span>
+      <h3 style="margin-top:14px">5 · Close it up, mark it, photograph it</h3>
+      <ul>
+        <li><b>EMERGENCY DISCONNECT</b> label on the combo door — the main breaker is the service disconnect (230.85).</li>
+        <li>Covers on, the GFI's extra-duty in-use cover closed over the outlet, everything tight and torqued to the door-label spec.</li>
+        <li><b>Photos for the job record:</b> the grounding bridge + GFI close-up, a shot up the mast showing the weatherhead, the drip loop, and the point of attachment, and the <b>TUG complete — wide shot</b> of the whole set-up. No photos, it didn't happen.</li>
+      </ul>
+      <span class="nec">NEC 230.85</span><span class="sharma">SHARMA TUG CHECKLIST — ITEM 6</span>
+    </div>
+
+    <h2>Quick numbers</h2>
+    <div class="card">
+      <table>
+        <tr><th>Item</th><th>Overhead TUG standard</th></tr>
+        <tr><td>Meter combo</td><td>Siemens meter main — e.g. MM0202B1200, 200A main</td></tr>
+        <tr><td>Service entrance</td><td><b>Overhead</b> — mast/riser out of the top of the combo, weatherhead at the top; <b>no downpipe, no sweep</b></td></tr>
+        <tr><td>Overhead hub</td><td><b>Milbank — NOT Siemens.</b> The Siemens combos Sharma uses take a Milbank hub</td></tr>
+        <tr><td>Mast &amp; conductors</td><td>Mast: <b>2-in rigid pipe</b>. Conductors: <b>4/0 XHHW, 3 runs — typically 45 ft total</b>. Weatherhead: <b>2-in, PVC or rigid</b> — whatever is cheaper or on the truck</td></tr>
+        <tr><td>Mast support</td><td>Straps: <b>Mineralac straps are best, but 2-hole rigid straps work too</b>; fittings <b>identified for use with service masts</b> where the mast supports the drop — 230.28</td></tr>
+        <tr><td>Weatherhead</td><td>At the top of the mast, <b>above the point of attachment</b> — 230.54 / 230.26</td></tr>
+        <tr><td>Drip loop</td><td>Conductors out of the head loop <b>below</b> the weatherhead before the attachment point — 230.54</td></tr>
+        <tr><td>Drop clearances</td><td><b>8 ft</b> above roofs the drop passes over · <b>10 ft</b> above ground at the service entrance · <b>12 ft</b> over residential driveways — 230.24. Mast height set by the plan + utility (Duke Energy / SECO) so the drop can meet them</td></tr>
+        <tr><td>Openings</td><td>Drop kept <b>3 ft</b> from windows, doors, and porches — 230.9</td></tr>
+        <tr><td>TUG outlet</td><td>GFCI receptacle on a 20A breaker, weatherproof box + <b>listed extra-duty while-in-use (bubble) cover — not a regular flip cover</b>, marked</td></tr>
+        <tr><td>Pipe entries</td><td><b>Male adapter + locknut + bushing</b> at every conduit entry — very important. Exception: the small ground hole, no bushing typically</td></tr>
+        <tr><td>Grounding — typical</td><td>To the UFER, conductor protected in PVC pipe</td></tr>
+        <tr><td>UFER</td><td>20 ft min of ½-in rebar or bare #4 Cu, encased 2 in+ in the footing — 250.52(A)(3)</td></tr>
+        <tr><td>GEC to UFER</td><td>#4 Cu is the largest required — 250.66(B)</td></tr>
+        <tr><td>Grounding bridge</td><td>Intersystem bonding bridge at the combo, bonded to the ground — 250.94</td></tr>
+        <tr><td>Marking</td><td>Breaker + GFI marked; EMERGENCY DISCONNECT label on the door — 230.85</td></tr>
+      </table>
+    </div>
+
+    <h2>The Sharma TUG checklist — overhead</h2>
+    <div class="card">
+      <p class="muted">Sanjay's own TUG list, adapted for overhead — the same six items the crew pages use. Tap each item as you finish it; your checkmarks save on this phone.</p>
+      <div class="bar"><i id="fill"></i></div>
+      <span class="pct" id="pct">0 of 6 done</span>
+      <div id="checks">
+        <label class="chk"><input type="checkbox" data-k="meter"><span>Meter base + mast mounted — combo plumb, solid, right location and height; mast plumb and strapped (Mineralac best, 2-hole rigid OK), weatherhead on top, above the point of attachment, drip loop formed</span></label>
+        <label class="chk"><input type="checkbox" data-k="gfi"><span>TUG Service GFCI Outlet — 20A breaker in, GFI in, extra-duty in-use (bubble) cover on, and marked</span></label>
+        <label class="chk"><input type="checkbox" data-k="bridge"><span>Intersystem grounding bridge installed and bonded</span></label>
+        <label class="chk"><input type="checkbox" data-k="locknut"><span>Locknut &amp; bushing check — male adapters seated, locknuts tight, bushings on the conduit entries (small ground hole doesn't need one)</span></label>
+        <label class="chk"><input type="checkbox" data-k="ground"><span>Grounding — GEC to the UFER, run in PVC pipe, clamped</span></label>
+        <label class="chk"><input type="checkbox" data-k="complete"><span>TUG complete — wide shot photo taken (plus bridge + GFI close-up and the mast head)</span></label>
+      </div>
+      <button class="reset" id="reset" type="button">Reset checklist</button>
+    </div>
+
+    <h2>Common overhead TUG fails — don't be these</h2>
+    <div class="card">
+      <ul>
+        <li><b>Mast too low.</b> If the mast is short, the utility's drop can't meet its clearances — 8 ft over roofs, 10 ft over ground, 12 ft over the driveway — and the service doesn't get connected. Height comes from the plan and the power company, not a guess.</li>
+        <li><b>No drip loop.</b> Conductors run straight out of the head to the drop and rain follows them right into the mast. Loop them below the head, every time.</li>
+        <li><b>Weatherhead below the point of attachment.</b> The head goes on top — above where the drop attaches. Below it, water runs into the head instead of off the loop.</li>
+        <li><b>Mast loose or strapped with whatever was on the truck.</b> Mineralac straps are best, 2-hole rigid straps work too — and where the mast carries the drop, only fittings identified for service masts.</li>
+        <li><b>GFI in but not marked.</b> An unmarked breaker and outlet is a fail on Sharma's list — mark it, every time.</li>
+        <li><b>Regular flip cover on the TUG GFI.</b> Wrong cover — a flip lid leaves a plugged-in cord exposed to the weather. The TUG outlet takes a listed extra-duty while-in-use (bubble) cover, per 406.9(B).</li>
+        <li><b>A Siemens hub on the truck.</b> Wrong part — for our Siemens combos the overhead hub is <b>Milbank</b>. No Milbank hub, no mast.</li>
+        <li><b>No grounding bridge.</b> The intersystem bridge is part of the TUG, not a later trip. Forgotten bridge = return trip.</li>
+        <li><b>Grounding left bare down the wall.</b> The grounding run to the UFER goes in PVC pipe for protection — that's the Sharma way.</li>
+        <li><b>Loose locknuts, missing bushings, pipe stubbed in with no male adapter.</b> It's a named checklist item because it gets missed. Check every conduit entry — then leave the small ground hole alone, it doesn't take one, typically.</li>
+        <li><b>Cut or buried UFER stub, nobody told.</b> If the stub is damaged or missing, the foreman hears it from you that day.</li>
+        <li><b>No wide shot.</b> The TUG isn't complete on paper until the complete wide shot is on the job record.</li>
+      </ul>
+      <p class="muted">Content pending final review by Sharma's master electrician. Follow your foreman and the plans — they win over any app.</p>
+    </div>
+
+    <footer>
+      Sharma Electric &amp; HVAC · Lic. EC13013924 · CAC1823596<br>
+      <a href="../meter-main-combo/">← Back to the TUG (underground) lesson</a> · <a href="../">← Education</a> · <a href="https://sharmaelechvac.github.io/sharma-nec-code/">NEC Code app</a> · <a href="https://sharma-electrician-101.sharma-crew.workers.dev">Electrician 101</a>
+    </footer>
+  </div>
+
+  <script>
+    const KEY = "sharma-tug-overhead-checklist-v1";
+    const boxes = [...document.querySelectorAll("#checks input[type=checkbox]")];
+    let saved = {};
+    try { saved = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { saved = {}; }
+    function render() {
+      let done = 0;
+      boxes.forEach((b) => {
+        b.checked = !!saved[b.dataset.k];
+        b.closest("label").classList.toggle("done", b.checked);
+        if (b.checked) done++;
+      });
+      document.getElementById("fill").style.width = (done / boxes.length * 100) + "%";
+      document.getElementById("pct").textContent = done + " of " + boxes.length + " done";
+    }
+    boxes.forEach((b) => b.addEventListener("change", () => {
+      saved[b.dataset.k] = b.checked;
+      localStorage.setItem(KEY, JSON.stringify(saved));
+      render();
+    }));
+    document.getElementById("reset").addEventListener("click", () => {
+      saved = {}; localStorage.removeItem(KEY); render();
+    });
+    render();
+  </script>
+</body>
+</html>
