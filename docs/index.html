@@ -13,51 +13,49 @@
   <link rel="apple-touch-icon" href="logo.png">
   <style>
     :root {
-      --bg: #f2f5f8; --panel: #ffffff; --panel-2: #ffffff; --line: #d3dde6;
-      --gold: #96690a; --gold-2: #8a5f00; --blue: #0058a3; --text: #182430; --muted: #5a6b7d;
+      --bg: #f4f6fb; --panel: #ffffff; --panel-2: #ffffff; --line: #dfe4ee;
+      --gold: #8a5a12; --gold-2: #8a5a12; --blue: #264387; --text: #1d2433; --muted: #5b6478;
     }
     * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
     html, body { margin: 0; background: var(--bg); color: var(--text);
       font-family: "Segoe UI", "Helvetica Neue", ui-sans-serif, system-ui, sans-serif;
       -webkit-font-smoothing: antialiased; }
-    body { background:
-      radial-gradient(90vw 50vh at 100% -10%, rgba(232,163,23,0.10), transparent 50%),
-      radial-gradient(80vw 40vh at 0% 0%, rgba(0,88,163,0.08), transparent 55%),
-      var(--bg); min-height: 100dvh; }
+    body { background: var(--bg); min-height: 100dvh; }
     .wrap { max-width: 560px; margin: 0 auto; padding: 18px 14px 30px; }
     header { display: flex; align-items: center; gap: 12px; margin: 6px 2px 4px; }
-    header img { height: 46px; width: auto; background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 4px 6px; }
+    header img { height: 46px; width: auto; background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 4px 6px; }
     header h1 { margin: 0; font-size: 1.35rem; font-weight: 750; letter-spacing: -0.02em; line-height: 1.15; }
     header p { margin: 2px 0 0; color: var(--muted); font-size: 0.85rem; }
     .badge { display: inline-block; margin: 10px 2px 0; font-size: 0.66rem; font-weight: 750;
       letter-spacing: 0.08em; color: var(--gold-2); background: #fdf6e0; border: 1px solid rgba(150,105,10,0.45);
-      border-radius: 999px; padding: 3px 9px; text-transform: uppercase; }
+      border-radius: 4px; padding: 3px 9px; text-transform: uppercase; }
     .intro { margin: 14px 2px 4px; color: var(--muted); font-size: 0.92rem; line-height: 1.45; }
     h2 { margin: 22px 2px 10px; font-size: 0.78rem; font-weight: 750; letter-spacing: 0.09em;
       text-transform: uppercase; color: var(--blue); }
     .cards { display: grid; grid-template-columns: 1fr; gap: 12px; }
     a.card { display: block; padding: 18px 16px 16px;
       background: var(--panel);
-      border: 1px solid var(--line); border-radius: 16px; color: var(--text); text-decoration: none;
-      box-shadow: 0 1px 3px rgba(24,36,48,0.06); }
+      border: 1px solid var(--line); border-radius: 6px; color: var(--text); text-decoration: none;
+      box-shadow: none; }
     a.card:active { border-color: var(--blue); }
     .ic { font-size: 1.9rem; line-height: 1; }
     .t { display: block; margin-top: 10px; font-size: 1.25rem; font-weight: 720; line-height: 1.2; }
     .d { display: block; margin-top: 5px; font-size: 0.88rem; color: var(--muted); line-height: 1.45; }
     .meta { display: block; margin-top: 12px; font-size: 0.78rem; font-weight: 650; color: var(--gold-2); }
     .open { display: inline-block; margin-top: 12px; font-size: 0.85rem; font-weight: 700; color: #fff;
-      background: var(--blue); border-radius: 999px; padding: 8px 16px; }
+      background: var(--blue); border-radius: 4px; padding: 8px 16px; }
     footer { margin: 28px 2px 0; color: var(--muted); font-size: 0.72rem; text-align: center; line-height: 1.5; }
     footer a { color: var(--muted); }
   </style>
+  <link rel="stylesheet" href="brand.css?v=1">
 </head>
 <body>
   <div class="wrap">
     <header>
-      <img src="logo.png" alt="Sharma Electric &amp; HVAC">
+      <img src="sharma-logo.svg" alt="Sharma Electric &amp; HVAC">
       <div>
-        <h1>Sharma Electric &amp; HVAC<br>Education</h1>
-        <p>Learn the trade — the Sharma way</p>
+        <h1>Education</h1>
+        <p>Training for Sharma Electric &amp; HVAC crews</p>
       </div>
     </header>
     <span class="badge">For Sharma crews · Helpers to masters</span>
@@ -67,7 +65,6 @@
     <h2>Code book</h2>
     <div class="cards">
       <a class="card" href="https://sharmaelechvac.github.io/sharma-nec-code/">
-        <span class="ic">📘</span>
         <span class="t">NEC Code</span>
         <span class="d">The NEC Field Book in app form — all nine chapters of NEC 2020 / Florida Building Code 8th Edition, in plain words with article and section cites. Lookup, working calculators, room checklists, and quizzes, with the Sharma rules layer on top.</span>
         <span class="meta">558 pages · 533 lookups · 288 quiz questions · 172 checklist items</span><br>
@@ -76,30 +73,27 @@
     </div>
 
     <h2>Field how-to lessons</h2>
+    <figure class="hub-photo"><img src="meter-main-combo/photo-finished.jpg" alt="Finished Sharma meter main combo on a block wall, GFCI below, grounding conductor in PVC"><figcaption>Sharma Electric &amp; HVAC job photo: finished meter main combo.</figcaption></figure>
     <div class="cards">
       <a class="card" href="meter-main-combo/">
-        <span class="ic">🔌</span>
         <span class="t">How to Set Up a Meter Main Combo — the Sharma TUG</span>
         <span class="d">The real TUG process, the way Sharma crews do it: meter on the wall, breaker and GFI in and marked, grounding to the UFER in PVC pipe, grounding bridge on, photos taken. With diagrams, real Sharma install photos, and Sanjay's own 6-item TUG checklist you can tick off on the job.</span>
         <span class="meta">The TUG · Siemens · UFER first · Intersystem grounding bridge</span><br>
         <span class="open">Open the lesson →</span>
       </a>
       <a class="card" href="overhead/">
-        <span class="ic">🏗️</span>
         <span class="t">Overhead Service — the Sharma TUG</span>
         <span class="d">The overhead version of the TUG: 2-inch rigid mast on a Milbank hub, 4/0 XHHW runs, weatherhead and drip loop up top — and the same TUG underneath: GFI in and marked, UFER grounding in PVC, bridge on, photos taken.</span>
         <span class="meta">Overhead · Mast + weatherhead · Same TUG below</span><br>
         <span class="open">Open the lesson →</span>
       </a>
       <a class="card" href="stacked/">
-        <span class="ic">📐</span>
         <span class="t">Stacked Underground Combo</span>
         <span class="d">The other meter type as its own lesson: meter on top, breakers below — same underground TUG underneath. From sheet E-7 of the typical-details set.</span>
         <span class="meta">The other type · Stacked · Sheet E-7 · Same TUG below</span><br>
         <span class="open">Open the lesson →</span>
       </a>
       <a class="card" href="subpanel/">
-        <span class="ic">🧰</span>
         <span class="t">Residential Subpanel Rough-In</span>
         <span class="d">Back-to-back on the same wall: Siemens meter-main on the outside, the 200A indoor panel directly behind it, and a 4-wire feeder through a short nipple. Neutral isolated. Branch circuits leave the top of the panel.</span>
         <span class="meta">Back-to-back · Nipple · Sheets E-1–E-3 · 200A</span><br>
