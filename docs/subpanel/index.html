@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#f2f5f8">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <title>Residential Subpanel Rough-In · Sharma Education</title>
+  <title>Back-to-Back Subpanel Rough-In · Sharma Education</title>
   <link rel="icon" href="../logo.png">
   <link rel="apple-touch-icon" href="../logo.png">
   <style>
@@ -80,444 +80,449 @@
       <div><span class="k">Sharma Education · Field How-To</span></div>
     </header>
 
-    <h1>Residential Subpanel Rough-In</h1>
-    <p class="sub">This is the indoor panel, after the TUG. A <b>Siemens 200A meter-main (MM0202B1200)</b> on the garage wall feeds a <b>Siemens indoor subpanel</b> with a <b>4-wire feeder</b> — two hots, a neutral, and an equipment grounding conductor. Central Florida house, NEC 2020 as used in the Florida Building Code, 8th Edition. Rough-in sets the can, routes the cable, and leaves the conductors long. <b>Nothing is terminated on this visit.</b></p>
+    <h1>Back-to-Back Subpanel Rough-In</h1>
+    <p class="sub">Sharma's standard is <b>back-to-back</b>. The <b>Siemens MM0202B1200</b> meter-main goes on the exterior face of the wall. The <b>Siemens indoor 200A, 30-space</b> panel goes <b>directly behind it</b>, in that same stud bay. A <b>short nipple</b> — PVC or EMT, with locknuts and bushings — carries the <b>4-wire feeder</b> straight through the wall. Two hots, a neutral, an equipment ground. The feeder does not travel the attic. Central Florida house, NEC 2020 as used in the Florida Building Code, 8th Edition. At rough-in the conductors are left long and coiled. <b>Nothing is terminated.</b></p>
 
-    <div class="warn"><b>Safety first:</b> work it dead. The meter-main is service equipment the utility will energize. Keep hands out of the meter socket, and do not land conductors on a bus that is hot. The foreman and the plans win over this page.</div>
+    <div class="warn"><b>Safety first:</b> work it dead. The meter-main is the service disconnect the utility will energize. Keep hands out of the meter socket. Do not land conductors on a bus that is hot. The foreman and the plans win over this page.</div>
 
-    <div class="highlight-banner"><b>The fail that matters:</b> in the subpanel the neutral bar stays <b>isolated from the can</b>. The bonding screw or strap that ships with the panel comes <b>out</b>. The equipment ground gets its <b>own bar, bonded to the enclosure</b>. Neutral and ground meet at the service disconnect — the meter-main — and not again downstream.</div>
+    <div class="highlight-banner"><b>Bond once, at the meter-main.</b> The 200A breaker in the meter-main is the service disconnect. In the indoor panel the neutral bar stays <b>isolated</b> and the bonding screw or strap comes <b>out</b>. The ground bar is a separate bar, <b>bonded to the can</b>. Neutral and ground meet at the meter-main and not again downstream.</div>
 
-    <h2>The picture — rough-in</h2>
+    <h2>The picture — wall section</h2>
     <div class="card">
-      <h3>Elevation — feeder through the attic</h3>
-      <svg class="diagram" role="img" aria-label="Rough-in elevation: Siemens meter-main on the garage exterior feeds a Siemens indoor subpanel with a four-wire feeder run through the attic, because the block wall is not bored. Conductors are left long in the can and not terminated." viewBox="0 0 640 1040" font-family="sans-serif">
-        <rect x="0" y="0" width="640" height="1040" fill="#eef4fa"/>
-        <text x="320" y="22" fill="#182430" font-size="15" font-weight="bold" text-anchor="middle">RESIDENTIAL SUBPANEL ROUGH-IN</text>
-        <text x="320" y="40" fill="#5a6b7d" font-size="11" text-anchor="middle">4-WIRE FEEDER · SQUARE ROUTE · CONDUCTORS NOT TERMINATED</text>
-
-        <rect x="12" y="52" width="616" height="112" fill="#f6f1e6" stroke="#c9b896"/>
-        <text x="24" y="72" fill="#8a5f00" font-size="13" font-weight="bold">ATTIC</text>
-        <text x="78" y="72" fill="#5a6b7d" font-size="11">GARAGE BLOCK IS NOT BORED. CABLES LEAVE THE TOP.</text>
-        <text x="24" y="92" fill="#182430" font-size="11" font-weight="bold">STAPLE WITHIN 12 IN OF EACH CAN, THEN EVERY 4 FT 6 IN</text>
-
-        <rect x="186" y="176" width="104" height="500" fill="#d5dde6" stroke="#b9c7d4"/>
-        <text x="238" y="400" fill="#182430" font-size="12" font-weight="bold" text-anchor="middle">BLOCK</text>
-        <text x="238" y="418" fill="#5a6b7d" font-size="11" text-anchor="middle">DO NOT</text>
-        <text x="238" y="434" fill="#5a6b7d" font-size="11" text-anchor="middle">BORE</text>
-
-        <rect x="300" y="168" width="230" height="14" fill="#c4a574" stroke="#8a7048"/>
-        <rect x="300" y="182" width="14" height="494" fill="#e6d5b0" stroke="#8a7048"/>
-        <rect x="516" y="182" width="14" height="494" fill="#e6d5b0" stroke="#8a7048"/>
-        <rect x="300" y="676" width="230" height="14" fill="#c4a574" stroke="#8a7048"/>
-        <text x="308" y="708" fill="#5a6b7d" font-size="11">FLOOR</text>
-
-        <text x="16" y="184" fill="#182430" font-size="11" font-weight="bold">EXTERIOR</text>
-        <text x="16" y="214" fill="#182430" font-size="10" font-weight="bold">≤ 12 IN</text>
-
-        <rect x="16" y="236" width="156" height="176" rx="8" fill="#ffffff" stroke="#96690a" stroke-width="2.5"/>
-        <text x="94" y="256" fill="#96690a" font-size="12" font-weight="bold" text-anchor="middle">METER-MAIN</text>
-        <text x="94" y="274" fill="#5a6b7d" font-size="11" text-anchor="middle">MM0202B1200</text>
-        <circle cx="52" cy="312" r="20" fill="none" stroke="#182430" stroke-width="2"/>
-        <text x="52" y="350" fill="#96690a" font-size="9" font-weight="bold" text-anchor="middle">SIEMENS</text>
-        <rect x="86" y="290" width="74" height="24" rx="3" fill="#e8a317"/>
-        <text x="123" y="306" fill="#182430" font-size="11" font-weight="bold" text-anchor="middle">200A MAIN</text>
-        <rect x="86" y="320" width="74" height="24" rx="3" fill="#0058a3"/>
-        <text x="123" y="336" fill="#ffffff" font-size="10" font-weight="bold" text-anchor="middle">FEEDER</text>
-        <text x="94" y="364" fill="#0058a3" font-size="10" font-weight="bold" text-anchor="middle">BREAKER IN THIS CAN</text>
-        <text x="94" y="394" fill="#b3261e" font-size="8" font-weight="bold" text-anchor="middle">EMERGENCY DISCONNECT</text>
-
-        <rect x="324" y="248" width="182" height="400" rx="4" fill="#ffffff" stroke="#182430" stroke-width="2.5"/>
-        <text x="338" y="270" fill="#182430" font-size="12" font-weight="bold">INDOOR PANEL</text>
-        <text x="338" y="296" fill="#182430" font-size="11" font-weight="bold">18–24 IN</text>
-        <text x="338" y="312" fill="#5a6b7d" font-size="11">NOT LANDED</text>
-        <text x="338" y="340" fill="#182430" font-size="11" font-weight="bold">NEUTRAL</text>
-        <text x="338" y="354" fill="#5a6b7d" font-size="11">ISOLATED</text>
-        <rect x="340" y="364" width="22" height="8" fill="#8a7048"/>
-        <rect x="340" y="430" width="22" height="8" fill="#8a7048"/>
-        <rect x="344" y="360" width="14" height="82" fill="#f4f4f4" stroke="#6d6d6d" stroke-width="1.4"/>
-        <text x="338" y="468" fill="#b3261e" font-size="11" font-weight="bold">SCREW OUT</text>
-        <text x="338" y="496" fill="#177245" font-size="11" font-weight="bold">GROUND</text>
-        <text x="338" y="510" fill="#177245" font-size="11" font-weight="bold">BONDED</text>
-        <rect x="344" y="520" width="14" height="56" fill="#1d9e4b" stroke="#177245" stroke-width="1.2"/>
-
-        <rect x="508" y="390" width="26" height="40" fill="#c5ced6" stroke="#5a6b7d" stroke-width="1.4"/>
-
-        <polyline points="78,242 78,118 448,118 448,270" fill="none" stroke="#1a1a1a" stroke-width="3.5" stroke-linejoin="miter" stroke-linecap="square"/>
-        <polyline points="90,242 90,130 460,130 460,270" fill="none" stroke="#c0392b" stroke-width="3.5" stroke-linejoin="miter" stroke-linecap="square"/>
-        <polyline points="102,242 102,142 472,142 472,270" fill="none" stroke="#8a8a8a" stroke-width="5" stroke-linejoin="miter" stroke-linecap="square"/>
-        <polyline points="102,242 102,142 472,142 472,270" fill="none" stroke="#f7f7f7" stroke-width="2.4" stroke-linejoin="miter" stroke-linecap="square"/>
-        <polyline points="114,242 114,154 484,154 484,270" fill="none" stroke="#178a3e" stroke-width="3.5" stroke-linejoin="miter" stroke-linecap="square"/>
-
-        <polyline points="448,270 448,600 500,600 500,540" fill="none" stroke="#1a1a1a" stroke-width="3.5" stroke-linejoin="miter" stroke-linecap="square"/>
-        <polyline points="460,270 460,616 500,616 500,556" fill="none" stroke="#c0392b" stroke-width="3.5" stroke-linejoin="miter" stroke-linecap="square"/>
-        <polyline points="472,270 472,632 500,632 500,572" fill="none" stroke="#8a8a8a" stroke-width="5" stroke-linejoin="miter" stroke-linecap="square"/>
-        <polyline points="472,270 472,632 500,632 500,572" fill="none" stroke="#f7f7f7" stroke-width="2.4" stroke-linejoin="miter" stroke-linecap="square"/>
-        <polyline points="484,270 484,648 500,648 500,588" fill="none" stroke="#178a3e" stroke-width="3.5" stroke-linejoin="miter" stroke-linecap="square"/>
-
-        <rect x="70" y="226" width="52" height="12" fill="#d5dde3" stroke="#5a6b7d"/>
-        <rect x="440" y="238" width="52" height="12" fill="#d5dde3" stroke="#5a6b7d"/>
-        <rect x="70" y="198" width="52" height="8" fill="#3d4c5c"/>
-        <rect x="440" y="210" width="52" height="8" fill="#3d4c5c"/>
-        <rect x="200" y="110" width="8" height="52" fill="#3d4c5c"/>
-        <rect x="300" y="110" width="8" height="52" fill="#3d4c5c"/>
-        <rect x="390" y="110" width="8" height="52" fill="#3d4c5c"/>
-
-        <text x="548" y="206" fill="#182430" font-size="11" font-weight="bold">STAPLE</text>
-        <text x="548" y="220" fill="#5a6b7d" font-size="10">WITHIN 12 IN</text>
-        <line x1="492" y1="214" x2="542" y2="210" stroke="#182430" stroke-width="1"/>
-        <text x="548" y="248" fill="#182430" font-size="11" font-weight="bold">LISTED</text>
-        <text x="548" y="262" fill="#5a6b7d" font-size="10">CONNECTOR</text>
-        <line x1="492" y1="244" x2="542" y2="252" stroke="#182430" stroke-width="1"/>
-        <text x="548" y="390" fill="#182430" font-size="11" font-weight="bold">STEEL PLATE</text>
-        <text x="548" y="404" fill="#5a6b7d" font-size="10">IF WITHIN</text>
-        <text x="548" y="418" fill="#5a6b7d" font-size="10">1-1/4 IN</text>
-        <text x="548" y="432" fill="#5a6b7d" font-size="10">OF THE FACE</text>
-        <line x1="534" y1="410" x2="544" y2="410" stroke="#182430" stroke-width="1"/>
-
-        <rect x="544" y="470" width="88" height="70" fill="#fdf6e0" stroke="#96690a" stroke-width="1.6"/>
-        <text x="552" y="488" fill="#8a5f00" font-size="9" font-weight="bold">SUPPLIED FROM</text>
-        <text x="552" y="504" fill="#182430" font-size="10">METER-MAIN</text>
-        <text x="552" y="518" fill="#182430" font-size="10">GARAGE WALL</text>
-        <text x="552" y="532" fill="#5a6b7d" font-size="9">MARK THE CAN</text>
-
-        <rect x="16" y="430" width="160" height="228" rx="8" fill="#ffffff" stroke="#d3dde6"/>
-        <text x="28" y="454" fill="#182430" font-size="12" font-weight="bold">FEEDER BREAKER</text>
-        <text x="28" y="470" fill="#5a6b7d" font-size="11">in the meter-main</text>
-        <text x="28" y="496" fill="#182430" font-size="12" font-weight="bold">4-WIRE FEEDER</text>
-        <text x="28" y="512" fill="#5a6b7d" font-size="11">two hots, neutral, EGC</text>
-        <text x="28" y="538" fill="#182430" font-size="12" font-weight="bold">200A WHOLE HOUSE</text>
-        <text x="28" y="554" fill="#5a6b7d" font-size="11">4/0 Al — Table 310.12</text>
-        <text x="28" y="580" fill="#182430" font-size="12" font-weight="bold">100A SUB EXAMPLE</text>
-        <text x="28" y="596" fill="#5a6b7d" font-size="11">100A breaker + wire</text>
-        <text x="28" y="622" fill="#5a6b7d" font-size="11">Sizes: table below</text>
-        <line x1="94" y1="412" x2="94" y2="428" stroke="#0058a3" stroke-width="1.4"/>
-
-        <text x="16" y="748" fill="#182430" font-size="13" font-weight="bold">WORKING CLEARANCE — PLAN</text>
-        <rect x="28" y="786" width="230" height="12" fill="#d5dde6" stroke="#b9c7d4"/>
-        <text x="28" y="778" fill="#5a6b7d" font-size="10">WALL</text>
-        <rect x="100" y="772" width="64" height="26" fill="#ffffff" stroke="#182430" stroke-width="2"/>
-        <text x="132" y="790" fill="#182430" font-size="9" font-weight="bold" text-anchor="middle">PANEL</text>
-        <rect x="78" y="798" width="120" height="96" fill="#eaf3fb" stroke="#0058a3" stroke-width="1.6" stroke-dasharray="6 4"/>
-        <text x="138" y="850" fill="#0058a3" font-size="12" font-weight="bold" text-anchor="middle">KEEP CLEAR</text>
-        <line x1="78" y1="908" x2="198" y2="908" stroke="#182430" stroke-width="1.2"/>
-        <line x1="78" y1="902" x2="78" y2="914" stroke="#182430" stroke-width="1.2"/>
-        <line x1="198" y1="902" x2="198" y2="914" stroke="#182430" stroke-width="1.2"/>
-        <text x="138" y="926" fill="#182430" font-size="11" font-weight="bold" text-anchor="middle">30 IN WIDE</text>
-        <line x1="214" y1="798" x2="214" y2="894" stroke="#182430" stroke-width="1.2"/>
-        <line x1="208" y1="798" x2="220" y2="798" stroke="#182430" stroke-width="1.2"/>
-        <line x1="208" y1="894" x2="220" y2="894" stroke="#182430" stroke-width="1.2"/>
-        <text x="228" y="850" fill="#182430" font-size="11" font-weight="bold">36 IN</text>
-        <text x="228" y="864" fill="#182430" font-size="11" font-weight="bold">DEEP</text>
-        <text x="16" y="948" fill="#5a6b7d" font-size="11">6 FT 6 IN HIGH · DOOR OPENS 90°</text>
-
-        <text x="400" y="748" fill="#182430" font-size="13" font-weight="bold">HANDLE HEIGHT</text>
-        <rect x="470" y="800" width="44" height="96" fill="#ffffff" stroke="#182430" stroke-width="2"/>
-        <rect x="478" y="812" width="28" height="10" fill="#0058a3"/>
-        <line x1="430" y1="896" x2="560" y2="896" stroke="#8a7048" stroke-width="4"/>
-        <text x="564" y="900" fill="#5a6b7d" font-size="10">FLOOR</text>
-        <line x1="454" y1="817" x2="454" y2="896" stroke="#182430" stroke-width="1.2"/>
-        <line x1="448" y1="817" x2="460" y2="817" stroke="#182430" stroke-width="1.2"/>
-        <line x1="448" y1="896" x2="460" y2="896" stroke="#182430" stroke-width="1.2"/>
-        <text x="400" y="780" fill="#182430" font-size="12" font-weight="bold">≤ 6 FT 7 IN</text>
-        <text x="400" y="932" fill="#5a6b7d" font-size="11">highest handle</text>
-        <text x="548" y="780" fill="#182430" font-size="12" font-weight="bold">6 FT 6 IN</text>
-        <text x="548" y="932" fill="#5a6b7d" font-size="11">headroom</text>
-
-        <rect x="16" y="1004" width="22" height="8" fill="#1a1a1a"/>
-        <text x="44" y="1013" fill="#182430" font-size="11">HOT A — BLACK</text>
-        <rect x="168" y="1004" width="22" height="8" fill="#c0392b"/>
-        <text x="196" y="1013" fill="#182430" font-size="11">HOT B — RED</text>
-        <rect x="312" y="1004" width="22" height="8" fill="#f7f7f7" stroke="#8a8a8a"/>
-        <text x="340" y="1013" fill="#182430" font-size="11">NEUTRAL</text>
-        <rect x="430" y="1004" width="22" height="8" fill="#178a3e"/>
-        <text x="458" y="1013" fill="#182430" font-size="11">EGC — GREEN / BARE</text>
+      <h3>Meter outside, panel directly behind, nipple through the wall</h3>
+      <svg class="diagram" role="img" aria-label="Wall section: Siemens meter-main on the exterior, Siemens 200 amp indoor panel directly behind it, four color-coded feeder conductors through a short nipple. Neutral isolated in the indoor panel. Ground rods and bonding bridge at the meter-main. Branch circuits leave the top of the indoor panel." viewBox="0 0 640 980" font-family="sans-serif">
+        <rect width="640" height="980" fill="#eef4fa"/>
+        <text x="320" y="22" fill="#182430" font-size="14" font-weight="bold" text-anchor="middle">BACK-TO-BACK — WALL SECTION</text>
+        <text x="320" y="40" fill="#5a6b7d" font-size="11" text-anchor="middle">FEEDER GOES STRAIGHT THROUGH THE NIPPLE</text>
+        <text x="20" y="78" fill="#182430" font-size="12" font-weight="bold">EXTERIOR</text>
+        <text x="470" y="78" fill="#182430" font-size="12" font-weight="bold">INTERIOR</text>
+        <rect x="360" y="52" width="264" height="36" fill="#f6f1e6" stroke="#c9b896"/>
+        <text x="372" y="74" fill="#8a5f00" font-size="12" font-weight="bold">ATTIC</text>
+        <text x="546" y="74" fill="#8a5f00" font-size="10" font-weight="bold">BRANCHES</text>
+        <rect x="248" y="100" width="112" height="500" fill="#e4edf5" stroke="#b9c7d4"/>
+        <rect x="248" y="100" width="14" height="500" fill="#e6d5b0" stroke="#8a7048"/>
+        <rect x="346" y="100" width="14" height="500" fill="#e6d5b0" stroke="#8a7048"/>
+        <text x="304" y="128" fill="#182430" font-size="11" font-weight="bold" text-anchor="middle">STUD BAY</text>
+        <text x="304" y="386" fill="#182430" font-size="11" font-weight="bold" text-anchor="middle">NIPPLE</text>
+        <text x="304" y="402" fill="#5a6b7d" font-size="10" text-anchor="middle">24 IN OR LESS</text>
+        <text x="304" y="418" fill="#5a6b7d" font-size="10" text-anchor="middle">BUSHING EACH END</text>
+        <text x="304" y="434" fill="#5a6b7d" font-size="10" text-anchor="middle">SEAL 300.7(A)</text>
+        <rect x="28" y="156" width="220" height="220" rx="8" fill="#ffffff" stroke="#96690a" stroke-width="2.5"/>
+        <text x="138" y="178" fill="#96690a" font-size="13" font-weight="bold" text-anchor="middle">METER-MAIN</text>
+        <text x="138" y="196" fill="#5a6b7d" font-size="11" text-anchor="middle">MM0202B1200</text>
+        <circle cx="78" cy="242" r="22" fill="none" stroke="#182430" stroke-width="2"/>
+        <text x="78" y="282" fill="#96690a" font-size="9" font-weight="bold" text-anchor="middle">SIEMENS</text>
+        <rect x="116" y="214" width="110" height="26" rx="3" fill="#e8a317"/>
+        <text x="171" y="232" fill="#182430" font-size="12" font-weight="bold" text-anchor="middle">200A MAIN</text>
+        <text x="171" y="258" fill="#b3261e" font-size="9" font-weight="bold" text-anchor="middle">SERVICE DISCONNECT</text>
+        <text x="171" y="276" fill="#182430" font-size="10" font-weight="bold" text-anchor="middle">NEUTRAL BONDED HERE</text>
+        <rect x="360" y="120" width="200" height="360" rx="4" fill="#ffffff" stroke="#182430" stroke-width="2.5"/>
+        <text x="374" y="144" fill="#182430" font-size="12" font-weight="bold">INDOOR PANEL</text>
+        <text x="374" y="162" fill="#5a6b7d" font-size="11">200A · 30 SPACE</text>
+        <text x="392" y="188" fill="#182430" font-size="11" font-weight="bold">NEUTRAL</text>
+        <text x="392" y="204" fill="#5a6b7d" font-size="11">ISOLATED</text>
+        <rect x="370" y="214" width="16" height="8" fill="#8a7048"/>
+        <rect x="370" y="268" width="16" height="8" fill="#8a7048"/>
+        <rect x="372" y="210" width="12" height="70" fill="#f4f4f4" stroke="#6d6d6d"/>
+        <text x="392" y="232" fill="#b3261e" font-size="11" font-weight="bold">SCREW OUT</text>
+        <rect x="374" y="400" width="14" height="40" fill="#1d9e4b" stroke="#177245"/>
+        <text x="394" y="416" fill="#177245" font-size="11" font-weight="bold">GROUND</text>
+        <text x="394" y="432" fill="#177245" font-size="11" font-weight="bold">BONDED</text>
+        <text x="374" y="470" fill="#182430" font-size="11" font-weight="bold">NOT LANDED</text>
+        <line x1="500" y1="120" x2="500" y2="64" stroke="#5a6b7d" stroke-width="3"/>
+        <line x1="514" y1="120" x2="514" y2="64" stroke="#5a6b7d" stroke-width="3"/>
+        <line x1="528" y1="120" x2="528" y2="64" stroke="#5a6b7d" stroke-width="3"/>
+        <rect x="210" y="300" width="230" height="40" fill="#c5d0dc" stroke="#5a6b7d"/>
+        <rect x="200" y="308" width="16" height="24" fill="#8fa5ba" stroke="#5a6b7d"/>
+        <rect x="430" y="308" width="16" height="24" fill="#8fa5ba" stroke="#5a6b7d"/>
+        <line x1="168" y1="310" x2="500" y2="310" stroke="#1a1a1a" stroke-width="3"/>
+        <line x1="168" y1="318" x2="508" y2="318" stroke="#c0392b" stroke-width="3"/>
+        <line x1="168" y1="326" x2="516" y2="326" stroke="#9a9a9a" stroke-width="4.5"/>
+        <line x1="168" y1="326" x2="516" y2="326" stroke="#f7f7f7" stroke-width="2"/>
+        <line x1="168" y1="334" x2="524" y2="334" stroke="#178a3e" stroke-width="3"/>
+        <polyline points="500,310 500,400 534,400 534,372" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linejoin="miter" stroke-linecap="square"/>
+        <polyline points="508,318 508,412 540,412 540,384" fill="none" stroke="#c0392b" stroke-width="3" stroke-linejoin="miter" stroke-linecap="square"/>
+        <polyline points="516,326 516,424 546,424 546,396" fill="none" stroke="#9a9a9a" stroke-width="4.5" stroke-linejoin="miter" stroke-linecap="square"/>
+        <polyline points="516,326 516,424 546,424 546,396" fill="none" stroke="#f7f7f7" stroke-width="2" stroke-linejoin="miter" stroke-linecap="square"/>
+        <polyline points="524,334 524,436 552,436 552,408" fill="none" stroke="#178a3e" stroke-width="3" stroke-linejoin="miter" stroke-linecap="square"/>
+        <line x1="110" y1="376" x2="110" y2="620" stroke="#178a3e" stroke-width="2.5" stroke-dasharray="5 4"/>
+        <rect x="86" y="450" width="48" height="20" rx="4" fill="#ffffff" stroke="#177245" stroke-width="2"/>
+        <circle cx="100" cy="460" r="3" fill="#177245"/>
+        <text x="140" y="464" fill="#177245" font-size="11" font-weight="bold">BONDING BRIDGE</text>
+        <text x="16" y="530" fill="#177245" font-size="11" font-weight="bold">GEC TO THE</text>
+        <text x="16" y="544" fill="#177245" font-size="11" font-weight="bold">METER-MAIN</text>
+        <line x1="8" y1="620" x2="632" y2="620" stroke="#8a7048" stroke-width="3"/>
+        <text x="16" y="614" fill="#5a6b7d" font-size="10">GRADE</text>
+        <text x="560" y="614" fill="#5a6b7d" font-size="10">FLOOR</text>
+        <rect x="0" y="623" width="248" height="130" fill="#dde5d2"/>
+        <rect x="70" y="630" width="8" height="100" fill="#8a7a68"/>
+        <rect x="180" y="630" width="8" height="100" fill="#8a7a68"/>
+        <polygon points="70,730 78,730 74,742" fill="#8a7a68"/>
+        <polygon points="180,730 188,730 184,742" fill="#8a7a68"/>
+        <rect x="62" y="624" width="24" height="10" rx="2" fill="#96690a"/>
+        <rect x="172" y="624" width="24" height="10" rx="2" fill="#96690a"/>
+        <text x="16" y="770" fill="#182430" font-size="11" font-weight="bold">TWO 8-FT RODS · 6 FT APART</text>
+        <text x="360" y="540" fill="#182430" font-size="12" font-weight="bold">200A FEEDER — TABLE 310.12</text>
+        <text x="360" y="558" fill="#5a6b7d" font-size="11">4/0 Al or 2/0 Cu</text>
+        <text x="360" y="576" fill="#5a6b7d" font-size="11">EGC #6 Cu or #4 Al minimum</text>
+        <text x="360" y="600" fill="#182430" font-size="11" font-weight="bold">COILED BOTH CANS</text>
+        <text x="360" y="616" fill="#5a6b7d" font-size="11">18–24 in · not terminated</text>
+        <text x="16" y="804" fill="#182430" font-size="12" font-weight="bold">CLEARANCE — BOTH SIDES</text>
+        <rect x="16" y="816" width="250" height="78" fill="#eaf3fb" stroke="#0058a3" stroke-dasharray="5 4"/>
+        <text x="28" y="838" fill="#0058a3" font-size="11" font-weight="bold">EXTERIOR — IN FRONT OF METER</text>
+        <text x="28" y="856" fill="#182430" font-size="11">30 in wide · 36 in deep · 6 ft 6 in high</text>
+        <text x="28" y="874" fill="#5a6b7d" font-size="10">Door opens 90°. Keep it clear.</text>
+        <rect x="330" y="816" width="290" height="78" fill="#eaf3fb" stroke="#0058a3" stroke-dasharray="5 4"/>
+        <text x="342" y="838" fill="#0058a3" font-size="11" font-weight="bold">INTERIOR — IN FRONT OF PANEL</text>
+        <text x="342" y="856" fill="#182430" font-size="11">30 in wide · 36 in deep · 6 ft 6 in high</text>
+        <text x="342" y="874" fill="#5a6b7d" font-size="10">Same box. Nothing stored there.</text>
+        <text x="16" y="920" fill="#182430" font-size="12" font-weight="bold">HIGHEST HANDLE ≤ 6 FT 7 IN — BOTH CANS</text>
+        <rect x="16" y="936" width="18" height="8" fill="#1a1a1a"/>
+        <text x="40" y="945" fill="#182430" font-size="11">HOT A</text>
+        <rect x="110" y="936" width="18" height="8" fill="#c0392b"/>
+        <text x="134" y="945" fill="#182430" font-size="11">HOT B</text>
+        <rect x="200" y="936" width="18" height="8" fill="#f7f7f7" stroke="#8a8a8a"/>
+        <text x="224" y="945" fill="#182430" font-size="11">NEUTRAL</text>
+        <rect x="320" y="936" width="18" height="8" fill="#178a3e"/>
+        <text x="344" y="945" fill="#182430" font-size="11">EGC</text>
+        <rect x="400" y="936" width="18" height="8" fill="#5a6b7d"/>
+        <text x="424" y="945" fill="#182430" font-size="11">BRANCH CABLES</text>
       </svg>
       <ul class="legend" aria-label="Conductor legend">
         <li><i style="background:#1a1a1a"></i> Hot A — black</li>
         <li><i style="background:#c0392b"></i> Hot B — red</li>
         <li><i style="background:#f7f7f7"></i> Neutral — white</li>
         <li><i style="background:#178a3e"></i> EGC — green or bare</li>
+        <li><i style="background:#5a6b7d"></i> Branch cables — leave the top</li>
       </ul>
-      <p class="muted" style="margin-top:10px">Read it left to right. The meter-main is outside. The block between the can and the stud bay is not drilled. The four conductors leave the top, cross the attic in straight runs, and drop into the top of the indoor panel. At rough-in they are coiled in the can and not landed.</p>
-
+      <p class="muted" style="margin-top:10px">Read the section left to right. The meter-main is on the outside face. The indoor panel is in the same bay, directly behind it. Four conductors pass straight through the nipple and stop, coiled, in the can. The only cables that go up are branch circuits, out the top of the indoor panel.</p>
       <details style="margin-top:10px;border-top:1px dashed #b9c7d4;padding-top:8px">
         <summary style="cursor:pointer;color:#0058a3;font-weight:700">Engineering drawing version</summary>
-        <svg class="diagram" role="img" aria-label="Engineering drawing of the residential subpanel rough-in, scale not to scale" viewBox="0 0 640 820" font-family="monospace">
-          <rect x="0" y="0" width="640" height="820" fill="#ffffff"/>
-          <rect x="8" y="8" width="624" height="748" fill="none" stroke="#000000" stroke-width="1.5"/>
-          <text x="320" y="32" fill="#000000" font-size="13" font-weight="bold" text-anchor="middle">RESIDENTIAL SUBPANEL ROUGH-IN</text>
-          <text x="320" y="50" fill="#000000" font-size="11" text-anchor="middle">4-WIRE FEEDER · NOT TERMINATED AT ROUGH-IN</text>
-          <rect x="16" y="64" width="608" height="100" fill="none" stroke="#000000"/>
-          <text x="28" y="82" fill="#000000" font-size="11" font-weight="bold">ATTIC — BLOCK NOT BORED — STAPLE EVERY 4 FT 6 IN</text>
-          <rect x="24" y="200" width="150" height="150" fill="none" stroke="#000000" stroke-width="2"/>
-          <text x="99" y="190" fill="#000000" font-size="11" font-weight="bold" text-anchor="middle">METER-MAIN MM0202B1200</text>
-          <circle cx="58" cy="248" r="18" fill="none" stroke="#000000" stroke-width="1.5"/>
-          <text x="58" y="286" fill="#000000" font-size="9" text-anchor="middle">SIEMENS</text>
-          <rect x="90" y="224" width="70" height="22" fill="none" stroke="#000000"/>
-          <text x="125" y="239" fill="#000000" font-size="10" font-weight="bold" text-anchor="middle">200A MAIN</text>
-          <rect x="90" y="252" width="70" height="22" fill="none" stroke="#000000"/>
-          <text x="125" y="267" fill="#000000" font-size="10" font-weight="bold" text-anchor="middle">FEEDER BKR</text>
-          <text x="99" y="310" fill="#000000" font-size="9" text-anchor="middle">SERVICE DISCONNECT</text>
-          <rect x="190" y="176" width="70" height="360" fill="none" stroke="#000000"/>
-          <text x="225" y="360" fill="#000000" font-size="11" font-weight="bold" text-anchor="middle">BLOCK</text>
-          <text x="225" y="378" fill="#000000" font-size="10" text-anchor="middle">DO NOT BORE</text>
-          <rect x="276" y="176" width="14" height="360" fill="none" stroke="#000000"/>
-          <rect x="470" y="176" width="14" height="360" fill="none" stroke="#000000"/>
-          <rect x="276" y="164" width="208" height="12" fill="none" stroke="#000000"/>
-          <rect x="276" y="536" width="208" height="12" fill="none" stroke="#000000"/>
-          <text x="286" y="564" fill="#000000" font-size="10">FLOOR</text>
-          <rect x="304" y="230" width="152" height="270" fill="none" stroke="#000000" stroke-width="2"/>
-          <text x="380" y="220" fill="#000000" font-size="11" font-weight="bold" text-anchor="middle">INDOOR SUBPANEL</text>
-          <text x="316" y="252" fill="#000000" font-size="10">18–24 IN</text>
-          <text x="316" y="266" fill="#000000" font-size="10">NOT LANDED</text>
-          <rect x="318" y="280" width="12" height="60" fill="none" stroke="#000000"/>
-          <text x="334" y="306" fill="#000000" font-size="10">N — ISOLATED</text>
-          <text x="334" y="320" fill="#000000" font-size="10">SCREW OUT</text>
-          <rect x="318" y="360" width="12" height="44" fill="none" stroke="#000000"/>
-          <text x="334" y="386" fill="#000000" font-size="10">G — BONDED</text>
-          <polyline points="70,210 70,108 360,108 360,240" fill="none" stroke="#000000" stroke-width="1.6" stroke-linejoin="miter"/>
-          <polyline points="82,210 82,120 372,120 372,240" fill="none" stroke="#000000" stroke-width="1.6" stroke-linejoin="miter"/>
-          <polyline points="94,210 94,132 384,132 384,240" fill="none" stroke="#000000" stroke-width="1.6" stroke-linejoin="miter"/>
-          <polyline points="106,210 106,144 396,144 396,240" fill="none" stroke="#000000" stroke-width="1.6" stroke-linejoin="miter"/>
-          <text x="430" y="112" fill="#000000" font-size="10">HOT A</text>
-          <text x="430" y="124" fill="#000000" font-size="10">HOT B</text>
-          <text x="430" y="136" fill="#000000" font-size="10">NEUTRAL</text>
-          <text x="430" y="148" fill="#000000" font-size="10">EGC</text>
-          <rect x="64" y="198" width="50" height="12" fill="none" stroke="#000000"/>
-          <rect x="348" y="218" width="50" height="12" fill="none" stroke="#000000"/>
-          <text x="500" y="230" fill="#000000" font-size="10" font-weight="bold">LISTED CONNECTOR</text>
-          <line x1="398" y1="224" x2="494" y2="226" stroke="#000000" stroke-width="1"/>
-          <text x="500" y="270" fill="#000000" font-size="10" font-weight="bold">STAPLE WITHIN 12 IN</text>
-          <text x="500" y="310" fill="#000000" font-size="10" font-weight="bold">STEEL PLATE — 300.4</text>
-          <text x="500" y="350" fill="#000000" font-size="10" font-weight="bold">SUPPLIED FROM:</text>
-          <text x="500" y="366" fill="#000000" font-size="10">METER-MAIN, GARAGE WALL</text>
-          <rect x="24" y="600" width="200" height="90" fill="none" stroke="#000000" stroke-dasharray="6 4"/>
-          <text x="124" y="628" fill="#000000" font-size="11" font-weight="bold" text-anchor="middle">KEEP CLEAR</text>
-          <text x="124" y="648" fill="#000000" font-size="10" text-anchor="middle">30 IN WIDE</text>
-          <text x="124" y="666" fill="#000000" font-size="10" text-anchor="middle">36 IN DEEP</text>
-          <text x="124" y="684" fill="#000000" font-size="10" text-anchor="middle">6 FT 6 IN HIGH</text>
-          <text x="250" y="640" fill="#000000" font-size="11" font-weight="bold">HIGHEST HANDLE</text>
-          <text x="250" y="658" fill="#000000" font-size="11">≤ 6 FT 7 IN ABOVE THE FLOOR</text>
-          <rect x="8" y="764" width="624" height="44" fill="none" stroke="#000000" stroke-width="1.5"/>
-          <line x1="230" y1="764" x2="230" y2="808" stroke="#000000"/>
-          <line x1="470" y1="764" x2="470" y2="808" stroke="#000000"/>
-          <text x="20" y="790" fill="#000000" font-size="11" font-weight="bold">SHARMA ELECTRIC &amp; HVAC</text>
-          <text x="242" y="790" fill="#000000" font-size="11">SUBPANEL ROUGH-IN</text>
-          <text x="482" y="790" fill="#000000" font-size="11">SCALE: NTS</text>
+        <svg class="diagram" role="img" aria-label="Engineering drawing of the back-to-back subpanel wall section, scale not to scale" viewBox="0 0 640 760" font-family="monospace">
+          <rect width="640" height="760" fill="#ffffff"/>
+          <rect x="8" y="8" width="624" height="620" fill="none" stroke="#000000" stroke-width="1.5"/>
+          <text x="320" y="30" fill="#000000" font-size="13" font-weight="bold" text-anchor="middle">BACK-TO-BACK SUBPANEL — WALL SECTION</text>
+          <text x="320" y="48" fill="#000000" font-size="11" text-anchor="middle">NIPPLE THROUGH THE WALL · FEEDER NOT IN THE ATTIC</text>
+          <text x="20" y="72" fill="#000000" font-size="11" font-weight="bold">EXTERIOR</text>
+          <text x="500" y="72" fill="#000000" font-size="11" font-weight="bold">INTERIOR</text>
+          <rect x="250" y="84" width="100" height="360" fill="none" stroke="#000000"/>
+          <text x="300" y="104" fill="#000000" font-size="10" text-anchor="middle">STUD BAY</text>
+          <rect x="40" y="130" width="210" height="160" fill="none" stroke="#000000" stroke-width="2"/>
+          <text x="145" y="150" fill="#000000" font-size="11" font-weight="bold" text-anchor="middle">METER-MAIN MM0202B1200</text>
+          <circle cx="80" cy="190" r="16" fill="none" stroke="#000000"/>
+          <text x="80" y="220" fill="#000000" font-size="9" text-anchor="middle">SIEMENS</text>
+          <rect x="120" y="170" width="110" height="20" fill="none" stroke="#000000"/>
+          <text x="175" y="184" fill="#000000" font-size="10" font-weight="bold" text-anchor="middle">200A MAIN</text>
+          <text x="175" y="210" fill="#000000" font-size="9" text-anchor="middle">SERVICE DISCONNECT</text>
+          <text x="175" y="226" fill="#000000" font-size="9" text-anchor="middle">NEUTRAL BONDED HERE</text>
+          <rect x="350" y="110" width="180" height="250" fill="none" stroke="#000000" stroke-width="2"/>
+          <text x="360" y="130" fill="#000000" font-size="11" font-weight="bold">INDOOR 200A 30-SPACE</text>
+          <rect x="362" y="145" width="12" height="50" fill="none" stroke="#000000"/>
+          <text x="380" y="165" fill="#000000" font-size="10">N — ISOLATED</text>
+          <text x="380" y="180" fill="#000000" font-size="10">SCREW OUT</text>
+          <rect x="362" y="300" width="12" height="36" fill="none" stroke="#000000"/>
+          <text x="380" y="322" fill="#000000" font-size="10">G — BONDED</text>
+          <text x="400" y="348" fill="#000000" font-size="10">COILED — NOT LANDED</text>
+          <rect x="200" y="240" width="200" height="28" fill="none" stroke="#000000"/>
+          <text x="300" y="286" fill="#000000" font-size="10" text-anchor="middle">NIPPLE ≤ 24 IN · BUSHING EACH END</text>
+          <text x="300" y="302" fill="#000000" font-size="10" text-anchor="middle">SEAL — 300.7(A)</text>
+          <line x1="230" y1="248" x2="430" y2="248" stroke="#000000" stroke-width="1.4"/>
+          <line x1="230" y1="254" x2="438" y2="254" stroke="#000000" stroke-width="1.4"/>
+          <line x1="230" y1="260" x2="446" y2="260" stroke="#000000" stroke-width="1.4"/>
+          <line x1="230" y1="266" x2="454" y2="266" stroke="#000000" stroke-width="1.4"/>
+          <text x="548" y="252" fill="#000000" font-size="10">HOT A</text>
+          <text x="548" y="266" fill="#000000" font-size="10">HOT B / N / EGC</text>
+          <line x1="400" y1="110" x2="400" y2="70" stroke="#000000" stroke-width="1.4"/>
+          <line x1="412" y1="110" x2="412" y2="70" stroke="#000000" stroke-width="1.4"/>
+          <text x="424" y="84" fill="#000000" font-size="10">BRANCHES UP</text>
+          <line x1="100" y1="290" x2="100" y2="470" stroke="#000000" stroke-width="1.4" stroke-dasharray="4 3"/>
+          <rect x="78" y="340" width="44" height="16" fill="none" stroke="#000000"/>
+          <text x="130" y="352" fill="#000000" font-size="10">BONDING BRIDGE — 250.94</text>
+          <line x1="12" y1="470" x2="620" y2="470" stroke="#000000" stroke-width="1.5"/>
+          <text x="16" y="464" fill="#000000" font-size="10">GRADE / FLOOR</text>
+          <rect x="60" y="478" width="6" height="60" fill="none" stroke="#000000"/>
+          <rect x="150" y="478" width="6" height="60" fill="none" stroke="#000000"/>
+          <text x="20" y="556" fill="#000000" font-size="10">TWO RODS · 8 FT · 6 FT APART — 250.53</text>
+          <text x="330" y="556" fill="#000000" font-size="10">4/0 Al OR 2/0 Cu — TABLE 310.12</text>
+          <text x="20" y="586" fill="#000000" font-size="10">CLEAR BOTH SIDES: 30 IN W × 36 IN D × 6 FT 6 IN H</text>
+          <text x="20" y="606" fill="#000000" font-size="10">HIGHEST HANDLE ≤ 6 FT 7 IN — 240.24(A)</text>
+          <rect x="8" y="708" width="624" height="40" fill="none" stroke="#000000"/>
+          <line x1="260" y1="708" x2="260" y2="748" stroke="#000000"/>
+          <line x1="500" y1="708" x2="500" y2="748" stroke="#000000"/>
+          <text x="20" y="732" fill="#000000" font-size="11" font-weight="bold">SHARMA ELECTRIC &amp; HVAC</text>
+          <text x="272" y="732" fill="#000000" font-size="11">BACK-TO-BACK SUBPANEL</text>
+          <text x="512" y="732" fill="#000000" font-size="11">SCALE: NTS</text>
         </svg>
       </details>
     </div>
 
-    <h2>Inside the can — neutral isolated</h2>
-    <div class="card highlight">
-      <span class="nec">NEC 250.24(A)(5)</span><span class="nec">NEC 250.142(B)</span><span class="sharma">BONDING SCREW OUT</span>
-      <p style="margin-top:10px">The meter-main is the service disconnect. That is the one place the neutral is bonded to the enclosure and to the grounding electrode system. The indoor panel is on the load side of that disconnect. On the load side, the grounded conductor is not used to ground the can, and it is not tied to the equipment ground again.</p>
-      <svg class="diagram" role="img" aria-label="Interior of the subpanel at rough-in: neutral bar on insulators with the bonding screw removed, separate ground bar bonded to the enclosure, four conductors coiled and not terminated" viewBox="0 0 640 460" font-family="sans-serif">
-        <rect x="0" y="0" width="640" height="460" fill="#eef4fa"/>
-        <rect x="24" y="36" width="300" height="404" rx="6" fill="#ffffff" stroke="#182430" stroke-width="2.5"/>
-        <rect x="200" y="32" width="64" height="16" fill="#d5dde3" stroke="#5a6b7d"/>
-        <text x="232" y="28" fill="#182430" font-size="10" font-weight="bold" text-anchor="middle">CONNECTOR</text>
-
-        <polyline points="214,48 214,300 286,300 286,250" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linejoin="miter" stroke-linecap="square"/>
-        <polyline points="226,48 226,318 286,318 286,268" fill="none" stroke="#c0392b" stroke-width="4" stroke-linejoin="miter" stroke-linecap="square"/>
-        <polyline points="238,48 238,336 286,336 286,286" fill="none" stroke="#8a8a8a" stroke-width="5.5" stroke-linejoin="miter" stroke-linecap="square"/>
-        <polyline points="238,48 238,336 286,336 286,286" fill="none" stroke="#f7f7f7" stroke-width="2.6" stroke-linejoin="miter" stroke-linecap="square"/>
-        <polyline points="250,48 250,354 286,354 286,304" fill="none" stroke="#178a3e" stroke-width="4" stroke-linejoin="miter" stroke-linecap="square"/>
-
-        <rect x="40" y="150" width="28" height="10" fill="#8a7048"/>
-        <rect x="40" y="230" width="28" height="10" fill="#8a7048"/>
-        <rect x="46" y="140" width="16" height="110" fill="#f4f4f4" stroke="#6d6d6d" stroke-width="1.6"/>
-        <text x="40" y="132" fill="#182430" font-size="11" font-weight="bold">NEUTRAL</text>
-
-        <circle cx="86" cy="168" r="9" fill="#ffffff" stroke="#c0392b" stroke-width="2"/>
-        <line x1="80" y1="162" x2="92" y2="174" stroke="#c0392b" stroke-width="2"/>
-        <line x1="92" y1="162" x2="80" y2="174" stroke="#c0392b" stroke-width="2"/>
-        <text x="100" y="164" fill="#b3261e" font-size="11" font-weight="bold">SCREW</text>
-        <text x="100" y="178" fill="#b3261e" font-size="11" font-weight="bold">OUT</text>
-
-        <rect x="46" y="300" width="16" height="70" fill="#1d9e4b" stroke="#177245" stroke-width="1.4"/>
-        <rect x="50" y="324" width="8" height="8" fill="#d5dde3" stroke="#182430"/>
-        <text x="40" y="292" fill="#177245" font-size="11" font-weight="bold">GROUND</text>
-        <text x="70" y="330" fill="#177245" font-size="11" font-weight="bold">BONDED</text>
-        <text x="70" y="344" fill="#177245" font-size="11" font-weight="bold">TO THE CAN</text>
-
-        <text x="40" y="400" fill="#182430" font-size="12" font-weight="bold">NOT LANDED</text>
-        <text x="40" y="418" fill="#5a6b7d" font-size="11">18–24 IN IN THE CAN</text>
-
-        <text x="348" y="64" fill="#182430" font-size="13" font-weight="bold">NEUTRAL BAR</text>
-        <text x="348" y="84" fill="#5a6b7d" font-size="12">Sits on insulators.</text>
-        <text x="348" y="102" fill="#5a6b7d" font-size="12">Does not touch the can.</text>
-        <text x="348" y="120" fill="#5a6b7d" font-size="12">Screw or strap removed.</text>
-        <text x="348" y="156" fill="#182430" font-size="13" font-weight="bold">GROUND BAR</text>
-        <text x="348" y="176" fill="#5a6b7d" font-size="12">Separate bar.</text>
-        <text x="348" y="194" fill="#5a6b7d" font-size="12">Screwed to the enclosure.</text>
-        <text x="348" y="212" fill="#5a6b7d" font-size="12">EGC lands here at trim.</text>
-        <text x="348" y="248" fill="#182430" font-size="13" font-weight="bold">AT ROUGH-IN</text>
-        <text x="348" y="268" fill="#5a6b7d" font-size="12">Ends are open.</text>
-        <text x="348" y="286" fill="#5a6b7d" font-size="12">No lug is tight yet.</text>
-        <text x="348" y="322" fill="#8a5f00" font-size="12" font-weight="bold">SAME BUILDING</text>
-        <text x="348" y="342" fill="#5a6b7d" font-size="12">No second neutral bond.</text>
-        <text x="348" y="360" fill="#5a6b7d" font-size="12">No ground rod at this can.</text>
-        <text x="348" y="378" fill="#5a6b7d" font-size="12">The feeder EGC is the path</text>
-        <text x="348" y="396" fill="#5a6b7d" font-size="12">back to the meter-main.</text>
-      </svg>
-      <p style="margin-top:10px">Take the bonding screw or strap out before the cover goes on, and do not set it aside “for later” in the bottom of the can where someone will thread it back in. The neutral bar stays on its insulators. Mount the ground bar to the can with the machine screws from the kit so the bar, the screws, and the enclosure are metal to metal. At trim, neutrals land only on the isolated bar. Equipment grounds, including the feeder EGC, land only on the ground bar.</p>
-      <p>This panel is in the same house as the meter-main. It does not get its own neutral-to-ground bond, and it does not get a ground rod of its own. The green or bare conductor in the feeder is what grounds the can.</p>
+    <h2>Engineering sheets E-1, E-2, E-3</h2>
+    <div class="card">
+      <p>Printable set, 11×17 landscape, three sheets. E-1 is the wall section, both front elevations, the clearance, the one-line, and the grounding detail. E-2 is the conductor, nipple, bushing, and connector schedule. E-3 is framing the bay and the rough-in list.</p>
+      <a href="back-to-back-engineering.pdf" download style="display:inline-block;background:#0058a3;color:#fff;font-weight:800;text-decoration:none;padding:12px 18px;border-radius:10px">Download E-1 · E-2 · E-3 (PDF)</a>
+      <p class="muted" style="margin-top:12px">Sheet E-1 — wall section through the nipple.</p>
+      <img src="e-1.png" alt="Sheet E-1, wall section, elevations, clearance, one-line, and grounding" style="width:100%;height:auto;border:1px solid #d3dde6;border-radius:10px">
+      <p class="muted" style="margin-top:12px">Sheet E-2 — feeder sizes, nipple trade size, bushings, and branch connectors.</p>
+      <img src="e-2.png" alt="Sheet E-2, conductor nipple bushing and connector schedule" style="width:100%;height:auto;border:1px solid #d3dde6;border-radius:10px">
+      <p class="muted" style="margin-top:12px">Sheet E-3 — framing the panel bay and the rough-in list.</p>
+      <img src="e-3.png" alt="Sheet E-3, framing the indoor panel bay and rough-in list" style="width:100%;height:auto;border:1px solid #d3dde6;border-radius:10px">
     </div>
 
-    <h2>Feeder size — breaker and conductor</h2>
+    <h2>Inside the indoor panel</h2>
+    <div class="card highlight">
+      <span class="nec">NEC 250.24(A)(5)</span><span class="nec">NEC 250.142(B)</span><span class="sharma">BONDING SCREW OUT</span>
+      <p style="margin-top:10px">The meter-main breaker is the service disconnect, so the indoor panel is on the load side of that disconnect. On the load side, the grounded conductor is not used to ground the can, and it is not tied to the equipment ground again.</p>
+      <svg class="diagram" role="img" aria-label="Indoor panel interior at rough-in: neutral bar on insulators with the bonding screw removed, separate ground bar bonded to the can, four feeder conductors coiled and not terminated" viewBox="0 0 640 420" font-family="sans-serif">
+        <rect width="640" height="420" fill="#eef4fa"/>
+        <rect x="24" y="28" width="300" height="372" rx="6" fill="#ffffff" stroke="#182430" stroke-width="2.5"/>
+        <rect x="36" y="168" width="36" height="14" fill="#c5d0dc" stroke="#5a6b7d"/>
+        <text x="54" y="164" fill="#182430" font-size="10" font-weight="bold" text-anchor="middle">NIPPLE</text>
+        <polyline points="46,182 46,280 110,280 110,236" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linejoin="miter" stroke-linecap="square"/>
+        <polyline points="58,182 58,296 130,296 130,250" fill="none" stroke="#c0392b" stroke-width="4" stroke-linejoin="miter" stroke-linecap="square"/>
+        <polyline points="70,182 70,312 150,312 150,264" fill="none" stroke="#9a9a9a" stroke-width="5" stroke-linejoin="miter" stroke-linecap="square"/>
+        <polyline points="70,182 70,312 150,312 150,264" fill="none" stroke="#f7f7f7" stroke-width="2.2" stroke-linejoin="miter" stroke-linecap="square"/>
+        <polyline points="82,182 82,328 170,328 170,278" fill="none" stroke="#178a3e" stroke-width="4" stroke-linejoin="miter" stroke-linecap="square"/>
+        <rect x="210" y="60" width="18" height="8" fill="#8a7048"/>
+        <rect x="210" y="130" width="18" height="8" fill="#8a7048"/>
+        <rect x="212" y="54" width="14" height="90" fill="#f4f4f4" stroke="#6d6d6d"/>
+        <text x="234" y="78" fill="#182430" font-size="12" font-weight="bold">NEUTRAL</text>
+        <text x="234" y="96" fill="#5a6b7d" font-size="11">ON INSULATORS</text>
+        <circle cx="268" cy="124" r="8" fill="#ffffff" stroke="#c0392b" stroke-width="2"/>
+        <line x1="262" y1="118" x2="274" y2="130" stroke="#c0392b" stroke-width="2"/>
+        <line x1="274" y1="118" x2="262" y2="130" stroke="#c0392b" stroke-width="2"/>
+        <text x="234" y="150" fill="#b3261e" font-size="11" font-weight="bold">SCREW OUT</text>
+        <rect x="212" y="300" width="14" height="60" fill="#1d9e4b" stroke="#177245"/>
+        <rect x="216" y="322" width="6" height="6" fill="#d5dde3" stroke="#182430"/>
+        <text x="234" y="324" fill="#177245" font-size="12" font-weight="bold">GROUND BAR</text>
+        <text x="234" y="342" fill="#177245" font-size="11">BONDED TO CAN</text>
+        <text x="40" y="378" fill="#182430" font-size="12" font-weight="bold">NOT LANDED — 18–24 IN</text>
+        <text x="348" y="56" fill="#182430" font-size="13" font-weight="bold">AT ROUGH-IN</text>
+        <text x="348" y="80" fill="#5a6b7d" font-size="12">Ends stay open.</text>
+        <text x="348" y="100" fill="#5a6b7d" font-size="12">No lug is tight yet.</text>
+        <text x="348" y="136" fill="#182430" font-size="13" font-weight="bold">NEUTRAL BAR</text>
+        <text x="348" y="156" fill="#5a6b7d" font-size="12">Does not touch the can.</text>
+        <text x="348" y="176" fill="#5a6b7d" font-size="12">Screw or strap is out.</text>
+        <text x="348" y="212" fill="#182430" font-size="13" font-weight="bold">GROUND BAR</text>
+        <text x="348" y="232" fill="#5a6b7d" font-size="12">Separate bar.</text>
+        <text x="348" y="252" fill="#5a6b7d" font-size="12">Screwed to the enclosure.</text>
+        <text x="348" y="272" fill="#5a6b7d" font-size="12">Feeder EGC lands here at trim.</text>
+        <text x="348" y="308" fill="#8a5f00" font-size="13" font-weight="bold">SERVICE BOND</text>
+        <text x="348" y="328" fill="#5a6b7d" font-size="12">Stays in the meter-main.</text>
+        <text x="348" y="348" fill="#5a6b7d" font-size="12">This can does not get a rod</text>
+        <text x="348" y="368" fill="#5a6b7d" font-size="12">of its own.</text>
+      </svg>
+      <p style="margin-top:10px">Take the bonding screw or strap out before the cover goes on. Do not leave it in the bottom of the can for someone to thread back in. The neutral bar stays on its insulators. The ground bar is mounted metal-to-metal to the enclosure. At trim, neutrals land only on the isolated bar. Equipment grounds, including the feeder equipment ground, land only on the ground bar.</p>
+    </div>
+
+    <h2>The nipple</h2>
     <div class="card">
-      <span class="nec">NEC 310.12</span><span class="nec">NEC 310.16</span><span class="nec">NEC 250.122</span><span class="sharma">MATCH THE BREAKER</span>
-      <p style="margin-top:10px">The feeder is four conductors: two ungrounded, one neutral, one equipment ground. The breaker that protects the feeder sets the ampacity you have to meet. A bigger cable does not fix a breaker that is too big for the wire.</p>
+      <span class="nec">NEC 312.5</span><span class="nec">NEC 300.4(G)</span><span class="nec">NEC 300.6</span><span class="nec">NEC 300.7(A)</span>
+      <p style="margin-top:10px">The two cans share one straight nipple. PVC or EMT both work when the fittings are listed for the spot. Line the knockouts up before you cut. A crooked nipple means one of the cans is not actually behind the other.</p>
+      <ul>
+        <li><b>Keep it 24 inches or less.</b> A nipple that short does not pick up the ampacity adjustment that applies when several current-carrying conductors share a longer raceway.</li>
+        <li><b>Close the opening.</b> The raceway fitting is what closes the knockout. Locknut tight, no open hole left beside it (312.5).</li>
+        <li><b>Bushing on 4 AWG and larger.</b> This feeder is well over 4 AWG. Where those conductors enter the cabinet, protect them with a fitting that has a smooth insulated throat (300.4(G)). Bushing on the meter-main end and bushing on the panel end.</li>
+        <li><b>Fittings that survive the weather.</b> The outdoor end sees rain. Use raceway and fittings suited to that face of the wall (300.6).</li>
+        <li><b>Seal the temperature change.</b> One end of the nipple is outdoors and the other is indoors. Seal the raceway so warm indoor air does not travel through it and condense (300.7(A)). Duct seal, or another sealant approved for the raceway, packed in the nipple.</li>
+      </ul>
+    </div>
 
-      <h3 style="margin-top:12px">200A — whole house</h3>
-      <svg class="diagram" role="img" aria-label="One-line of a 200 amp whole-house feeder: 4/0 aluminum from the meter-main main breaker to the indoor panel" viewBox="0 0 640 150" font-family="sans-serif">
-        <rect x="0" y="0" width="640" height="150" fill="#eef4fa"/>
-        <rect x="16" y="28" width="150" height="72" rx="6" fill="#ffffff" stroke="#96690a" stroke-width="2"/>
-        <text x="91" y="50" fill="#96690a" font-size="11" font-weight="bold" text-anchor="middle">METER-MAIN</text>
-        <text x="91" y="68" fill="#182430" font-size="12" font-weight="bold" text-anchor="middle">200A MAIN</text>
-        <text x="91" y="86" fill="#5a6b7d" font-size="10" text-anchor="middle">MM0202B1200</text>
-        <line x1="166" y1="52" x2="430" y2="52" stroke="#1a1a1a" stroke-width="3"/>
-        <line x1="166" y1="62" x2="430" y2="62" stroke="#c0392b" stroke-width="3"/>
-        <line x1="166" y1="72" x2="430" y2="72" stroke="#8a8a8a" stroke-width="4"/>
-        <line x1="166" y1="72" x2="430" y2="72" stroke="#f7f7f7" stroke-width="2"/>
-        <line x1="166" y1="82" x2="430" y2="82" stroke="#178a3e" stroke-width="3"/>
-        <rect x="430" y="28" width="190" height="72" rx="6" fill="#ffffff" stroke="#182430" stroke-width="2"/>
-        <text x="525" y="52" fill="#182430" font-size="12" font-weight="bold" text-anchor="middle">INDOOR PANEL</text>
-        <text x="525" y="70" fill="#5a6b7d" font-size="11" text-anchor="middle">whole dwelling</text>
-        <text x="525" y="88" fill="#5a6b7d" font-size="11" text-anchor="middle">neutral isolated</text>
-        <text x="300" y="118" fill="#182430" font-size="12" font-weight="bold" text-anchor="middle">4/0 Al hots and neutral · EGC #4 Al minimum</text>
-        <text x="300" y="136" fill="#5a6b7d" font-size="11" text-anchor="middle">Table 310.12 — feeder carries the entire dwelling</text>
-      </svg>
-
-      <h3 style="margin-top:14px">100A sub — breaker and conductor together</h3>
-      <svg class="diagram" role="img" aria-label="One-line of a 100 amp subpanel: a 100 amp two-pole feeder breaker in the meter-main and conductors sized for that breaker" viewBox="0 0 640 168" font-family="sans-serif">
-        <rect x="0" y="0" width="640" height="168" fill="#eef4fa"/>
-        <rect x="16" y="16" width="168" height="88" rx="6" fill="#ffffff" stroke="#0058a3" stroke-width="2"/>
-        <text x="100" y="38" fill="#0058a3" font-size="11" font-weight="bold" text-anchor="middle">METER-MAIN</text>
-        <text x="100" y="58" fill="#182430" font-size="13" font-weight="bold" text-anchor="middle">100A 2-POLE</text>
-        <text x="100" y="76" fill="#182430" font-size="12" font-weight="bold" text-anchor="middle">FEEDER BREAKER</text>
-        <text x="100" y="94" fill="#5a6b7d" font-size="10" text-anchor="middle">both 1-inch spaces</text>
-        <line x1="184" y1="46" x2="420" y2="46" stroke="#1a1a1a" stroke-width="3"/>
-        <line x1="184" y1="56" x2="420" y2="56" stroke="#c0392b" stroke-width="3"/>
-        <line x1="184" y1="66" x2="420" y2="66" stroke="#8a8a8a" stroke-width="4"/>
-        <line x1="184" y1="66" x2="420" y2="66" stroke="#f7f7f7" stroke-width="2"/>
-        <line x1="184" y1="76" x2="420" y2="76" stroke="#178a3e" stroke-width="3"/>
-        <rect x="420" y="16" width="200" height="88" rx="6" fill="#ffffff" stroke="#182430" stroke-width="2"/>
-        <text x="520" y="46" fill="#182430" font-size="13" font-weight="bold" text-anchor="middle">100A SUBPANEL</text>
-        <text x="520" y="66" fill="#5a6b7d" font-size="11" text-anchor="middle">Siemens indoor can</text>
-        <text x="520" y="84" fill="#5a6b7d" font-size="11" text-anchor="middle">neutral isolated</text>
-        <text x="320" y="128" fill="#182430" font-size="12" font-weight="bold" text-anchor="middle">Whole dwelling: #2 Al · Table 310.12</text>
-        <text x="320" y="148" fill="#182430" font-size="12" font-weight="bold" text-anchor="middle">Part of the house: #1 Al or #3 Cu · Table 310.16, 75°C</text>
-      </svg>
-
-      <p style="margin-top:12px">Table 310.12 is the dwelling table. It applies to the service, and to a feeder that carries the <b>entire</b> load of the dwelling. On the usual Sharma house the indoor panel is that feeder: the meter-main is the disconnect, and everything in the house is downstream of this cable. For that 200A feeder the ungrounded conductors and the neutral are <b>4/0 aluminum</b>. The equipment ground is sized from 250.122, not from 310.12: a 200A breaker needs at least <b>#4 aluminum or #6 copper</b>.</p>
-      <p><b>2/0-2/0-2/0-4 aluminum SER</b> is a real cable: three 2/0 aluminum conductors and a #4 aluminum equipment ground. The #4 ground is large enough for a breaker up to 200A. The 2/0 conductors are not. Table 310.12 lists 2/0 aluminum at <b>150A</b> when the feeder carries the whole dwelling. Do not land that SER on a 200A breaker. A 4/0-4/0-4/0-4 aluminum SER is the cable form of the 200A dwelling feeder.</p>
-      <p>The MM0202B1200 has a factory <b>200A main</b> and <b>two 1-inch branch spaces</b>. A two-pole feeder breaker fills both spaces. That is the 100A example: a <b>100A two-pole</b> in those spaces, and a feeder sized for 100A. If that 100A feeder carries the entire dwelling, Table 310.12 allows <b>#2 aluminum</b> (a 2-2-2-4 aluminum SER is the common cable). If the 100A panel feeds only part of the house — a suite, a garage shop, an addition — Table 310.12 does not apply. Use the <b>75°C column of Table 310.16</b>, because breaker and lug terminations are 75°C unless the listing says otherwise. That is <b>#1 aluminum or #3 copper</b>. #2 aluminum is 90A at 75°C, so it is not a 100A feeder outside of Table 310.12.</p>
-      <p>This two-space can has <b>no feed-through lug kit</b>. The 200A whole-house feeder is protected by the 200A main, and the conductors land only on lugs the can is listed for. Do not put two conductors under a lug listed for one. If the plan shows a 200A indoor panel on this meter-main, the foreman confirms the landing before the cable is cut.</p>
-      <p>Identify the conductors and leave them that way. Black and red are the hots. The white is the neutral and stays white. The equipment ground is green or bare. If the SER gives you two black legs, phase-tape one leg red at each end so the next person can tell them apart.</p>
+    <h2>Feeder size</h2>
+    <div class="card">
+      <span class="nec">NEC 310.12</span><span class="nec">NEC 250.122</span><span class="sharma">200A WHOLE HOUSE</span>
+      <p style="margin-top:10px">The indoor panel is the 200A, 30-space panel for the house, and the meter-main breaker is what protects the feeder. When that feeder carries the whole dwelling, Table 310.12 sets the size: <b>4/0 aluminum or 2/0 copper</b> for the two hots and the neutral.</p>
+      <p>The equipment ground is sized from the breaker, not from Table 310.12. A 200A breaker needs an equipment ground at least <b>#6 copper or #4 aluminum</b> (250.122). Four conductors in the nipple: black, red, white, green or bare. The white stays the neutral. If the two hots are the same color, phase-tape one leg red at each end.</p>
       <table>
-        <tr><th>Feeder</th><th>Breaker</th><th>Conductor</th></tr>
-        <tr><td>200A, whole dwelling</td><td>200A main</td><td>4/0 Al hots and neutral, EGC #4 Al min — 310.12 and 250.122</td></tr>
-        <tr><td>150A, whole dwelling</td><td>150A, where the can is listed for it</td><td>2/0-2/0-2/0-4 Al SER — 310.12. Not a 200A feeder</td></tr>
-        <tr><td>100A, whole dwelling</td><td>100A 2-pole in the two spaces</td><td>#2 Al (2-2-2-4 Al SER) — 310.12. EGC in that cable is larger than 250.122 requires</td></tr>
-        <tr><td>100A, part of the house</td><td>100A 2-pole in the two spaces</td><td>#1 Al or #3 Cu — 310.16, 75°C column. EGC #6 Al or #8 Cu min</td></tr>
+        <tr><th>Conductor</th><th>200A whole-dwelling feeder</th></tr>
+        <tr><td>Hot A, hot B, neutral</td><td>4/0 Al or 2/0 Cu — Table 310.12</td></tr>
+        <tr><td>Equipment ground</td><td>#6 Cu or #4 Al minimum — 250.122</td></tr>
+        <tr><td>Raceway</td><td>Short PVC or EMT nipple, bushing each end</td></tr>
       </table>
     </div>
 
-    <h2>Where the panel goes</h2>
+    <h2>Grounding stays at the meter-main</h2>
+    <div class="card">
+      <span class="nec">NEC 250.24</span><span class="nec">NEC 250.50</span><span class="nec">NEC 250.52</span><span class="nec">NEC 250.53</span><span class="nec">NEC 250.94</span>
+      <p style="margin-top:10px">The grounding electrode conductor, the main bonding jumper, and the neutral-to-ground bond all land in the meter-main. That is the service. The indoor panel is fed from the load side and does not get a second bond or a ground rod of its own. The equipment ground in the nipple is the path back to the service.</p>
+      <ul>
+        <li><b>Every electrode present is bonded in</b> (250.50). Rods, a concrete-encased electrode, a metal water pipe — whatever the job actually has — tie into the one grounding electrode system. Electrode types are in 250.52.</li>
+        <li><b>Rods:</b> 8 ft, driven so the full length is in the earth. Space them at least <b>6 ft</b> apart. Sharma uses two rods (250.53). The drawing shows that pair under the meter-main.</li>
+        <li><b>Bonding bridge:</b> the intersystem bonding connection goes at the service, on this grounding system, so cable and phone have a place to land (250.94).</li>
+        <li><b>GEC size:</b> to rod electrodes, the code never requires larger than #6 copper (250.66(A)). Sharma's usual grounding conductor is #4 copper. It lands in the meter-main, not in the indoor panel.</li>
+      </ul>
+    </div>
+
+    <h2>Height, clearance, and where it cannot go</h2>
     <div class="card">
       <span class="nec">NEC 110.26</span><span class="nec">NEC 240.24(A)</span><span class="nec">NEC 240.24(D)</span><span class="nec">NEC 240.24(E)</span>
       <ul>
-        <li><b>Not a bathroom, and not a clothes closet.</b> Overcurrent devices stay out of dwelling bathrooms, and out of the vicinity of easily ignitable material such as a clothes closet (240.24(D) and (E)).</li>
-        <li><b>Stud bay, plumb.</b> On a Sharma garage the exterior wall is block. Do not bore the block for this feeder or for the branch circuits. The panel sits in a wood stud bay, and the cables leave the <b>top</b> of the can, through the top plate, into the attic.</li>
-        <li><b>Handle height.</b> Set the can so the center of the grip of the highest breaker handle, in its highest position, is not more than <b>6 ft 7 in</b> above the floor (240.24(A)). 404.8(A) uses that same measurement for switches. The drawing shows the breaker rule.</li>
-        <li><b>Working clearance</b> in front of the panel, kept clear for the life of the house, not used as a shelf: <b>30 in wide</b> (or the width of the can, whichever is more; the 30 in does not have to be centered, and the door still has to open 90°), <b>36 in deep</b> for a 120/240-volt panel with the live parts on one side only, and <b>6 ft 6 in high</b> or the height of the equipment, whichever is greater (110.26).</li>
+        <li><b>Meter centerline is the utility's number.</b> Duke Energy: center of the meter at least 4 ft and not more than 5 ft 6 in above final grade. FPL: not less than 5 ft and not more than 6 ft above finished grade. OUC's booklet requires 3 ft clear in front of the meter and beside it; take the centerline from the current OUC book and the planner.</li>
+        <li><b>Breaker handle.</b> On both cans, the center of the grip of the highest breaker handle, in its highest position, stays at or under <b>6 ft 7 in</b> above the floor or grade (240.24(A)). 404.8(A) uses that same measurement for switches.</li>
+        <li><b>Working clearance on both faces.</b> In front of the meter-main and in front of the indoor panel: <b>30 in wide</b> or the width of the can, whichever is more, <b>36 in deep</b> for this 120/240-volt equipment with live parts on one side, and <b>6 ft 6 in high</b> (110.26). The door opens at least 90°. The floor in that box stays clear.</li>
+        <li><b>Not a bathroom, and not a clothes closet</b> (240.24(D) and (E)). That rules the indoor panel. The meter-main is outside, on the garage wall, where the utility and the plan put it.</li>
       </ul>
     </div>
 
     <h2>Rough-in steps</h2>
     <div class="card">
-      <h3>1 · Set the can</h3>
-      <p>Height first, then plumb. Screw into the studs, not into drywall. The highest handle has to land at or under 6 ft 7 in when the breakers are in. A can that leans is the first thing the inspector sees.</p>
-      <h3>2 · Knockouts and the connector</h3>
-      <p>Open only the knockout you are using. On this rough-in that is a top knockout for the feeder, and the top knockouts the branch cables need for the attic. A listed connector for that cable — SER connector or NM connector, sized for the cable — with the locknut run up tight inside. Close every unused opening. An open knockout is a fail.</p>
-      <span class="nec">NEC 110.12(A)</span><span class="nec">NEC 408.7</span>
-      <h3 style="margin-top:12px">3 · Route the feeder through the attic</h3>
-      <p>Out of the feeder breaker in the meter-main, up, across the attic, down the stud bay, into the top of the subpanel. Straight runs, secured, not draped. Secure the cable within <b>12 in</b> of the meter-main and within <b>12 in</b> of the subpanel, then at intervals not over <b>4 ft 6 in</b> (334.30). Type SE cable used for this interior feeder follows those same support rules (338.10). Staples snug, not crushed through the jacket.</p>
-      <span class="nec">NEC 334.30</span><span class="nec">NEC 338.10</span>
-      <h3 style="margin-top:12px">4 · Branch cables leave the top</h3>
-      <p>Same path as the feeder. Homeruns go up into the attic because the garage block is not a raceway and it is not a place you bore NM through. Where a cable is run through a wood member and the edge of the hole is less than <b>1-1/4 in</b> from the nearest face, or where the cable is parallel to a stud and that close to the face, cover it with a steel plate listed for the purpose, at least 1/16 in thick (300.4). The plate is there so the drywall screw does not find the wire.</p>
-      <span class="nec">NEC 300.4</span>
-      <h3 style="margin-top:12px">5 · Leave length — do not terminate</h3>
-      <p>In the can, leave <b>18 to 24 in</b> of each conductor, coiled so the ends stay clear of the bars and the bus. This is rough-in. Do not skin them back to the lug and do not torque anything. Identify them: black, red, white, green or bare. Tag each branch cable with the room and the load, specific enough that the directory can be written at trim.</p>
-      <span class="sharma">ROUGH-IN LENGTH</span>
-      <h3 style="margin-top:12px">6 · Bonding check before you leave</h3>
-      <p>Bonding screw or strap <b>removed</b>. Neutral bar isolated. Ground bar installed and bonded to the can. Feeder is four wires, not three. If you can see a factory strap still tying the neutral bar to the enclosure, the rough-in is not done.</p>
-      <h3>7 · Marks the next crew will need</h3>
-      <p>Every circuit gets a clear, specific name in the directory on the face or inside of the door — the purpose of the circuit, not who uses the room (408.4(A)). Write it at trim from the tags you left. Also mark the panel with where it is fed from: <b>“Supplied from: meter-main, garage exterior.”</b> NEC 2020 408.4(B) requires that source-of-supply mark on feeder-fed panels in buildings <b>other than</b> one- and two-family dwellings, and the mark has to be permanent and not handwritten. A Sharma house is a one-family dwelling, so that section does not require the mark here. Put it on anyway. The next person has to be able to find the feeder breaker without opening every cover on the job.</p>
-      <span class="nec">NEC 408.4(A)</span><span class="nec">NEC 408.4(B)</span>
+      <h3>1 · Pick the bay</h3>
+      <p>One wall. The meter-main on the exterior face, the indoor panel in the stud bay directly behind it. Not a bathroom, not a clothes closet. If the two knockouts will not line up in a straight line, you are not back-to-back yet.</p>
+      <h3>2 · Set the meter-main</h3>
+      <p>Height from the utility — Duke, OUC, or FPL, as above — then plumb and solid into the structure. The 200A breaker handle still has to end up at or under 6 ft 7 in. A can that leans makes the nipple miss.</p>
+      <h3>3 · Set the indoor panel</h3>
+      <p>Plumb in that same bay, directly behind the meter-main. Set the height so the highest breaker handle lands at or under 6 ft 7 in, and so the back knockout lines up with the meter-main knockout.</p>
+      <h3>4 · Cut and fit the nipple</h3>
+      <p>Straight, short, 24 inches or less. Locknut and insulating bushing on each end. Unused openings closed. Seal the raceway for the outdoor-to-indoor temperature change.</p>
+      <h3>5 · Pull the feeder and leave it long</h3>
+      <p>Four conductors, sized from the table above, straight through the nipple. Coil about <b>18 to 24 inches</b> in the meter-main and the same in the indoor panel. Do not skin them onto the lugs. Identify black, red, white, and the equipment ground.</p>
+      <h3>6 · Bonding check</h3>
+      <p>Indoor bonding screw or strap <b>out</b>. Neutral bar isolated. Ground bar installed and bonded to the can. The service bond, the grounding electrode conductor, the rods, and the bonding bridge are at the meter-main.</p>
+      <h3>7 · Branch circuits leave the top</h3>
+      <p>Homeruns go <b>up out of the top</b> of the indoor panel and into the attic. The garage block is not bored for those cables. The feeder is not one of those cables — it already went through the nipple. Where a branch cable passes through a stud closer than 1-1/4 in to the face, cover it with a steel plate (300.4).</p>
+      <span class="sharma">BLOCK IS NOT BORED</span>
     </div>
 
-    <h2>Breakers — AFCI and GFCI</h2>
+    <h2>Bushing, nipple, and connector schedule</h2>
     <div class="card">
-      <span class="nec">NEC 210.12</span><span class="nec">NEC 210.8</span>
-      <p style="margin-top:10px">The branch breakers go in at trim, not at rough-in. The homerun tags are what make that possible. In a dwelling, the 120-volt, 15- and 20-amp branch circuits that supply outlets or devices in kitchens, family rooms, dining rooms, living rooms, parlors, libraries, dens, bedrooms, sunrooms, recreation rooms, closets, hallways, laundry areas, and similar rooms need AFCI protection (210.12). Sharma uses a combination-type AFCI breaker at the origin of the circuit.</p>
-      <p>GFCI protection (210.8) covers the dwelling locations that section names, including bathrooms, garages, outdoors, crawl spaces, basements, kitchen counter receptacles, receptacles within 6 ft of a sink, and laundry areas. Where one circuit needs both, a dual-function breaker does both jobs. Tag the cable for the breaker it will get. A tag that only says “bedroom” is how the wrong breaker ends up in the space.</p>
+      <span class="nec">NEC 310.12</span><span class="nec">NEC 310.16</span><span class="nec">NEC CH. 9 NOTE 4</span><span class="nec">NEC 300.4(G)</span>
+      <p style="margin-top:10px">The nipple is 24 inches or less, so Chapter 9, Note 4, allows it to be filled to 60 percent. The areas below are Chapter 9, Table 5, for THHN/THWN-2: three conductors (two hots and the neutral) plus the equipment ground. Copper-clad aluminum uses the aluminum column. Table 310.12 applies only when this feeder carries the whole dwelling. Otherwise use the 75°C column of Table 310.16. A 4/0 aluminum conductor is 180 amps at 75°C, so it is not a 200-amp feeder unless 310.12 applies.</p>
+      <p>The locknut and the insulating bushing are the same trade size as the raceway you actually pull. Every ungrounded conductor in this table is 4 AWG or larger, so 300.4(G) requires the insulating bushing on both ends. A chase nipple is the same trade size and has to be an insulated chase nipple, or a chase nipple plus a bushing. Published chase-nipple length is <b>UNVERIFIED</b> — measure the fitting. A PVC male adapter is the same trade size, with the locknut and the bushing inside the can.</p>
+      <table>
+        <tr><th>A</th><th>Rule</th><th>2 hots + neutral</th><th>EGC min</th><th>EMT</th><th>PVC Sch 40</th></tr>
+        <tr><td>100</td><td>310.12 whole dwelling</td><td>4 Cu</td><td>8 Cu</td><td>3/4</td><td>3/4</td></tr>
+        <tr><td>100</td><td>310.12 whole dwelling</td><td>2 Al or CCA</td><td>6 Al</td><td>1</td><td>1</td></tr>
+        <tr><td>100</td><td>310.16 at 75°C</td><td>3 Cu</td><td>8 Cu</td><td>1</td><td>1</td></tr>
+        <tr><td>100</td><td>310.16 at 75°C</td><td>1 Al or CCA</td><td>6 Al</td><td>1-1/4</td><td>1-1/4</td></tr>
+        <tr><td>125</td><td>310.12 whole dwelling</td><td>2 Cu</td><td>6 Cu</td><td>1</td><td>1</td></tr>
+        <tr><td>125</td><td>310.12 whole dwelling</td><td>1/0 Al or CCA</td><td>4 Al</td><td>1-1/4</td><td>1-1/4</td></tr>
+        <tr><td>125</td><td>310.16 at 75°C</td><td>1 Cu</td><td>6 Cu</td><td>1-1/4</td><td>1-1/4</td></tr>
+        <tr><td>125</td><td>310.16 at 75°C</td><td>2/0 Al or CCA</td><td>4 Al</td><td>1-1/4</td><td>1-1/4</td></tr>
+        <tr><td>150</td><td>310.12 whole dwelling</td><td>1 Cu</td><td>6 Cu</td><td>1-1/4</td><td>1-1/4</td></tr>
+        <tr><td>150</td><td>310.12 whole dwelling</td><td>2/0 Al or CCA</td><td>4 Al</td><td>1-1/4</td><td>1-1/4</td></tr>
+        <tr><td>150</td><td>310.16 at 75°C</td><td>1/0 Cu</td><td>6 Cu</td><td>1-1/4</td><td>1-1/4</td></tr>
+        <tr><td>150</td><td>310.16 at 75°C</td><td>3/0 Al or CCA</td><td>4 Al</td><td>1-1/4</td><td>1-1/2</td></tr>
+        <tr><td>200</td><td>310.12 whole dwelling</td><td>2/0 Cu</td><td>6 Cu</td><td>1-1/4</td><td>1-1/4</td></tr>
+        <tr><td>200</td><td>310.12 whole dwelling</td><td>4/0 Al or CCA</td><td>4 Al</td><td>1-1/2</td><td>1-1/2</td></tr>
+        <tr><td>200</td><td>310.16 at 75°C</td><td>3/0 Cu</td><td>6 Cu</td><td>1-1/4</td><td>1-1/4</td></tr>
+        <tr><td>200</td><td>310.16 at 75°C</td><td>250 Al or CCA</td><td>4 Al</td><td>2</td><td>2</td></tr>
+      </table>
+      <p class="muted">Nipple trade size is the smallest EMT or Schedule 40 PVC whose 60 percent area holds the four THHN/THWN-2 conductors. If the raceway is longer than 24 inches, refill at 40 percent. Compact aluminum (Table 5A) and XHHW-2 have their own areas — recheck before you buy the pipe. The Sharma house feeder is the 200-amp whole-dwelling row: 4/0 aluminum or 2/0 copper, in a 1-1/2 inch nipple for the aluminum and a 1-1/4 inch nipple for the copper.</p>
+      <h3 style="margin-top:12px">Branch connectors at the top of the panel</h3>
+      <p>Arlington Black Button sheet for NM94, NM942, NM95, and NM96. The bag on the truck wins if a printing differs. Service-entrance cable needs an SE-listed connector, not an NM button. An Arlington 842 excerpt lists some SE cable (8/2 through 4/2). A catalog number for every SER size is <b>UNVERIFIED</b>.</p>
+      <table>
+        <tr><th>Cable</th><th>One cable</th><th>Two cables</th><th>KO</th></tr>
+        <tr><td>14/2, 12/2, 10/2</td><td>NM94</td><td>NM94 or NM942</td><td>1/2</td></tr>
+        <tr><td>10/3</td><td>NM94</td><td>NM95</td><td>1/2 or 3/4</td></tr>
+        <tr><td>6/3</td><td>NM95</td><td>UNVERIFIED</td><td>3/4</td></tr>
+        <tr><td>8/3</td><td>NM96</td><td>UNVERIFIED</td><td>1</td></tr>
+        <tr><td>SER</td><td>SE-listed connector</td><td>—</td><td>Per the listing</td></tr>
+      </table>
+      <p>Knockout trade sizes on this work: 1/2, 3/4, 1, 1-1/4, 1-1/2, and 2. The feeder uses the nipple size in the table. Branch knockouts follow the connector. Staple the cable within 12 inches of the connector, then every 4 feet 6 inches (334.30, and 338.10 when SE cable is used inside). Tag each home run with the room and the load before you leave, so the directory (408.4) can be written at trim.</p>
+    </div>
+
+    <h2>Framing the panel bay</h2>
+    <div class="card">
+      <span class="nec">NEC 312.3</span><span class="nec">NEC 334.30</span><span class="nec">NEC 300.4</span><span class="nec">NEC 110.26(E)</span>
+      <p style="margin-top:10px">The cited can is the Siemens ES main-lug box <b>SB3040L1200G</b>: 30 inches high, 14.5 inches wide, 4.25 inches deep, from the Siemens ES unassembled load-center sheet. A main-breaker 30-space box on that same sheet is 36 inches high. This panel is main-lug, because the meter-main breaker is the disconnect. If the can on the truck is a later catalog, measure it and frame to that can.</p>
+      <svg class="diagram" role="img" aria-label="Framing elevation: king studs, flat header and sill, staple blocking, panel can flush to drywall, open bay above into the attic" viewBox="0 0 640 420" font-family="sans-serif">
+        <rect width="640" height="420" fill="#eef4fa"/>
+        <text x="320" y="22" fill="#182430" font-size="13" font-weight="bold" text-anchor="middle">FRAMING THE BAY — ELEVATION</text>
+        <line x1="40" y1="360" x2="360" y2="360" stroke="#8a7048" stroke-width="3"/>
+        <text x="44" y="378" fill="#5a6b7d" font-size="11">FLOOR</text>
+        <rect x="70" y="80" width="16" height="280" fill="#e6d5b0" stroke="#8a7048"/>
+        <rect x="250" y="80" width="16" height="280" fill="#e6d5b0" stroke="#8a7048"/>
+        <text x="40" y="220" fill="#182430" font-size="11" font-weight="bold">KING</text>
+        <text x="40" y="234" fill="#182430" font-size="11" font-weight="bold">STUD</text>
+        <rect x="86" y="80" width="164" height="12" fill="#c4a574" stroke="#8a7048"/>
+        <text x="280" y="90" fill="#182430" font-size="11">TOP PLATE</text>
+        <rect x="86" y="200" width="164" height="12" fill="#c4a574" stroke="#8a7048"/>
+        <text x="280" y="210" fill="#182430" font-size="11">2x4 FLAT HEADER</text>
+        <rect x="86" y="300" width="164" height="12" fill="#c4a574" stroke="#8a7048"/>
+        <text x="280" y="310" fill="#182430" font-size="11">2x4 FLAT SILL</text>
+        <rect x="86" y="150" width="164" height="10" fill="#d7c4a3" stroke="#8a7048"/>
+        <text x="280" y="158" fill="#182430" font-size="11">STAPLE BLOCK</text>
+        <rect x="96" y="212" width="144" height="88" fill="#ffffff" stroke="#182430" stroke-width="2"/>
+        <text x="168" y="252" fill="#182430" font-size="12" font-weight="bold" text-anchor="middle">PANEL CAN</text>
+        <text x="168" y="270" fill="#5a6b7d" font-size="11" text-anchor="middle">30 × 14.5</text>
+        <line x1="140" y1="212" x2="140" y2="86" stroke="#5a6b7d" stroke-width="2"/>
+        <line x1="154" y1="212" x2="154" y2="86" stroke="#5a6b7d" stroke-width="2"/>
+        <line x1="168" y1="212" x2="168" y2="86" stroke="#5a6b7d" stroke-width="2"/>
+        <rect x="128" y="100" width="52" height="8" fill="#c5ced6" stroke="#5a6b7d"/>
+        <text x="280" y="120" fill="#182430" font-size="11">NAIL PLATE</text>
+        <text x="280" y="134" fill="#5a6b7d" font-size="10">IF WITHIN 1-1/4 IN</text>
+        <text x="430" y="70" fill="#182430" font-size="12" font-weight="bold">SECTION</text>
+        <rect x="430" y="120" width="14" height="160" fill="#e6d5b0" stroke="#8a7048"/>
+        <rect x="444" y="160" width="52" height="80" fill="#ffffff" stroke="#182430" stroke-width="2"/>
+        <rect x="496" y="120" width="8" height="160" fill="#d5dde6" stroke="#b9c7d4"/>
+        <text x="444" y="150" fill="#182430" font-size="10">CAN</text>
+        <text x="510" y="200" fill="#182430" font-size="11">DRYWALL</text>
+        <text x="510" y="216" fill="#5a6b7d" font-size="10">1/2 OR 5/8</text>
+        <text x="510" y="236" fill="#182430" font-size="11" font-weight="bold">LIP FLUSH</text>
+        <text x="96" y="400" fill="#182430" font-size="11">OPEN ABOVE THE CAN INTO THE ATTIC. DO NOT CLOSE IT SOLID.</text>
+      </svg>
+      <ul>
+        <li><b>King studs</b> set to the can you are holding. A 14.5-inch can does not squeeze into a tight 16-inch bay. Frame the opening to the can.</li>
+        <li><b>Flat 2×4 header and sill</b> above and below the can, and a flat block in the bay above so the home runs have a staple within 12 inches of the connector (334.30).</li>
+        <li><b>Flush.</b> On a wood wall, the front edge of the cabinet is flush with the drywall or proud of it, not buried (312.3). On a noncombustible finish, not set back more than 1/4 inch. The 1/4-inch setback people know from device boxes is 314.20. For this cabinet the rule is 312.3. Drywall on the job is 1/2 inch or 5/8 inch, whichever the wall is.</li>
+        <li><b>Plywood backer</b> only when a surface-mounted can has nothing solid to screw to. The thickness is whatever the screws need. It is not a code thickness.</li>
+        <li><b>Top plate.</b> Drill or notch for the home runs. If the edge of the hole is within 1-1/4 inch of the face, put on a steel plate (300.4). Firestop that hole only when the ceiling is a fire-rated assembly (300.21).</li>
+        <li><b>Dedicated space</b> (110.26(E)): the width and depth of the panel, from the floor to 6 feet above the panel, stays free of plumbing, ducts, and anything that is not part of the electrical install. The working clearance in front — 30 inches by 36 inches by 6 feet 6 inches — stays free on both sides of the wall, and a door swing does not cover it.</li>
+      </ul>
     </div>
 
     <h2>Quick numbers</h2>
     <div class="card">
       <table>
-        <tr><th>Item</th><th>Rough-in standard</th></tr>
-        <tr><td>Meter-main</td><td>Siemens MM0202B1200 — 200A main, two 1-inch branch spaces</td></tr>
-        <tr><td>Indoor panel</td><td>Siemens load center. Neutral isolated. Ground bar bonded to the can</td></tr>
-        <tr><td>Feeder</td><td>4-wire: two hots, neutral, EGC. Never a 3-wire feeder to this panel</td></tr>
-        <tr><td>200A whole dwelling</td><td>4/0 Al — Table 310.12. EGC #4 Al or #6 Cu minimum — 250.122</td></tr>
-        <tr><td>2/0-2/0-2/0-4 Al SER</td><td>150A dwelling feeder under Table 310.12. Not the 200A size</td></tr>
-        <tr><td>100A whole dwelling</td><td>100A 2-pole breaker, #2 Al — Table 310.12</td></tr>
-        <tr><td>100A, part of the house</td><td>100A 2-pole breaker, #1 Al or #3 Cu — Table 310.16 at 75°C</td></tr>
-        <tr><td>Support</td><td>Within 12 in of each can, then every 4 ft 6 in — 334.30, 338.10</td></tr>
-        <tr><td>Protection</td><td>Steel plate where the cable is within 1-1/4 in of the face — 300.4</td></tr>
-        <tr><td>In the can</td><td>18–24 in left on each conductor. Not terminated</td></tr>
-        <tr><td>Handle</td><td>Center of the highest handle ≤ 6 ft 7 in above the floor — 240.24(A)</td></tr>
-        <tr><td>Clearance</td><td>30 in wide × 36 in deep × 6 ft 6 in high, kept clear — 110.26</td></tr>
-        <tr><td>Location</td><td>Not a bathroom, not a clothes closet — 240.24(D), 240.24(E)</td></tr>
-        <tr><td>Labels</td><td>Circuit directory — 408.4(A). “Supplied from” mark on the can — Sharma habit; 408.4(B) requires it outside one- and two-family dwellings</td></tr>
+        <tr><th>Item</th><th>Back-to-back standard</th></tr>
+        <tr><td>Meter-main</td><td>Siemens MM0202B1200 on the exterior face. 200A main is the service disconnect</td></tr>
+        <tr><td>Indoor panel</td><td>Siemens 200A, 30-space, directly behind it in the same bay</td></tr>
+        <tr><td>Feeder</td><td>4-wire in a short nipple. 4/0 Al or 2/0 Cu — Table 310.12</td></tr>
+        <tr><td>Equipment ground</td><td>#6 Cu or #4 Al minimum — 250.122</td></tr>
+        <tr><td>Nipple</td><td>PVC or EMT, 24 in or less, locknut and bushing each end — 312.5, 300.4(G), 300.6</td></tr>
+        <tr><td>Seal</td><td>Raceway sealed exterior to interior — 300.7(A)</td></tr>
+        <tr><td>Indoor neutral</td><td>Isolated. Bonding screw or strap removed — 250.24(A)(5), 250.142(B)</td></tr>
+        <tr><td>Indoor ground bar</td><td>Separate bar, bonded to the can</td></tr>
+        <tr><td>Electrodes</td><td>At the meter-main. Two 8-ft rods, 6 ft apart, plus every other electrode present — 250.50, 250.52, 250.53</td></tr>
+        <tr><td>Bonding bridge</td><td>At the meter-main — 250.94</td></tr>
+        <tr><td>Meter height</td><td>Duke: 4 ft to 5 ft 6 in. FPL: 5 ft to 6 ft. OUC: current book and the planner</td></tr>
+        <tr><td>Handle</td><td>Highest handle ≤ 6 ft 7 in — 240.24(A)</td></tr>
+        <tr><td>Clearance</td><td>Both sides: 30 in × 36 in × 6 ft 6 in — 110.26</td></tr>
+        <tr><td>Branches</td><td>Out the top of the indoor panel, into the attic. Block is not bored</td></tr>
+        <tr><td>In the cans</td><td>18–24 in coiled each end. Not terminated</td></tr>
       </table>
     </div>
 
-    <h2>Subpanel rough-in checklist</h2>
+    <h2>Back-to-back checklist</h2>
     <div class="card">
       <p class="muted">Tap each item as you finish it. The checkmarks stay on this phone.</p>
       <div class="bar"><i id="fill"></i></div>
-      <span class="pct" id="pct">0 of 8 done</span>
+      <span class="pct" id="pct">0 of 9 done</span>
       <div id="checks">
-        <label class="chk"><input type="checkbox" data-k="place"><span>Can is in a stud bay, plumb, not in a bathroom or a clothes closet</span></label>
-        <label class="chk"><input type="checkbox" data-k="height"><span>Highest breaker handle will be at or under 6 ft 7 in</span></label>
-        <label class="chk"><input type="checkbox" data-k="ko"><span>Only the knockouts in use are open — listed connector, locknut tight, spare openings closed</span></label>
-        <label class="chk"><input type="checkbox" data-k="feeder"><span>4-wire feeder, sized for its breaker, attic route, block not bored, stapled within 12 in and every 4 ft 6 in</span></label>
-        <label class="chk"><input type="checkbox" data-k="plate"><span>Steel plate where the cable is within 1-1/4 in of the face of the framing</span></label>
-        <label class="chk"><input type="checkbox" data-k="bond"><span>Neutral bar isolated, bonding screw or strap removed, ground bar bonded to the can</span></label>
-        <label class="chk"><input type="checkbox" data-k="length"><span>18–24 in of each conductor in the can, not terminated, hots / neutral / EGC identified and branches tagged</span></label>
-        <label class="chk"><input type="checkbox" data-k="clear"><span>30 in × 36 in × 6 ft 6 in kept clear. Directory planned. “Supplied from: meter-main, garage exterior” noted for the can</span></label>
+        <label class="chk"><input type="checkbox" data-k="bay"><span>Indoor panel is in the stud bay directly behind the meter-main — not a bathroom, not a clothes closet</span></label>
+        <label class="chk"><input type="checkbox" data-k="height"><span>Meter centerline set to the utility (Duke, OUC, or FPL). Highest handle on both cans at or under 6 ft 7 in</span></label>
+        <label class="chk"><input type="checkbox" data-k="nipple"><span>Nipple straight, 24 in or less, locknut and bushing each end, raceway sealed exterior to interior</span></label>
+        <label class="chk"><input type="checkbox" data-k="feeder"><span>4-wire feeder in the nipple — 4/0 Al or 2/0 Cu, equipment ground sized for 200A — coiled 18–24 in, not terminated</span></label>
+        <label class="chk"><input type="checkbox" data-k="bond"><span>Indoor neutral isolated, bonding screw or strap out, ground bar bonded to the can</span></label>
+        <label class="chk"><input type="checkbox" data-k="gec"><span>GEC, electrodes, and bonding bridge are at the meter-main</span></label>
+        <label class="chk"><input type="checkbox" data-k="frame"><span>King studs, flat header, and flat sill fit the can. Cabinet front is flush to the drywall</span></label>
+        <label class="chk"><input type="checkbox" data-k="branch"><span>Branch circuits leave the top, stapled within 12 in, tagged with room and load. Block is not bored. Feeder stays in the nipple</span></label>
+        <label class="chk"><input type="checkbox" data-k="clear"><span>Working clearance clear on both sides, and the dedicated space above the panel is free of piping</span></label>
       </div>
       <button class="reset" id="reset" type="button">Reset checklist</button>
     </div>
 
-    <h2>Common rough-in fails — don't be these</h2>
+    <h2>Common misses</h2>
     <div class="card">
       <ul>
-        <li><b>Bonding screw left in.</b> The neutral is then bonded at the subpanel. That is the fail. Screw out, strap out.</li>
-        <li><b>Neutrals and grounds on one bar.</b> Isolated bar for neutrals. Bonded bar for grounds. They do not share.</li>
-        <li><b>Three-wire feeder.</b> Two hots and a neutral, and the can has no equipment ground. This panel needs the fourth conductor.</li>
-        <li><b>2/0 SER on a 200A breaker.</b> 2/0-2/0-2/0-4 aluminum SER is the 150A dwelling size in Table 310.12. The 200A dwelling size is 4/0 aluminum.</li>
-        <li><b>#2 aluminum on a 100A breaker that does not feed the whole house.</b> Outside Table 310.12, #2 aluminum is not a 100A conductor at 75°C. Use #1 aluminum or #3 copper.</li>
-        <li><b>Cable bored through the garage block.</b> It leaves the top and uses the attic.</li>
-        <li><b>One staple at the can and a long loose run.</b> Within 12 in, then every 4 ft 6 in.</li>
-        <li><b>Conductors cut short, or landed at rough-in.</b> Leave 18–24 in. Do not terminate.</li>
-        <li><b>No plate</b> where the bit came out close to the face of the stud.</li>
-        <li><b>Panel in a closet or a bathroom, handle too high, or the floor in front stacked with material.</b> Location, 6 ft 7 in, and the clearance box are part of the rough-in, not a trim problem.</li>
+        <li><b>Feeder run up into the attic.</b> The feeder is the nipple. Branch circuits are what leave the top.</li>
+        <li><b>Panel offset down the wall</b> so the nipple has to turn. Move the can until the knockouts line up.</li>
+        <li><b>Bonding screw left in</b> the indoor panel. The neutral is then bonded on the load side of the service disconnect.</li>
+        <li><b>Neutrals and grounds on one bar</b> in the indoor panel.</li>
+        <li><b>No bushing</b> on a feeder this size. 4 AWG and larger gets an insulated bushing at the enclosure.</li>
+        <li><b>Open nipple</b> from the garage heat into the outdoor air. Seal it.</li>
+        <li><b>Grounding electrode conductor landed in the indoor panel.</b> It lands in the meter-main.</li>
+        <li><b>Branch cables bored through the garage block.</b> They come out the top.</li>
+        <li><b>Clearance used as a shelf</b> on either face of the wall.</li>
       </ul>
       <p class="muted">Content pending final review by Sharma's master electrician. Follow your foreman and the plans — they win over any page.</p>
     </div>
@@ -528,9 +533,8 @@
       <a href="https://sharmaelechvac.github.io/sharma-nec-code/">NEC Code app</a>
     </footer>
   </div>
-
   <script>
-    const KEY = "sharma-subpanel-roughin-v1";
+    const KEY = "sharma-subpanel-backtoback-v1";
     const boxes = [...document.querySelectorAll("#checks input[type=checkbox]")];
     let saved = {};
     try { saved = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { saved = {}; }
