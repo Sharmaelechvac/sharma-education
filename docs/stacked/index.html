@@ -26,7 +26,7 @@
     .back { display: inline-block; color: var(--muted); text-decoration: none; font-size: 0.85rem; margin: 2px 2px 12px; }
     header { display: flex; align-items: center; gap: 12px; margin: 0 2px 4px; }
     header img { height: 42px; width: auto; background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 4px 6px; }
-    header .k { font-size: 0.68rem; font-weight: 750; letter-spacing: 0.09em; text-transform: uppercase; color: var(--gold); }
+    header .k { font-size: 0.85rem; font-weight: 750; letter-spacing: 0.09em; text-transform: uppercase; color: var(--gold); }
     h1 { margin: 10px 2px 6px; font-size: 1.55rem; font-weight: 760; letter-spacing: -0.02em; line-height: 1.15; }
     .sub { margin: 0 2px; color: var(--muted); font-size: 0.93rem; line-height: 1.5; }
     .warn { margin: 16px 0 0; padding: 13px 14px; border: 1px solid rgba(192,57,43,0.5);
@@ -37,7 +37,7 @@
     .card { margin-top: 14px; padding: 16px 15px 14px; background: var(--panel);
       border: 1px solid var(--line); border-radius: 6px; box-shadow: none; }
     .card.highlight { border: 2px solid var(--blue); background: #eaf3fb; }
-    h2 { margin: 24px 2px 6px; font-size: 0.8rem; font-weight: 750; letter-spacing: 0.09em;
+    h2 { margin: 24px 2px 6px; font-size: 0.85rem; font-weight: 750; letter-spacing: 0.09em;
       text-transform: uppercase; color: var(--blue); }
     h3 { margin: 0 0 6px; font-size: 1.05rem; font-weight: 700; }
     p, li { font-size: 0.92rem; line-height: 1.55; }
@@ -45,9 +45,9 @@
     ul, ol { margin: 6px 0 4px; padding-left: 20px; }
     li { margin-bottom: 5px; }
     .muted { color: var(--muted); }
-    .nec { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em;
+    .nec { display: inline-block; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.04em;
       color: var(--blue); background: #eaf3fb; border: 1px solid rgba(0,88,163,0.4); border-radius: 4px; padding: 2px 8px; margin: 0 4px 4px 0; }
-    .sharma { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em;
+    .sharma { display: inline-block; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.04em;
       color: var(--gold-2); background: #fdf6e0; border: 1px solid rgba(150,105,10,0.45); border-radius: 4px; padding: 2px 8px; margin: 0 4px 4px 0; }
     .diagram { width: 100%; height: auto; display: block; }
     .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
@@ -58,7 +58,7 @@
     figcaption b { color: var(--text); display: block; margin-bottom: 3px; font-size: 0.9rem; }
     .bar { height: 10px; background: #e3eaf1; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; margin: 10px 0 4px; }
     .bar i { display: block; height: 100%; width: 0%; background: var(--blue); transition: width .25s; }
-    .pct { font-size: 0.8rem; color: var(--muted); }
+    .pct { font-size: 0.85rem; color: var(--muted); }
     label.chk { display: flex; gap: 10px; align-items: flex-start; padding: 9px 10px; margin: 7px 0;
       background: #f7fafc; border: 1px solid var(--line); border-radius: 6px; font-size: 0.9rem; line-height: 1.45; cursor: pointer; }
     label.chk input { margin-top: 2px; width: 18px; height: 18px; accent-color: var(--green); flex: none; }
@@ -67,12 +67,14 @@
       border-radius: 4px; padding: 7px 14px; font: inherit; font-size: 0.82rem; cursor: pointer; }
     table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
     td, th { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; line-height: 1.4; }
-    th { color: var(--gold-2); font-size: 0.76rem; letter-spacing: 0.05em; text-transform: uppercase; }
-    footer { margin: 30px 2px 0; color: var(--muted); font-size: 0.72rem; text-align: center; line-height: 1.5; }
+    th { color: var(--gold-2); font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; }
+    footer { margin: 30px 2px 0; color: var(--muted); font-size: 0.85rem; text-align: center; line-height: 1.5; }
     footer a { color: var(--muted); }
   </style>
   <link rel="stylesheet" href="../brand.css?v=1">
 <meta name="theme-color" content="#264387">
+<script>(function(){try{if(localStorage.getItem("sk-scheme")==="dark"){var d=document.documentElement;d.setAttribute("data-scheme","dark");var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=d.getAttribute("data-theme")==="track"?"#1C1C1E":"#1a2f61"}}catch(e){}})()</script>
+<meta name="color-scheme" content="light">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -531,6 +533,7 @@ body.sk{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 24px)}
       <p class="muted">Content pending final review by Sharma's master electrician. Follow your foreman and the plans — they win over any app.</p>
     </div>
 
+    <div class="sk-section-title"><span>Display</span></div><div class="sk-list" id="appearance"></div>
     <footer>
       Sharma Electric &amp; HVAC · Lic. EC13013924 · CAC1823596<br>
       <a href="../">← Education</a> · <a href="https://sharmaelechvac.github.io/sharma-nec-code/">NEC Code app</a>
@@ -566,8 +569,11 @@ body.sk{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 24px)}
 /* Sharma kit v1.2 adapter: service worker + bottom tab bar wired to this app's
    existing tab buttons. No data, links or behaviour change. */
 (function(){
-  function reg(){ if (window.SK && SK.registerSW) { try { SK.registerSW("../sw.js"); } catch(e){} } }
+  function reg(){ if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) { try { navigator.serviceWorker.register("../sw.js", { scope: "/sharma-education/" }).catch(function(){}); } catch(e){} } }
   if (document.readyState === "complete") reg(); else addEventListener("load", reg);
+  var ap = document.getElementById("appearance");
+  function mt(){ if (ap && window.SK && SK.scheme) SK.scheme.mountToggle(ap); }
+  if (window.SK) mt(); else addEventListener("load", mt);
   var tabs = document.querySelectorAll(".sk-tab[data-sk-view]");
   if (!tabs.length) return;
   function sync(){
